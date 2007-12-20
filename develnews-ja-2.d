@@ -37,21 +37,33 @@ Different compression algorithms for debs
    Unfortunately, both [17]lintian and [18]linda incorrectly report that
    this should not be used.
 
-Advanced package search prototype in experimental
--------------------------------------------------
+高機能なパッケージ検索のプロトタイプが experimental に
+------------------------------------------------------
 
-   Enrico Zini created [19]apt-xapian-index, a prototype indexer for a
-   system-wide [20]Xapian-based index of packages.
+Enrico Zini さんが、システム全体にわたるパッケージの Xapian[20]
+ベースのインデックスを生成するインデクサのプロトタイプ、apt-xapian-index[19]
+を作成しました。
 
-   The index allows to perform very fast queries on package descriptions
-   and tags, and any package can install plugins to add extra information
-   to the index.
+このインデックスを使うと、パッケージの説明文やタグが非常に高速に検索できます。
+また、インデックスに特別な情報を付加するのに、
+任意のパッケージをプラグインとしてインストールできます。
 
-   Also available is an extensive [21]tutorial on how to use the index.
+さらに、インデックスの使い方を書いた、詳しいチュートリアル[21]も利用できます。
 
-   [22]apt-xapian-index, currently in experimental, will be uploaded to
-   unstable as soon as some technical feedback is received, especially
-   with regards to the index structure and the plugin interface.
+apt-xapian-index[22] (現在は experimental にあります) は、
+特にインデックスの構造やプラグインのインターフェイスに関する技術的なフィードバックが得られ次第、
+不安定版 (unstable) にアップロードされる予定です。
+
+(訳注) すでに不安定版 (unstable) にアップロードされ[23]、experimental
+からは削除されています。
+
+
+19. http://packages.debian.org/experimental/apt-xapian-index
+20. http://www.xapian.org/
+21. http://www.enricozini.org/2007/debtags/apt-xapian-index.html
+22. http://packages.debian.org/experimental/apt-xapian-index
+
+23. http://packages.qa.debian.org/a/apt-xapian-index.html
 
 Changelog entries must describe changes
 ---------------------------------------
