@@ -20,15 +20,14 @@ Homepage field in the corresponding binary stanza in the control file.
 
 This was implemented in dpkg 1.14.6.
 
-Vcs-* fields in debian/control
+debian/control の Vcs-* フィールド
 ------------------------------
+パッケージが VCS 内で管理されている場合は、
+Vsc-<Kind> にそのリポジトリの場所を指定します。
+リポジトリの内容をウェブ上で閲覧できるようにしている場合は
+Vcs-Browser フィールドにその URL を指定します。
 
-If your package is managed in a VCS, you should indicate where the
-repository is located in the Vcs-<Kind> field. If the content of the
-repository can be browsed on the web, you should indicate the URL in the
-Vcs-Browser field.
-
-The fields officially supported by dpkg are:
+dpkg が公式にサポートしているフィールドは以下の通りです。
 
     * Vcs-Arch (arch and baz)
     * Vcs-Bzr (bazaar)
@@ -39,12 +38,12 @@ The fields officially supported by dpkg are:
     * Vcs-Mtn (Monotone)
     * Vcs-Svn (Subversion) 
 
-Here are some examples:
+いくつか例を示します。
 
 Vcs-Browser: http://ikiwiki.info/cgi-bin/viewvc.cgi/trunk/?root=ikiwiki
 Vcs-Svn: svn://svn.kitenet.net/ikiwiki/trunk
 
-This was implemented in dpkg 1.14.6.
+これは dpkg 1.14.6 で実装されました。
 
 dpkg-buildpackage がデフォルトで fakeroot を使うように
 ------------------------------------------------------
