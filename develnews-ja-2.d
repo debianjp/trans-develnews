@@ -71,30 +71,29 @@ apt-xapian-index[22] (現在は experimental にあります) は、
 
 23. http://packages.qa.debian.org/a/apt-xapian-index.html
 
-Changelog entries must describe changes
----------------------------------------
+Changelog エントリには変更を記述すること
+----------------------------------------------------------
 
-   While reading changelogs (through debian-devel-changes@l.d.o), we
-   see too often bad changelog entries that describe the problem that they
-   fix without indicating how they fix it. In a changelog the important
-   bits are the description of the change and not only what lead you
-   to do the change. Hopefully some examples will make it clearer:
+(debian-devel-changes@xxxxx に流れる) changelog を読んでいると、
+どのように修正したのかを明示せずに修正した問題を書いたような
+お粗末な changelog エントリがやたらと目につきます。changelog
+で重要なのは、変更の経緯はもちろんですが、変更内容の説明です。
+いくつかの例ではっきりすればいいのですが：
 
-   Bad:
-     * Fix lintian error.
-   Good:
-     * Fix spelling error (maintainance -> maintenance) in description
-       (detected by lintian).
+悪い例：
+ * lintian のエラーを修正
+良い例：
+ * (lintian が検出した) description 中のスペルミス (maintainance -> maintenance) を修正
 
-   Bad:
-     * Fix package building with new dpkg-shlibdeps.
-   Good:
-     * Pass LD_LIBRARY_PATH=/usr/lib/mypackage to dpkg-shlibdeps so that
-       the private libraries are properly found.
+悪い例：
+ * 新しい dpkg-shlibdeps 用にパッケージビルド方法を修正
+良い例：
+ * LD_LIBRARY_PATH=/usr/lib/mypackage を dpkg-shlibdeps に渡して、プライベート
+   ライブラリが適切に検出されるようにした
 
-   When you write changelog entries, have in mind that one must be able to
-   have a reasonably clear idea of what change you did without being
-   forced to read a debdiff between both versions.
+changelog エントリを書くときは、わざわざ両方のバージョンの
+debdiff を読まなくても、それなりにきちんと変更内容がわかる
+ようにしなくてはならない、ということを頭に置いてください。
 
 Links
 
