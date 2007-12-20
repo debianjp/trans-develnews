@@ -23,7 +23,7 @@ PTS[13] の Web インターフェースにいくつか変更がありました�
   * パッケージごとの svnbuildstat[14] 情報へのリンクが付け加えられました
   (luk さんと kibi さんによる)
 
-  * 新しい情報の表現がいくつか付け加えれました。それらは DM-Upload-Allowd
+  * 新しい情報の表現がいくつか付け加えられました。それらは DM-Upload-Allowd
   フィールド、LowThresholdNmu[15] の wiki ページにあるメンテナー、
   Homepage フィールドです(zack さんによる)。
 
