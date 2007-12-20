@@ -24,18 +24,17 @@ PTS web interface
        maintainer being in the [15]LowThresholdNmu wiki page, Homepage
        field (by zack)
 
-Different compression algorithms for debs
+debs 用の特別な圧縮アルゴリズム
 -----------------------------------------
 
-   The ability to compress binary packages with something else than gzip
-   (for example bzip2) has been in dpkg-dev and dpkg for a long time,
-   since 1.11 [16].
+dpkg-dev と dpkg には、1.11 [16] 以来長い間、
+(例えば bzip2 のような） gzip よりも優れたバイナリバイナリパッケージを圧縮する能力があります。
 
-   The way to add it to a package is to use the "-Z" switch of dpkg-deb.
-   Or "dh_builddeb -- -Z bzip2" from within debian/rules.
+dpkg-debの"-Z"スイッチを使うことでその能力を使うことが出来ます。
+または、debian/rules 内から"dh_builddeb -- -Z bzip2"を使います。
 
-   Unfortunately, both [17]lintian and [18]linda incorrectly report that
-   this should not be used.
+不運にも、[17]lintian と [18]linda は、
+これが使われていないという報告が挙がっています。
 
 高機能なパッケージ検索のプロトタイプが experimental に
 ------------------------------------------------------
