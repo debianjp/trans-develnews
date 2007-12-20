@@ -65,14 +65,13 @@ dpkg-buildpackage が並列ビルドをサポート
 
 これは dpkg 1.14.7 で実装されました。
 
-dpkg-shlibdeps supports symbol based dependencies
+dpkg-shlibdepsは、シンボルにもとづく依存性をサポートします
 -------------------------------------------------
+pkg-gensymbolsは、ライブラリパッケージのための新しいシンボルコントロールファイルを
+作成するために利用することができます（それは、より正確な依存性を形成するために
+dpkg-shlibdepsにより、順に利用します。）。さらに詳細は、後ほど提供します。現在、
+若干の良好な使用ガイドラインの追加を検討する数名の初期段階の適用者を探しています。
+さらに詳細情報は、以下をご参照ください。
+http://lists.debian.org/debian-devel/2007/11/msg00611.html
 
-dpkg-gensymbols can be used to generate new symbols control files for
-library packages (which in turn will be used by dpkg-shlibdeps to generate
-more accurate dependencies). More details will be provided later on. For
-now, we're looking for some early adopters to flesh out some good usage
-guidelines, see http://lists.debian.org/debian-devel/2007/11/msg00611.html
-for more information.
-
-This was implemented in dpkg 1.14.8.
+これは、dpkg 1.14.8で実装されました。
