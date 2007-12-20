@@ -1,16 +1,20 @@
 The news are collected on http://wiki.debian.org/DeveloperNews
 Feel free to contribute.
 
-New archive for unofficial architectures
+非公式なアーキテクチャのための新アーカイブ
 ----------------------------------------
+新しいホスト[9]は、非公式なアーキテクチャのホストアーカイブ[10]にセットアップ
+されました。それは、gnuab.org に代わって、現在、armel、
+hurd-i386 （唯一リリースされていない）、kfreebsd-i386 と kfreebsd-amd64 の
+アーキテクチャのホストになっています。
 
-   A new [9]host has been setup to host [10]archives of unofficial
-   architectures. It replaces gnuab.org and currently hosts the armel,
-   hurd-i386 (unreleased only), kfreebsd-i386 and kfreebsd-amd64
-   architecture.
+開発者は、自分の担当するパッケージのビルドログ[11]を見て、
+その状況[12]をチェックすることができます。
 
-   Developers can look at the [11]build logs of their packages and check
-   their [12]status.
+  9. http://www.debian-ports.org/
+ 10. http://ftp.debian-ports.org/
+ 11. http://buildd.debian-ports.org/
+ 12. http://buildd.debian-ports.org/status/
 
 PTS web interface
 -----------------
