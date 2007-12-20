@@ -16,17 +16,20 @@ hurd-i386 （唯一リリースされていない）、kfreebsd-i386 と kfreebs
  11. http://buildd.debian-ports.org/
  12. http://buildd.debian-ports.org/status/
 
-PTS web interface
------------------
+PTS の Web インターフェース
+---------------------------
+PTS[13] の Web インターフェースにいくつか変更がありました。
+  * PTS ページの最新ニュースの RSS フィードが付け加えられました(zack さんによる)。
+  * パッケージごとの svnbuildstat[14] 情報へのリンクが付け加えられました
+  (luk さんと kibi さんによる)。
 
-   The [13]PTS web interface has gone through some changes:
-     * added RSS feeds for the "latest news" part of the PTS pages (by
-       zack)
-     * added hyperlinks to per package [14]svn-buildstat info (by luk and
-       kibi)
-     * added rendering of some new info: DM-Upload-Allowed field,
-       maintainer being in the [15]LowThresholdNmu wiki page, Homepage
-       field (by zack)
+  * 新しい情報がいくつか付け加えれました。それらは DM-Upload-Allowd
+  フィールド、LowThresholdNmu[15] の wiki ページにあるメンテナー、
+  Homepage フィールドです(zack さんによる)。
+
+ 13. http://packages.qa.debian.org/
+ 14. http://svnbuildstat.debian.net/
+ 15. http://wiki.debian.org/LowThresholdNmu
 
 debs 用の特別な圧縮アルゴリズム
 -----------------------------------------
