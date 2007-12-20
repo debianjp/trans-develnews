@@ -19,13 +19,14 @@ hurd-i386 （唯一リリースされていない）、kfreebsd-i386 と kfreebs
 PTS の Web インターフェース
 ---------------------------
 PTS[13] の Web インターフェースにいくつか変更がありました。
-  * PTS ページの最新ニュースの RSS フィードが付け加えられました(zack さんによる)。
+  * PTS ページの「最新ニュース」部分用に RSS フィードが付け加えられました(zack さんによる)。
   * パッケージごとの svnbuildstat[14] 情報へのリンクが付け加えられました
-  (luk さんと kibi さんによる)。
+  (luk さんと kibi さんによる)
 
-  * 新しい情報がいくつか付け加えれました。それらは DM-Upload-Allowd
+  * 新しい情報の表現がいくつか付け加えれました。それらは DM-Upload-Allowd
   フィールド、LowThresholdNmu[15] の wiki ページにあるメンテナー、
   Homepage フィールドです(zack さんによる)。
+
 
  13. http://packages.qa.debian.org/
  14. http://svnbuildstat.debian.net/
