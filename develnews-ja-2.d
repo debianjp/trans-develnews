@@ -84,7 +84,7 @@ Changelog エントリには変更を記述すること
 悪い例：
  * lintian のエラーを修正
 良い例：
- * (lintian が検出した) description 中のスペルミス (maintainance -> maintenance) を修正
+ * (lintian が検出した) description 中のスペルミス (maintainance → maintenance) を修正
 
 悪い例：
  * 新しい dpkg-shlibdeps 用にパッケージビルド方法を修正
