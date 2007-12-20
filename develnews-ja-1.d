@@ -50,8 +50,9 @@ Vcs-Svn: svn://svn.kitenet.net/ikiwiki/trunk
 dpkg-buildpackage がデフォルトで fakeroot を使うように
 ------------------------------------------------------
 
-root 権限で実行しておらず、fakeroot が利用できる場合には、'-rfakeroot'
-オプションを付けなくても、自動的に fakeroot が使われるようになりました。
+もう '-rfakeroot' オプションを付ける必要はありません。root
+権限で実行しておらず、fakeroot が利用できる場合には、自動的に fakeroot
+が使われるようになりました。
 
 これは、dpkg 1.14.7 で実装されました。
 
