@@ -3,15 +3,15 @@ Feel free to contribute.
 
 非公式なアーキテクチャのための新アーカイブ
 ----------------------------------------
-新しいホスト[9]は、非公式なアーキテクチャのホストアーカイブ[10]にセットアップ
-されました。それは、gnuab.org に代わって、現在、armel、
+新しいホスト[9]は、非公式なアーキテクチャのアーカイブ[10]をホストするようにセットアップされました。それは、gnuab.org
+に代わって、現在、armel、
 hurd-i386 （唯一リリースされていない）、kfreebsd-i386 と kfreebsd-amd64 の
 アーキテクチャのホストになっています。
 
 開発者は、自分の担当するパッケージのビルドログ[11]を見て、
 その状況[12]をチェックすることができます。
 
-  9. http://www.debian-ports.org/
+ 9. http://www.debian-ports.org/
  10. http://ftp.debian-ports.org/
  11. http://buildd.debian-ports.org/
  12. http://buildd.debian-ports.org/status/
