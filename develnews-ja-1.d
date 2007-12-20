@@ -54,14 +54,15 @@ root 権限で実行しておらず、fakeroot が利用できる場合には、
 
 これは、dpkg 1.14.7 で実装されました。
 
-dpkg-buildpackage supports parallel builds
-------------------------------------------
+dpkg-buildpackage が並列ビルドをサポート
+-------------------------------------------------------------
 
-The new option '-j' can be used to enable parallel builds, in case the
-package build system is make based, otherwise the package will need
-explicit support for it.
+パッケージのビルドシステムが make に基づいている場合は、新しい
+オプション '-j' を使って、並列ビルドを有効化できます。
+それ以外の場合、パッケージが並列ビルドをきちんとサポートする
+必要があります。
 
-This was implemented in dpkg 1.14.7.
+これは dpkg 1.14.7 で実装されました。
 
 dpkg-shlibdeps supports symbol based dependencies
 -------------------------------------------------
