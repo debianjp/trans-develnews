@@ -10,15 +10,15 @@ teams will use the opportunity to share some stuff.
 
 debian/control の Homepage フィールド
 -------------------------------------
-かなり長い間、 control ファイル自体に上流プロジェクトの URL を
-記述するようにしていました。現在では control ファイルのスタンザに
-ある新しい Homepage フィールドに記述する方法が推奨されています。
+かなり長い間、 description の中に上流プロジェクトの URL を記述する
+ようにしていました。現在では control ファイルの source 節にある
+新しい Homepage フィールドに記述する方法が推奨されています。
 そのフィールドを記述すると、ソースパッケージやバイナリパッケージの
 中で伝搬されます(そのようにして Sources.gz と Packages.gz ができ
 上がります)。特別なバイナリパッケージの Homepage フィールドに対して
-は、それぞれそれに相当する、 control ファイルのバイナリスタンザに
-ある 2 番目の Homepage フィールドを記述することによって、それらを
-上書きすることができます。
+は、それぞれそれに相当する、 control ファイルの binary 節にある
+2 番目の Homepage フィールドを記述することによって、それらを上書き
+することができます。
 
 This was implemented in dpkg 1.14.6.
 
