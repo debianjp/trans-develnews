@@ -75,7 +75,7 @@ apt-xapian-index[22] (現在は experimental にあります) は、
 Changelog エントリには変更を記述すること
 ----------------------------------------------------------
 
-(debian-devel-changes@xxxxx に流れる) changelog を読んでいると、
+(debian-devel-changes@l.d.o に流れる) changelog を読んでいると、
 どのように修正したのかを明示せずに修正した問題を書いたような
 お粗末な changelog エントリがやたらと目につきます。changelog
 では，その変更に至った経緯はもちろん重要ですが、変更内容の説明も重要です。
