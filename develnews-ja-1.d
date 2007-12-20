@@ -11,14 +11,12 @@ teams will use the opportunity to share some stuff.
 debian/control の Homepage フィールド
 -------------------------------------
 かなり長い間、 description の中に上流プロジェクトの URL を記述する
-ようにしていました。現在では control ファイルの source 節にある
-新しい Homepage フィールドに記述する方法が推奨されています。
-そのフィールドを記述すると、ソースパッケージやバイナリパッケージの
-中で伝搬されます(そのようにして Sources.gz と Packages.gz ができ
-上がります)。特別なバイナリパッケージの Homepage フィールドに対して
-は、それぞれそれに相当する、 control ファイルの binary 節にある
-2 番目の Homepage フィールドを記述することによって、それらを上書き
-することができます。
+ようにしていました。現在では control ファイルの source 節にある新し
+い Homepage フィールドに記述する方法が推奨されています。Homepage
+フィールドは、ソースパッケージやバイナリパッケージに伝播します(その
+結果 Sources.gz と Packages.gz ができます)。control ファイルにある
+対応した binary 節の 2 番目の Homepage フィールドを記述することで、
+特定のバイナリパッケージの Homepage フィールドを上書きできます。
 
 This was implemented in dpkg 1.14.6.
 
