@@ -8,15 +8,17 @@ mail will be sent out when we have enough content, say 5 news). For the
 first issue, we have mainly dpkg related news, for the future I hope other
 teams will use the opportunity to share some stuff.
 
-Homepage field in debian/control
---------------------------------
-For quite some time, we used to put the URL of the upstream project in the
-description itself. The recommended way is now to put it in the new
-"Homepage" field in the source stanza of the control file. The field will
-be propagated in the source package and in the binary packages (and thus
-will end up in Sources.gz and Packages.gz). It's possible to override the
-Homepage field for each a specific binary package by putting a second
-Homepage field in the corresponding binary stanza in the control file.
+debian/control の Homepage フィールド
+-------------------------------------
+かなり長い間、 control ファイル自体に上流プロジェクトの URL を
+記述するようにしていました。現在では control ファイルのスタンザに
+ある新しい Homepage フィールドに記述する方法が推奨されています。
+そのフィールドを記述すると、ソースパッケージやバイナリパッケージの
+中で伝搬されます(そのようにして Sources.gz と Packages.gz ができ
+上がります)。特別なバイナリパッケージの Homepage フィールドに対して
+は、それぞれそれに相当する、 control ファイルのバイナリスタンザに
+ある 2 番目の Homepage フィールドを記述することによって、それらを
+上書きすることができます。
 
 This was implemented in dpkg 1.14.6.
 
