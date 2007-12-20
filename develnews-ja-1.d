@@ -46,13 +46,13 @@ Vcs-Svn: svn://svn.kitenet.net/ikiwiki/trunk
 
 This was implemented in dpkg 1.14.6.
 
-dpkg-buildpackage uses fakeroot by default
-------------------------------------------
+dpkg-buildpackage がデフォルトで fakeroot を使うように
+------------------------------------------------------
 
-You don't need to specify '-rfakeroot' any more, if you are not running as
-root, and fakeroot is present it will be used automatically.
+root 権限で実行しておらず、fakeroot が利用できる場合には、'-rfakeroot'
+オプションを付けなくても、自動的に fakeroot が使われるようになりました。
 
-This was implemented in dpkg 1.14.7.
+これは、dpkg 1.14.7 で実装されました。
 
 dpkg-buildpackage supports parallel builds
 ------------------------------------------
