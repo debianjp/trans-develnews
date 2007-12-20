@@ -32,17 +32,22 @@ PTS[13] の Web インターフェースにいくつか変更がありました�
  14. http://svnbuildstat.debian.net/
  15. http://wiki.debian.org/LowThresholdNmu
 
-debs 用の特別な圧縮アルゴリズム
+deb ファイルでの他の圧縮アルゴリズム
 -----------------------------------------
 
-dpkg-dev と dpkg には、1.11 [16] 以来長い間、
-(例えば bzip2 のような） gzip よりも優れたバイナリバイナリパッケージを圧縮する能力があります。
+dpkg-dev および dpkg パッケージには、バイナリパッケージを gzip 以外のも
+の (例えば bzip2 など) を使って圧縮する機能がバージョン 1.11[16] 以来ずっと
+存在しています。
 
-dpkg-debの"-Z"スイッチを使うことでその能力を使うことが出来ます。
+dpkg-debの"-Z"スイッチを使うことでその機能を使うことが出来ます。
 または、debian/rules 内から"dh_builddeb -- -Z bzip2"を使います。
 
-不運にも、[17]lintian と [18]linda は、
-これが使われていないという報告が挙がっています。
+残念なことに、lintian と linda の双方とも、この機能を使うべきではないと
+いう誤った警告を出します。
+
+  16. http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=34727
+  17. http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=447257
+  18. http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=452329
 
 高機能なパッケージ検索のプロトタイプが experimental に
 ------------------------------------------------------
