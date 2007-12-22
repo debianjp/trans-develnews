@@ -76,7 +76,7 @@ apt-xapian-index[22] (現在は experimental にあります) は、
 20. http://www.xapian.org/
 21. http://www.enricozini.org/2007/debtags/apt-xapian-index.html
 22. http://packages.debian.org/experimental/apt-xapian-index
-23. http://packages.qa.debian.org/a/apt-xapian-index.html
+23. http://packages.debian.org/sid/apt-xapian-index
 
 changelog エントリには変更を記述すること
 ----------------------------------------
