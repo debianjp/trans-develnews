@@ -1,12 +1,14 @@
-Hi,
+こんにちは。
 
-this mail is a simple cut&paste from http://wiki.debian.org/DeveloperNews
-where we try to collect small development news that should be known to all
-DD but that are not worth a dedicated mail to d-d-a. Feel free to
-participate and to add news for the next issue (it won't be periodic, the
-mail will be sent out when we have enough content, say 5 news). For the
-first issue, we have mainly dpkg related news, for the future I hope other
-teams will use the opportunity to share some stuff.
+このメールは、Wiki ページ http://wiki.debian.org/DeveloperNews
+から単純にカット・アンド・ペーストしたものです。
+この Wiki ページでは、すべての Debian 開発者 (DD) が知っておくべきである一方で、
+通知のために debian-devel-announce (d-d-a) にわざわざメールを 1 通投稿するほどのことではないような、
+小さな開発関連のニュースをまとめようと試みています。
+ページの編集や次号に載せるニュースの追加は御自由にどうぞ (発行は不定期になるでしょう。
+十分な内容が (つまりニュースが 5 つほど) 揃ったときに、メールが投稿されます)。
+第 1 号については、主に dpkg 関連のニュースを扱っています。
+将来的には、他のチームも何かの情報を共有するのにこの場を使うとよいでしょう。
 
 debian/control の Homepage フィールド
 -------------------------------------
