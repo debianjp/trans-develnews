@@ -66,10 +66,8 @@ Enrico Zini さんが、システム全体にわたるパッケージの Xapian[
 
 apt-xapian-index[22] (現在は experimental にあります) は、
 特にインデックスの構造やプラグインのインターフェイスに関する技術的なフィードバックが得られ次第、
-不安定版 (unstable) にアップロードされる予定です。
-
-(訳注) すでに不安定版 (unstable) にアップロードされ[23]、experimental
-からは削除されています。
+不安定版 (unstable) にアップロードされる予定です (訳注: すでに不安定版 (unstable) にアップロードされ[23]、experimental
+からは削除されています)。
 
 
 19. http://packages.debian.org/experimental/apt-xapian-index
