@@ -35,19 +35,19 @@ Vcs-Browser フィールドにその URL を指定します。
 
 dpkg が公式にサポートしているフィールドは以下の通りです。
 
-    * Vcs-Arch (arch and baz)
-    * Vcs-Bzr (bazaar)
-    * Vcs-Cvs
-    * Vcs-Darcs
-    * Vcs-Git
-    * Vcs-Hg (Mercurial)
-    * Vcs-Mtn (Monotone)
-    * Vcs-Svn (Subversion) 
+  * Vcs-Arch (arch and baz)
+  * Vcs-Bzr (bazaar)
+  * Vcs-Cvs
+  * Vcs-Darcs
+  * Vcs-Git
+  * Vcs-Hg (Mercurial)
+  * Vcs-Mtn (Monotone)
+  * Vcs-Svn (Subversion)
 
 いくつか例を示します。
 
-Vcs-Browser: http://ikiwiki.info/cgi-bin/viewvc.cgi/trunk/?root=ikiwiki
-Vcs-Svn: svn://svn.kitenet.net/ikiwiki/trunk
+    Vcs-Browser: http://ikiwiki.info/cgi-bin/viewvc.cgi/trunk/?root=ikiwiki
+    Vcs-Svn: svn://svn.kitenet.net/ikiwiki/trunk
 
 これは dpkg 1.14.6 で実装されました。
 
