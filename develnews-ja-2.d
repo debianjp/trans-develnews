@@ -1,3 +1,5 @@
+Misc development news (#2)
+
 このニュースは http://wiki.debian.org/DeveloperNews でまとめたものです。
 寄稿はご自由にどうぞ。
 

@@ -1,3 +1,5 @@
+Misc development news
+
 こんにちは。
 
 このメールは、Wiki ページ http://wiki.debian.org/DeveloperNews
