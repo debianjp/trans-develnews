@@ -1,4 +1,4 @@
-Misc development news (#2)
+開発ニュース寄せ集め (第 2 号)
 
 このニュースは http://wiki.debian.org/DeveloperNews でまとめたものです。
 寄稿はご自由にどうぞ。

@@ -1,4 +1,4 @@
-Misc development news
+開発ニュース寄せ集め (第 1 号)
 
 こんにちは。
 
