@@ -33,7 +33,6 @@ PTS[13] の Web インタフェースにいくつか変更がありました。
     フィールド、メンテナが Wiki の LowThresholdNmu[15] ページに名前を連ねているかどうか、
     Homepage フィールドです (zack さんによる変更)。
 
-
  13. http://packages.qa.debian.org/
  14. http://svnbuildstat.debian.net/
  15. http://wiki.debian.org/LowThresholdNmu
@@ -73,12 +72,10 @@ apt-xapian-index[22] (現在は experimental にあります) は、
 不安定版 (unstable) にアップロードされる予定です (訳注: すでに不安定版 (unstable) にアップロードされ[23]、experimental
 からは削除されています)。
 
-
 19. http://packages.debian.org/experimental/apt-xapian-index
 20. http://www.xapian.org/
 21. http://www.enricozini.org/2007/debtags/apt-xapian-index.html
 22. http://packages.debian.org/experimental/apt-xapian-index
-
 23. http://packages.qa.debian.org/a/apt-xapian-index.html
 
 changelog エントリには変更を記述すること
