@@ -19,9 +19,9 @@ hurd-i386 (リリースされていないもののみ)、kfreebsd-i386 と kfree
  11. http://buildd.debian-ports.org/
  12. http://buildd.debian-ports.org/status/
 
-PTS の Web インターフェース
+PTS の Web インタフェース
 ---------------------------
-PTS[13] の Web インターフェースにいくつか変更がありました。
+PTS[13] の Web インタフェースにいくつか変更がありました。
   * PTS ページに「Latest news (最新ニュース)」部分の RSS フィードが付け加えられました (zack さんによる変更)。
   * パッケージごとの svn-buildstat[14] 情報へのリンクが付け加えられました
   (luk さんと kibi さんによる変更)。
@@ -65,7 +65,7 @@ Enrico Zini さんが、システム全体にわたるパッケージの Xapian[
 さらに、インデックスの使い方を書いた、詳しいチュートリアル[21]も利用できます。
 
 apt-xapian-index[22] (現在は experimental にあります) は、
-特にインデックスの構造やプラグインのインターフェイスに関する技術的なフィードバックが得られ次第、
+特にインデックスの構造やプラグインのインタフェースに関する技術的なフィードバックが得られ次第、
 不安定版 (unstable) にアップロードされる予定です (訳注: すでに不安定版 (unstable) にアップロードされ[23]、experimental
 からは削除されています)。
 
@@ -77,7 +77,7 @@ apt-xapian-index[22] (現在は experimental にあります) は、
 
 23. http://packages.qa.debian.org/a/apt-xapian-index.html
 
-Changelog エントリには変更を記述すること
+changelog エントリには変更を記述すること
 ----------------------------------------------------------
 
 (debian-devel-changes@l.d.o に流れる) changelog を読んでいると、
