@@ -44,7 +44,7 @@ dpkg-dev および dpkg パッケージには、バイナリパッケージを g
 dpkg-deb の "-Z" スイッチを使うことでその機能を使うことが出来ます。
 または、debian/rules 内から "dh_builddeb -- -Z bzip2" を使います。
 
-残念なことに、lintian と linda の双方とも、この機能を使うべきではないと
+残念なことに、lintian[17] と linda[18] の双方とも、この機能を使うべきではないと
 いう誤った警告を出します。
 
   16. http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=34727
