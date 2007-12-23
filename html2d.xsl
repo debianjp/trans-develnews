@@ -2,7 +2,7 @@
 <xsl:stylesheet
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     version="1.0">
-  <xsl:output method="xml" encoding="utf-8" omit-xml-declaration = "yes"
+  <xsl:output method="xml" encoding="euc-jp" omit-xml-declaration = "yes"
       indent="no"/>
   <!-- Actually, this is neither a well-formed XML nor HTML.  However,
     xsl:output method="text" outputs only the string-value of every text
