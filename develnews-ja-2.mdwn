@@ -1,7 +1,7 @@
 開発ニュース寄せ集め (第 2 号)
 ==============================
 
-このニュースは http://wiki.debian.org/DeveloperNews でまとめたものです。
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
 非公式アーキテクチャのための新アーカイブ

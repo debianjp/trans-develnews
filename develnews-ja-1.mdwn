@@ -3,7 +3,7 @@
 
 こんにちは。
 
-このメールは、Wiki ページ http://wiki.debian.org/DeveloperNews
+このメールは、Wiki ページ <http://wiki.debian.org/DeveloperNews>
 から単純にカット・アンド・ペーストしたものです。
 この Wiki ページでは、すべての Debian 開発者 (DD) が知っておくべきである一方で、
 通知のために debian-devel-announce (d-d-a) にわざわざメールを 1 通投稿するほどのことではないような、
@@ -80,7 +80,7 @@ dpkg-gensymbols が使えます (生成されたこの制御ファイルは、dp
 さらに詳しくは、後ほど説明します。現在、
 ガイドラインに分かりやすい使用法を追記してくれるアーリーアダプターを募集中です。
 さらに詳しい情報は、
-http://lists.debian.org/debian-devel/2007/11/msg00611.html をご参照ください。
+<http://lists.debian.org/debian-devel/2007/11/msg00611.html> をご参照ください。
 
 これは、dpkg 1.14.8で実装されました。
 
