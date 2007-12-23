@@ -12,4 +12,4 @@ all: $(BLOSXOM_FILES)
 	echo "</div>" >> $@
 
 clean:
-	rm -f *.html
+	rm -f *.html *.d
