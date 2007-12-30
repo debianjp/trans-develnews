@@ -1,0 +1,101 @@
+The news are collected on http://wiki.debian.org/DeveloperNews
+Feel free to contribute.
+
+Updating libraries with symbols files
+-------------------------------------
+
+ A few packages of libraries have already been updated to provide symbols
+ files (like zlib1g, libxml2, libogg0, liburiparser1, libvorbis0a). The
+ adoption rate is still slow but I expect it to increase now that
+ dpkg-shlibdeps in dpkg 1.14.14 supports injection of versions extracted
+ from build-dependencies in the real dependency. This is a safety measure
+ suggested by Loïc Minier[1].
+
+ For package like libgtk2-0 where symbol based dependency could generate a
+ dependency weaker than what's really needed at run-time, it offers a way
+ for the package using the library to provide a minimal version for the
+ dependency. In the case of libgtk2-0, the minimal version of libgtk2-dev
+ required at build-time (as identified in the Build-Depends header) would
+ be used a minimal version to put in the run-time dependency. For this the
+ symbols file needs to indicate to dpkg-shlibdeps the name of the
+ corresponding -dev package. This is done with a special header called
+ "Build-Depends-Package" (see man dpkg-shlibdeps and man deb-symbols for
+ details and precise syntax).
+
+ If you add symbols files to packages, please follow the guidelines
+ provided here[2] and feel free to contribute to this wiki page. I'm also
+ looking for volunteers to identify the libraries with most reverse
+ dependencies, to file bug reports on them and to coordinate the work to
+ make it a release goal to have the most important libraries use symbols
+ files.
+
+  -- Raphaël Hertzog
+
+ [1] http://lists.debian.org/debian-devel/2007/12/msg00036.html
+ [2] http://wiki.debian.org/UsingSymbolsFiles
+
+Mark easy bugs to let new contributors help you
+-----------------------------------------------
+
+ Lucas Nussbaum discussed in his blog how Debian could be more friendly
+ towards new contributors[3]. He also created a new wiki page[4]:
+ http://wiki.debian.org/HelpDebian/Start
+
+ Another important point in his proposal is to mark easy bugs with a
+ special tag so that new contributors can do real and useful work that
+ gets quickly integrated. See the explanation on this page:
+ http://wiki.debian.org/qa.debian.org/GiftTag
+
+  -- Raphaël Hertzog
+
+ [3] http://www.lucas-nussbaum.net/blog/?p=268
+ [4] http://www.lucas-nussbaum.net/blog/?p=269
+
+D-I i18n news
+-------------
+
+ Christian Perrier gave some news[5] of the translation work of
+ debian-installer. A new African language (Amharic) has been enabled, and
+ the translations have been split in 5 levels according to the importance
+ of each string (level 1 for strings always used and level 5 for strings
+ used only in special case on non-mainstream architectures). This split
+ means that translations can be activated sooner while still having a good
+ coverage of most installation scenarios.
+
+  -- Raphaël Hertzog
+
+ [5] http://www.perrier.eu.org/weblog/2007/12/23#d-i_i18n-news
+
+packages.qa.debian.org (PTS) update
+-----------------------------------
+
+ Well, you have probably already noticed, but the PTS[6] has got a
+ facelift: new layout and new css with (supposedly) Debian "social"
+ colors.
+
+  -- Stefano Zacchiroli
+
+ [6] http://packages.qa.debian.org
+
+bugs.qa.debian.org update
+-------------------------
+
+ The QA bug-squashing web pages[7] have been belatedly updated for lenny,
+ and their idea of the contents of the base system fixed so that it no
+ longer needs to be updated manually.
+
+  -- Colin Watson
+
+ [7] http://bugs.qa.debian.org/
+
+Fonts review updates
+--------------------
+
+ The Fonts Task Force[8] enabled weekly updates to the review of fonts in
+ Debian[9] and will use this to identify non-free fonts, duplicated fonts
+ and fonts that need to be split into separate packages.
+
+  -- Paul Wise
+
+ [8] http://wiki.debian.org/Fonts
+ [9] http://pkg-fonts.alioth.debian.org/review/
