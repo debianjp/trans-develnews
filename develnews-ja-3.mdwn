@@ -115,6 +115,16 @@ bugs.qa.debian.org update
 
  [7] http://bugs.qa.debian.org/
 
+bugs.qa.debian.org が更新
+-------------------------
+遅ればせながら、Debian QA チームのバグ退治用ウェブページ[7]が lenny
+向けに更新され、ベースシステムの内容についての構想も準備されたので、
+もう手動で更新する必要はなくなりました。
+
+  -- Colin Watson
+
+ [7] http://bugs.qa.debian.org/
+
 Fonts review updates
 --------------------
 
