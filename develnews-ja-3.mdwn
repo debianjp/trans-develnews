@@ -51,6 +51,17 @@ Mark easy bugs to let new contributors help you
  [3] http://www.lucas-nussbaum.net/blog/?p=268
  [4] http://www.lucas-nussbaum.net/blog/?p=269
 
+新しい貢献者が、あなたを助けられるよう、易しいバグをマークしよう
+-----------------------------------------------
+ Lucas Nussbaumは、彼のブログで、Debianプロジェクトが、新しい貢献者に、いかにより親切になれるかについて議論しました［3］。彼はまた、このために新しいwikiページも作りました[4]。
+  http://wiki.debian.org/HelpDebian/Start
+
+ 彼の提案のもう一つの重要な点は、新しい貢献者が本当に有用な仕事ができ、素早く総合化されるよう、易しいバグを特別なタグでマークすることです。このページ上の説明を見てください。
+  http://wiki.debian.org/qa.debian.org/GiftTag
+ －Raphaël Hertzog
+ [3]http://www.lucas-nussbaum.net/blog/?p=268
+ [4] http://www.lucas-nussbaum.net/blog/?p=269
+
 D-I i18n news
 -------------
 
