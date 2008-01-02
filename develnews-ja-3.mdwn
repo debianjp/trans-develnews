@@ -106,6 +106,17 @@ packages.qa.debian.org (PTS) update
 
  [6] http://packages.qa.debian.org
 
+packages.qa.debian.org (PTS) のアップデート
+-----------------------------------
+
+たぶんすでにお気づきのことかと思いますが、PTS[6] が改装されました。
+新しいレイアウトと(多分) Debian の "社会的な" 色の新しい css となりまし
+た。
+
+  -- Stefano Zacchiroli
+
+ [6] http://packages.qa.debian.org
+
 bugs.qa.debian.org update
 -------------------------
 
