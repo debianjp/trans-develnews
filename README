@@ -1,0 +1,5 @@
+Required softwares
+------------------
+
+* Markdown (The package name in Debian is "markdown".)
+* xsltproc (The package name in Debian is "xsltproc".)
