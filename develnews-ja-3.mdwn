@@ -139,10 +139,12 @@ Fonts review updates
  [8] http://wiki.debian.org/Fonts
  [9] http://pkg-fonts.alioth.debian.org/review/
 
-フォントレビューをアップデートします
+フォントレビューを更新します
+--------------------
 
-フォントタスクフォース［8］では、Debian［9］のフォントのレビューを毎週アップデートできるようにし、non-freeのフォントや複製されたフォント、別々のパッケージに分けられる必要があるフォントを識別するためにこれを使います。
+ Fonts Task Force[8] では、 Debian[9] に含まれるフォントのレビューを毎週更新できるようにし、 non-free のフォントや重複したフォント、別々のパッケージに分けられる必要があるフォントを特定するためにこれを使います。
 
- －Paul Wise
+ -- Paul Wise
 
- [8]http://wiki.debian.org/Fonts[9] http://pkg-fonts.alioth.debian.org/review/
+ [8] http://wiki.debian.org/Fonts
+ [9] http://pkg-fonts.alioth.debian.org/review/
