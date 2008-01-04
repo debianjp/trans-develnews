@@ -34,6 +34,16 @@ Updating libraries with symbols files
  [1] http://lists.debian.org/debian-devel/2007/12/msg00036.html
  [2] http://wiki.debian.org/UsingSymbolsFiles
 
+symbols ファイルを含むようにライブラリを更新中
+----------------------------------------------
+
+いくつかのライブラリパッケージは既に更新されて symbols ファイルを
+提供しています (zlib1g, libxml2, libogg0, liburiparser1, libvorbis0a など)。
+適用の進度はまだゆっくりですが、dpkg 1.14.14 で dpkg-shlibdeps が
+ビルド用の依存関係からバージョンを抽出し、実際の依存関係に注入する
+ようになったので、今後は増加する見込みです。Loïc Minier[1]
+さんがこの安全対策を提案しました。
+
 Mark easy bugs to let new contributors help you
 -----------------------------------------------
 
