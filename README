@@ -21,7 +21,9 @@ What should be done in the release process
 * to add and marking up the top title in Japanese
 * to add the footer section
   * to include acknowledgment to all reviewers who gave comments
-  * to include the correct URL of the message in the list's web archive
+  * to include a URL of the message in the list's web archive, which is
+    UNIQUE to the issue (i.e. not the same as any URLs of the previous
+    issues)
 * to unify terminology
 * to squash typos
   * to check spelling of personal names for typos
