@@ -12,7 +12,7 @@ all: $(BLOSXOM_FILES)
 	echo "</div>" >> $@
 
 preview: $(BLOSXOM_FILES)
-	nkf -Ew $(BLOSXOM_FILES) | w3m -T text/html
+	cat $(BLOSXOM_FILES) | w3m -I e -T text/html
 
 publish: $(BLOSXOM_FILES)
 	svn checkout https://svn.debian.or.jp/repos/www/trunk/blosxom/data/develop develop
