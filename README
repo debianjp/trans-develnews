@@ -1,8 +1,19 @@
 Required softwares
 ------------------
 
+For converting styles of articles:
+
 * Markdown (The package name in Debian is "markdown".)
 * xsltproc (The package name in Debian is "xsltproc".)
+
+For previewing converted articles:
+
+* nkf (The package name in Debian is "nkf".)
+* w3m (The package name in Debian is "w3m".)
+
+For uploading converted articles:
+
+* Subversion (The package name in Debian is "subversion".)
 
 What should be done in the release process
 ------------------------------------------
