@@ -191,3 +191,13 @@ Fonts review updates
 
  [8]: http://wiki.debian.org/Fonts
  [9]: http://pkg-fonts.alioth.debian.org/review/
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・倉敷悟さん・中尾隆さん・小林儀匡が行いました。
+また、石井一夫さん・今井伸広さん・かねこせいじさん・武井伸光さん・やまねひできさんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2007/12/msg00011.html
