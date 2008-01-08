@@ -19,3 +19,4 @@ What should be done in the release process
 * inserting/deleting space characters for appearance
 * making sure that all reference links included in the original text exists
 * making the text as a correct Markdown document
+  * marking up reference links
