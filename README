@@ -3,3 +3,19 @@ Required softwares
 
 * Markdown (The package name in Debian is "markdown".)
 * xsltproc (The package name in Debian is "xsltproc".)
+
+What should be done in the release process
+------------------------------------------
+
+* translating the lead paragraph
+* adding, translating, and marking up the top title
+* adding the footer section
+  * including acknowledgment to all reviewers who gave comments
+* unifying terminology
+* squashing typos
+  * checking spelling of personal names for typos
+* checking for filtered characters such as mail addresses
+* improving line break points for appearance
+* inserting/deleting space characters for appearance
+* making sure that all reference links included in the original text exists
+* making the text as a correct Markdown document
