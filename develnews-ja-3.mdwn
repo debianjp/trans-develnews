@@ -44,8 +44,8 @@ symbols ファイルを含むようにライブラリを更新中
 提供しています (zlib1g、libxml2、libogg0、liburiparser1、libvorbis0a など)。
 適用の進度はまだゆっくりですが、dpkg 1.14.14 で dpkg-shlibdeps が
 ビルド用の依存関係からバージョンを抽出し、実際の依存関係に注入する
-ようになったので、今後は増加する見込みです。Loïc Minier[1]
-さんがこの安全対策を提案しました。
+ようになったので、今後は増加する見込みです。Loïc Minier
+さんがこの安全対策を[提案しました][1]。
 
 libgtk2-0 のように、symbol をもとにすると実行時に本当は必要となる
 バージョンより高いバージョンの依存関係が生成されるパッケージについては、
@@ -57,15 +57,15 @@ libgtk2-0 のように、symbol をもとにすると実行時に本当は必要
 "Build-Depends-Package" という特別なヘッダでなされます (詳細と正確な記法に
 ついては、man dpkg-shlibdeps と man deb-symbols を見てください)。
 
-パッケージに symbols ファイルを追加する時は、ガイドライン [2] に従って
+パッケージに symbols ファイルを追加する時は、[ガイドライン][2]に従って
 ください。この wiki ページへの寄稿もご自由に。ライブラリの被依存を
 おおよそ調べる、それらにバグレポートを出す、そして重要なライブラリのほとんどで
 symbols ファイルが使われることをリリースゴールとするために作業をとりまとめる、
 といったことのために、有志も募集しています。
 
   -- Raphaël Hertzog
- [1] http://lists.debian.org/debian-devel/2007/12/msg00036.html
- [2] http://wiki.debian.org/UsingSymbolsFiles
+ [1]: http://lists.debian.org/debian-devel/2007/12/msg00036.html
+ [2]: http://wiki.debian.org/UsingSymbolsFiles
 
 Mark easy bugs to let new contributors help you
 -----------------------------------------------
@@ -86,16 +86,16 @@ Mark easy bugs to let new contributors help you
 
 新参の貢献者に助けてもらえるよう、易しいバグをマークしよう
 -----------------------------------------------
- Lucas Nussbaum は、彼のブログで、Debian プロジェクトが新しい貢献者にいかにより親切になれるかについて議論しました[3] 。彼はまた、このために新しい wiki ページも作りました[4]。
-  http://wiki.debian.org/HelpDebian/Start
+ Lucas Nussbaum は、彼のブログで、Debian プロジェクトが新しい貢献者にいかにより親切になれるかについて[議論しました][3]。彼はまた、このために新しい wiki ページも[作りました][4]。
+  <http://wiki.debian.org/HelpDebian/Start>
 
  彼の提案のもう一つの重要な点は、すぐに取り込まれる重要で有用な作業を新しい貢献者ができるよう、易しいバグを特別なタグでマークすることです。このページ内の説明を見てください。
-  http://wiki.debian.org/qa.debian.org/GiftTag
+  <http://wiki.debian.org/qa.debian.org/GiftTag>
 
  －Raphaël Hertzog
 
- [3] http://www.lucas-nussbaum.net/blog/?p=268
- [4] http://www.lucas-nussbaum.net/blog/?p=269
+ [3]: http://www.lucas-nussbaum.net/blog/?p=268
+ [4]: http://www.lucas-nussbaum.net/blog/?p=269
 
 D-I i18n news
 -------------
@@ -116,7 +116,7 @@ D-I 国際化ニュース
 ------------------
 
 Christian Perrier さんが Debian インストーラの翻訳作業に関する
-ニュース[5]を出しました。アフリカの言語(アムハラ語)が新しく利用
+[ニュース][5]を出しました。アフリカの言語(アムハラ語)が新しく利用
 可能となりました。また、d-i の翻訳文は内容の重要性に応じて 5 つ
 のレベルに分けられました(常に使用される文向けのレベル 1 から、
 主流でないアーキテクチャ上の特別な場合のみに使用される文向けの
@@ -126,7 +126,7 @@ Christian Perrier さんが Debian インストーラの翻訳作業に関する
 
  -- Raphaël Hertzog
 
- [5] http://www.perrier.eu.org/weblog/2007/12/23#d-i_i18n-news
+ [5]: http://www.perrier.eu.org/weblog/2007/12/23#d-i_i18n-news
 
 packages.qa.debian.org (PTS) update
 -----------------------------------
@@ -142,12 +142,12 @@ packages.qa.debian.org (PTS) update
 packages.qa.debian.org (PTS) のアップデート
 -----------------------------------
 
-たぶんすでにお気づきのことかと思いますが、PTS[6] が改装されました。
+たぶんすでにお気づきのことかと思いますが、[PTS][6] が改装されました。
 新たなレイアウトと、 Debian "らしい" 色づかいの css になりました。
 
   -- Stefano Zacchiroli
 
- [6] http://packages.qa.debian.org
+ [6]: http://packages.qa.debian.org
 
 bugs.qa.debian.org update
 -------------------------
@@ -162,13 +162,13 @@ bugs.qa.debian.org update
 
 bugs.qa.debian.org が更新
 -------------------------
-遅ればせながら、Debian QA チームのバグ退治用ウェブページ[7]が lenny
+遅ればせながら、Debian QA チームの[バグ退治用ウェブページ][7]が lenny
 向けに更新され、ベースシステムの内容についての構想も決まったので、
 もう手動で更新する必要はなくなりました。
 
   -- Colin Watson
 
- [7] http://bugs.qa.debian.org/
+ [7]: http://bugs.qa.debian.org/
 
 Fonts review updates
 --------------------
@@ -185,9 +185,9 @@ Fonts review updates
 フォントレビューを更新します
 --------------------
 
- Fonts Task Force [8] では、Debian に含まれるフォントのレビュー [9] を毎週更新できるようにしました。このレビューは non-free のフォントや重複したフォント、分割したパッケージにすべきフォントを特定するために使います。
+ [Fonts Task Force][8] では、[Debian に含まれるフォントのレビュー][9]を毎週更新できるようにしました。このレビューは non-free のフォントや重複したフォント、分割したパッケージにすべきフォントを特定するために使います。
 
  -- Paul Wise
 
- [8] http://wiki.debian.org/Fonts
- [9] http://pkg-fonts.alioth.debian.org/review/
+ [8]: http://wiki.debian.org/Fonts
+ [9]: http://pkg-fonts.alioth.debian.org/review/
