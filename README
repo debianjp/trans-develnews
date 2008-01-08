@@ -8,9 +8,10 @@ What should be done in the release process
 ------------------------------------------
 
 * translating the lead paragraph
-* adding, translating, and marking up the top title
+* adding and marking up the top title in Japanese
 * adding the footer section
   * including acknowledgment to all reviewers who gave comments
+  * including the correct URL of the message in the list's web archive
 * unifying terminology
 * squashing typos
   * checking spelling of personal names for typos
@@ -20,3 +21,5 @@ What should be done in the release process
 * making sure that all reference links included in the original text exists
 * making the text as a correct Markdown document
   * marking up reference links
+* making sure that all plain-text-style expressions are converted into
+  HTML-style ones
