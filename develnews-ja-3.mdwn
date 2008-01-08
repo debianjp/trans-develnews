@@ -41,7 +41,7 @@ symbols ファイルを含むようにライブラリを更新中
 提供しています (zlib1g, libxml2, libogg0, liburiparser1, libvorbis0a など)。
 適用の進度はまだゆっくりですが、dpkg 1.14.14 で dpkg-shlibdeps が
 ビルド用の依存関係からバージョンを抽出し、実際の依存関係に注入する
-ようになったので、今後は増加する見込みです。Loic Minier[1]
+ようになったので、今後は増加する見込みです。Loïc Minier[1]
 さんがこの安全対策を提案しました。
 
 libgtk2-0 のように、symbol をもとにすると実行時に本当は必要となる
@@ -60,7 +60,7 @@ libgtk2-0 のように、symbol をもとにすると実行時に本当は必要
 symbols ファイルが使われることをリリースゴールとするために作業をとりまとめる、
 といったことのために、有志も募集しています。
 
-  -- Raphael Hertzog
+  -- Raphaël Hertzog
  [1] http://lists.debian.org/debian-devel/2007/12/msg00036.html
  [2] http://wiki.debian.org/UsingSymbolsFiles
 
@@ -121,7 +121,7 @@ Christian Perrier さんが Debian インストーラの翻訳作業に関する
 しか翻訳されていなくとも、より早く翻訳版 d-i を有効にすることが
 できます。
 
- -- Raphael Hertzog
+ -- Raphaël Hertzog
 
  [5] http://www.perrier.eu.org/weblog/2007/12/23#d-i_i18n-news
 
