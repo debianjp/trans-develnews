@@ -17,19 +17,19 @@ For uploading converted articles:
 What should be done in the release process
 ------------------------------------------
 
-* translating the lead paragraph
-* adding and marking up the top title in Japanese
-* adding the footer section
-  * including acknowledgment to all reviewers who gave comments
-  * including the correct URL of the message in the list's web archive
-* unifying terminology
-* squashing typos
-  * checking spelling of personal names for typos
-* checking for filtered characters such as mail addresses
-* improving line break points for appearance
-* inserting/deleting space characters for appearance
-* making sure that all reference links included in the original text exists
-* making the text as a correct Markdown document
-  * marking up reference links
-* making sure that all plain-text-style expressions are converted into
+* to translate the lead paragraph
+* to add and marking up the top title in Japanese
+* to add the footer section
+  * to include acknowledgment to all reviewers who gave comments
+  * to include the correct URL of the message in the list's web archive
+* to unify terminology
+* to squash typos
+  * to check spelling of personal names for typos
+* to check for filtered characters such as mail addresses
+* to improve line break points for appearance
+* to insert/delete space characters for appearance
+* to make sure that all reference links included in the original text exists
+* to make the text as a correct Markdown document
+  * to mark up reference links
+* to make sure that all plain-text-style expressions are converted into
   HTML-style ones
