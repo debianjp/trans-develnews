@@ -33,11 +33,13 @@ libgtk2-0 の場合、ビルド時に (Build-Depends ヘッダで判別されて
 といったことのために、有志も募集しています。
 
   -- Raphaël Hertzog
+
  [1]: http://lists.debian.org/debian-devel/2007/12/msg00036.html
  [2]: http://wiki.debian.org/UsingSymbolsFiles
 
 新参の貢献者に助けてもらえるよう、易しいバグをマークしよう
------------------------------------------------
+----------------------------------------------------------
+
 Lucas Nussbaum さんは、彼のブログで、Debian
 プロジェクトが新参の貢献者にいかにより親切になれるかについて[議論しました][3]。
 彼はまた、このために新しい wiki ページ <http://wiki.debian.org/HelpDebian/Start>
@@ -48,7 +50,7 @@ Lucas Nussbaum さんは、彼のブログで、Debian
 易しいバグを特別なタグでマークすることです。
 説明ページ <http://wiki.debian.org/qa.debian.org/GiftTag> を見てください。
 
- －Raphaël Hertzog
+  -- Raphaël Hertzog
 
  [3]: http://www.lucas-nussbaum.net/blog/?p=268
  [4]: http://www.lucas-nussbaum.net/blog/?p=269
@@ -64,12 +66,12 @@ Christian Perrier さんが debian-installer
 この分類により、まだインストールシナリオの大部分しか翻訳されていなくとも、
 より早く翻訳版 d-i を有効にすることができます。
 
- -- Raphaël Hertzog
+  -- Raphaël Hertzog
 
  [5]: http://www.perrier.eu.org/weblog/2007/12/23#d-i_i18n-news
 
 packages.qa.debian.org (PTS) のアップデート
------------------------------------
+-------------------------------------------
 
 たぶんすでにお気づきのことかと思いますが、[PTS][6] が改装されました。
 新たなレイアウトと、 Debian "らしい" 色づかいの css になりました。
@@ -80,6 +82,7 @@ packages.qa.debian.org (PTS) のアップデート
 
 bugs.qa.debian.org が更新
 -------------------------
+
 遅ればせながら、Debian QA チームの[バグ退治用ウェブページ][7]が lenny
 向けに更新され、ベースシステムの内容についての構想も決まったので、
 もう手動で更新する必要はなくなりました。
@@ -96,7 +99,7 @@ bugs.qa.debian.org が更新
 このレビューは non-free のフォントや重複したフォント、
 分割したパッケージにすべきフォントを特定するために使います。
 
- -- Paul Wise
+  -- Paul Wise
 
  [8]: http://wiki.debian.org/Fonts
  [9]: http://pkg-fonts.alioth.debian.org/review/
