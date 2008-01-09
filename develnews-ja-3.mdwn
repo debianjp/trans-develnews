@@ -89,11 +89,9 @@ Mark easy bugs to let new contributors help you
 
 新参の貢献者に助けてもらえるよう、易しいバグをマークしよう
 -----------------------------------------------
- Lucas Nussbaum は、彼のブログで、Debian プロジェクトが新しい貢献者にいかにより親切になれるかについて[議論しました][3]。彼はまた、このために新しい wiki ページも[作りました][4]。
-  <http://wiki.debian.org/HelpDebian/Start>
+ Lucas Nussbaum さんは、彼のブログで、Debian プロジェクトが新参の貢献者にいかにより親切になれるかについて[議論しました][3]。彼はまた、このために新しい wiki ページ <http://wiki.debian.org/HelpDebian/Start> も[作りました][4]。
 
- 彼の提案のもう一つの重要な点は、すぐに取り込まれる重要で有用な作業を新しい貢献者ができるよう、易しいバグを特別なタグでマークすることです。このページ内の説明を見てください。
-  <http://wiki.debian.org/qa.debian.org/GiftTag>
+ 彼の提案のもう一つの重要な点は、すぐに取り込まれる重要で有用な作業を新参の貢献者ができるよう、易しいバグを特別なタグでマークすることです。説明ページ <http://wiki.debian.org/qa.debian.org/GiftTag> を見てください。
 
  －Raphaël Hertzog
 
