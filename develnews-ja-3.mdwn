@@ -48,7 +48,7 @@ Lucas Nussbaum さんは、彼のブログで、Debian
 彼の提案のもう一つの重要な点は、
 すぐに取り込まれる重要で有用な作業を新参の貢献者ができるよう、
 易しいバグを特別なタグでマークすることです。
-説明ページ <http://wiki.debian.org/qa.debian.org/GiftTag> を見てください。
+<http://wiki.debian.org/qa.debian.org/GiftTag> の説明を見てください。
 
   -- Raphaël Hertzog
 
@@ -58,7 +58,7 @@ Lucas Nussbaum さんは、彼のブログで、Debian
 D-I 国際化ニュース
 ------------------
 
-Christian Perrier さんが debian-installer
+Christian Perrier さんが debian-installer (d-i)
 の翻訳作業に関する[ニュース][5]を出しました。アフリカの言語 (アムハラ語)
 が新しく利用可能となりました。また、d-i の翻訳文は内容の重要性に応じて 5
 つのレベルに分けられました (常に使用される文向けのレベル 1 から、
