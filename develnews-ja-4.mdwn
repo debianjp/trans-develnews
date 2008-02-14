@@ -131,10 +131,10 @@ PTS と DEHS の統合
 
 DEHS と PHS の統合の最初の実装が利用可能になっています。
 
-一方では、もし与えられているパッケージの "summary" キーワードを購読して
-いるなら、[DEHS][7] によって検出された時に新しい上流のバージョンが利用
-可能であることを知らせるメールを DEHS から受け取るようになります。
-DEHS 側での作業を行った Raphael Geissert さんに賛辞を呈します。
+一方では、もしあるパッケージの "summary" キーワードを購読しているなら、
+[DEHS][7] によって検出された時に新しい上流のバージョンが利用可能である
+ことを知らせるメールを DEHS から受け取るようになります。DEHS 側での作業
+を行った Raphael Geissert さんに賛辞を呈します。
 
 他方では、PTS が更新される度に、より新しい上流のバージョンを持つパッケ
 ージに関する情報と、uscan の実行に失敗したパッケージに関する情報が集め
@@ -144,7 +144,7 @@ DEHS 側での作業を行った Raphael Geissert さんに賛辞を呈します
 
   -- Stefano Zacchiroli
 
- [7] http://dehs.alioth.debian.org
+ [7]: http://dehs.alioth.debian.org
 
 Using wildcards in symbols files
 --------------------------------
