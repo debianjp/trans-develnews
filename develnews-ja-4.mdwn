@@ -150,3 +150,19 @@ Dpkg feature removal schedule and API information
  http://git.debian.org/?p=dpkg/dpkg.git;a=blob;f=README.api;hb=master
 
   -- Guillem Jover
+
+dpkg の機能削除の予定と API 情報
+--------------------------------
+
+dpkg 1.14.16 以降では、/usr/share/doc のパッケージディレクトリ内に 2
+つのファイル (README.feature-removal-schedule と README.api)
+が含まれるようになりました。
+それぞれ、削除が予定されている機能の削除予定と、dpkg や dpkg-dev
+が提供する API の状態を記述したものです。
+
+これらは、オンラインでも、
+<http://git.debian.org/?p=dpkg/dpkg.git;a=blob;f=README.feature-removal-schedule;hb=master>
+と <http://git.debian.org/?p=dpkg/dpkg.git;a=blob;f=README.api;hb=master>
+で参照できます。
+
+  -- Guillem Jover
