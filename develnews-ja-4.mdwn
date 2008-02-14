@@ -36,6 +36,15 @@ wnpp.debian.net
 
   -- Holger Levsen
 
+wnpp.debian.net
+---------------
+
+ http://wnpp.debian.net では、すてきな概要のページや、
+ 作業が望まれるパッケージおよびそれらの統計についての RSS
+ フィードが提供されています。
+
+  -- Holger Levsen
+
 debcheckout
 -----------
 
