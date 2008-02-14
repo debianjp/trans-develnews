@@ -67,9 +67,9 @@ wnpp.debian.net
 wnpp.debian.net
 ---------------
 
- http://wnpp.debian.net では、すてきな概要のページや、
- 作業が望まれるパッケージおよびそれらの統計についての RSS
- フィードが提供されています。
+http://wnpp.debian.net では、作業が望まれるパッケージおよび
+それらの統計についての、すてきな概要のページや RSS フィード
+が提供されています。
 
   -- Holger Levsen
 
