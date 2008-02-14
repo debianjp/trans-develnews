@@ -133,17 +133,21 @@ PTS と DEHS の統合の最初の実装が利用可能になっています。
 
 まず、あるパッケージの "summary" キーワードを PTS で購読している場合、
 [DEHS][7] によって新しい上流のバージョンが利用可能であるのが
-検出された時に、DEHS から通知メールを受け取るようになります。
+検出された時に、DEHS から通知メールを受け取るようになります (訳注: "summary"
+キーワードの購読については、[Debian Developer's Reference][7.1]
+の [4.10.1 The PTS email interface][7.2] を参照してください)。
 DEHS 側での作業を行った Raphael Geissert さんに賛辞を呈します。
 
 また一方、PTS が更新される度に、より新しい上流のバージョンを持つ
 パッケージに関する情報と、uscan の実行に失敗したパッケージに関する
-情報が集められます。PTS のページで、uscan の実行に失敗したパッケ
-ージは Problems 節に相応の項目を持ちますが、より新しい上流のバー
-ジョンを持つパッケージは TODO 節に相応の項目を持つようになります。
+情報が集められます。PTS のページで、より新しい上流のバー
+ジョンを持つパッケージは TODO 節に相応の項目を持つようになりますが、
+uscan の実行に失敗したパッケージは Problems 節に相応の項目を持ちます。
 
   -- Stefano Zacchiroli
 
+ [7.1]: http://www.debian.org/doc/manuals/developers-reference/
+ [7.2]: http://www.debian.org/doc/manuals/developers-reference/ch-resources.en.html#s-pts-commands
  [7]: http://dehs.alioth.debian.org
 
 Using wildcards in symbols files
