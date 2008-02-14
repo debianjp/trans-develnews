@@ -126,6 +126,26 @@ PTS <-> DEHS integration
 
  [7] http://dehs.alioth.debian.org
 
+PTS と DEHS の統合
+------------------
+
+DEHS と PHS の統合の最初の実装が利用可能になっています。
+
+一方では、もし与えられているパッケージの "summary" というキーワードに署
+名しているなら、[DEHS][7] によって検出された時に新しい上流のバージョンが
+利用可能であることを知らせるメールを DEHS から受け取るようになります。
+DEHS 側での作業を行った Raphael Geissert さんに賛辞を呈します。
+
+他方では、各々の PTS のパルスに、より新しい上流のバージョンを持つパッケ
+ージに関する情報と、uscan の実行に失敗したパッケージに関する情報が集め
+られます。PTS のページで、uscan の実行に失敗したパッケージは Problems
+節に相応の項目を持つのに対して、より新しい上流のバージョンを持つパッケ
+ージは TODO 節に相応の項目を持つようになります。
+
+  -- Stefano Zacchiroli
+
+ [7] http://dehs.alioth.debian.org
+
 Using wildcards in symbols files
 --------------------------------
 
