@@ -64,6 +64,36 @@ debcheckout
 
  [3] http://packages.debian.org/devscripts
 
+debcheckout
+-----------
+
+よくある要望の中から、ずいぶんお待たせしている debcheckout について
+お知らせします。
+
+2007 年 9 月から利用できるようになった debcheckout は、指定した
+パッケージをバージョン管理システム (VCS)でチェックアウトする、新しい
+[devscript][3] です。コマンドラインでパッケージ名を指定すると、パッケージの
+Vcs-XXX フィールドを解析し、必要なバージョン管理システムを使って
+debian 化されたソースツリーをチェックアウトしようとします。VCS 情報を
+表示するだけ、あるいは通常の URL からパッケージをチェックアウトする、
+といったこともできます。
+使い始めは、大抵 `debcheckout packagename` とするだけで十分です。
+
+通常、VCS の URL は匿名でのチェックアウトを指すものなので、チェックアウト
+したリポジトリにコミットすることはできません。しかし、debcheckout は
+典型的な Debian の URL スキーム (例えば、alioth や launchpad に設置されて
+いる VCS) を理解するので、(認証用に) `-a` フラグを渡すことで
+チェックアウトで使う URL を改変してコミットできるようにしてくれます。
+もちろん、これにはコミットするための権限が必要ですが、Debian 開発者 (DD)
+は全員、いくつかのリポジトリ (collab-maint など) については既に条件を
+満しています。
+
+追加情報については、`debcheckout (1)` マニュアルページを見てください。
+
+ -- Stefano Zacchiroli
+
+ [3]: http://packages.debian.org/devscripts
+
 Bits from DEHS
 --------------
 
