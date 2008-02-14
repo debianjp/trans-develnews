@@ -137,6 +137,18 @@ Using wildcards in symbols files
 
   -- Raphael Hertzog
 
+シンボルファイルでのワイルドカードの使用
+--------------------------------
+
+ dpkg-dev 1.14.16 以来、dpkg-gensymbols は debian/*.symbols ファイルにおいて
+ 与えられたライブラリのバージョン（例: *@GLIBC_2.0）からすべてのシンボルに同じ
+ 依存情報を与える新しい構文をサポートしています。
+ これは同じライブラリを使うシンボルのバージョニングのためにシンボルファイルを与え
+ ることを容易にします。
+ もっと知りたいときは dpkg-gensymbols の man ページをチェックしてください。
+
+  -- Raphael Hertzog
+
 Dpkg feature removal schedule and API information
 -------------------------------------------------
 
