@@ -1,0 +1,152 @@
+The news are collected on http://wiki.debian.org/DeveloperNews
+Feel free to contribute.
+
+Debian Enhancement Proposals
+----------------------------
+
+ Lars Wirzenius, Stefano Zacchiroli and Adeodato Simó are trying to
+ introduce the concept of Debian Enhancement Proposal[1]. Quoting dato's
+ mail[2] that started the discussion, the goals of the proposal are
+ twofold:
+
+  1. having clear indication of the status of ongoing proposals,
+  particularly to settle that a certain design/implementation has been
+  agreed upon, ensuring that time spent in that implementation will not by
+  wasted, and dissipating "fears" of adopting such implementation (which
+  should help to break the traditional "wide adoption vs normative
+  documents" Debian loop)
+
+  2. having a central place/mechanism to document decisions and consensus
+  reached in our traditional ways and forums, to which we can later refer
+  to instead of "yeah, *that* mailing list thread"
+
+ The proposal has received much support although there are still some
+ debates on the technical means to store the DEP documents themselves.
+
+  -- Raphael Hertzog
+
+ [1] http://dep.debian.net
+ [2] http://lists.debian.org/debian-project/2008/01/msg00045.html
+
+wnpp.debian.net
+---------------
+
+ http://wnpp.debian.net provides a nice overview page and RSS feeds about
+ work needing packages and their statistics.
+
+  -- Holger Levsen
+
+debcheckout
+-----------
+
+ Out of popular request, here is a long overdue announcement about
+ debcheckout.
+
+ Available since September 2007, debcheckout is a new devscript[3]
+ performing version control system checkout of a given package. When given
+ a package name on the command line, it parses the Vcs-XXX fields of the
+ package and attempts to checkout the debianized source tree of the
+ package using the needed version control system. It can also be used to
+ just print out VCS information or to check out packages from plain URL.
+ Usually `debcheckout packagename` is enough to get you started.
+
+ Usually, Vcs URLs point to anonymous checkout, so you won't be able to
+ commit on the checked out repository. However debcheckout recognizes some
+ typical Debian URL schemes (for example for VCS hosted on alioth or
+ launchpad) and, if requested by passing the `-a` (for authenticated)
+ flag, will mangle the checkout URL so that you can commit on it. Of
+ course this requires you to have the permissions to do so, but that's
+ already true for all DDs on some repositories (for example collab-maint).
+
+ See the `debcheckout (1)` manpage for additional information.
+
+  -- Stefano Zacchiroli
+
+ [3] http://packages.debian.org/devscripts
+
+Bits from DEHS
+--------------
+
+ It's been some time since DEHS[4] had some 'big' changes (probably since
+ its creation). Here's a list of changes that have been done lately:
+
+ New look&feel:: DEHS' website now has a look similar to other *.d.o
+ pages. More restyling will be done at some point in the future :).
+
+ DEHS statistics:: For some time now DEHS provides a statistics page[5]
+ which shows the overall "external status" of Debian over the time. The
+ big bumps shown were some changes/tweaks in the backend, not actually
+ large changes in the archive.
+
+ Updated uscan:: DEHS is now using, and will continue to use, the latest
+ uscan version available. This will increase the quality of the checks by
+ using the latest improvements of uscan.
+
+ New upstream version notifications:: DEHS started sending notifications
+ to the 'summary' tag/keyword of the PTS when it finds a new upstream
+ version. Anyone interested in receiving this kind of notifications should
+ read the PTS' documentation to find out how to subscribe[6]. Note that
+ there are some packages shipping a watch file which reports an incorrect
+ upstream version. I'm going to file reports on those I notice.
+
+ Fresher data:: DEHS now refreshes its data daily (new/updated packages
+ only) and several times a month (archive wide) meaning the data is
+ fresher than ever. Some more work is being done so packages are checked
+ even more often by making use of timestamps, reducing the workload and
+ providing even fresher data at the same time.
+
+ Hoping I didn't miss any other important change I invite anyone
+ interested in joining DEHS' development or wanting to know more about it
+ to contact me (I don't think Stefano will reject anyone willing to
+ continue with his work).
+
+  -- Raphael Geissert
+
+ [4] http://dehs.alioth.debian.org
+ [5] http://dehs.alioth.debian.org/stats.html
+ [6] http://www.debian.org/doc/manuals/developers-reference/ch-resources.en.html#s-pkg-tracking-system
+
+PTS <-> DEHS integration
+------------------------
+
+ A first implementation of DEHS <-> PTS integration is now available.
+
+ On one hand if you are subscribed to the "summary" keyword of a given
+ package you will receive mail from DEHS notifying the availability of a
+ new upstream version, as detected by DEHS[7]. Kudos to Raphael Geissert
+ for the work on the DEHS side.
+
+ On the other hand at each PTS pulse, information about packages which
+ have newer upstream version and about packages which failed an uscan run
+ are gathered. Packages which a newer upstream will have a corresponding
+ TODO item in the PTS page whereas packages with failed uscan run will
+ have a corresponding item in the Problems section.
+
+  -- Stefano Zacchiroli
+
+ [7] http://dehs.alioth.debian.org
+
+Using wildcards in symbols files
+--------------------------------
+
+ Since dpkg-dev 1.14.16, dpkg-gensymbols supports a new syntax in the
+ debian/*.symbols files to provide the same dependency information for all
+ symbols from a given library version (example: *@GLIBC_2.0). It makes it
+ easy to provide a symbols file for sane libraries using symbol
+ versioning. Check dpkg-gensymbols' man page to learn more about this.
+
+  -- Raphael Hertzog
+
+Dpkg feature removal schedule and API information
+-------------------------------------------------
+
+ Starting with dpkg 1.14.16, two files are provided under /usr/share/doc
+ (README.feature-removal-schedule and README.api) which describe the
+ timeline for features that are going to get removed and the status of the
+ APIs provided by dpkg and dpkg-dev.
+
+ Check them out online too:
+ http://git.debian.org/?p=dpkg/dpkg.git;a=blob;f=README.feature-removal-schedule;hb=master
+ http://git.debian.org/?p=dpkg/dpkg.git;a=blob;f=README.api;hb=master
+
+  -- Guillem Jover
