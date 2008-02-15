@@ -146,9 +146,9 @@ uscan の実行に失敗したパッケージは Problems 節に相応の項目�
 
   -- Stefano Zacchiroli
 
+ [7]: http://dehs.alioth.debian.org
  [7.1]: http://www.debian.org/doc/manuals/developers-reference/
  [7.2]: http://www.debian.org/doc/manuals/developers-reference/ch-resources.en.html#s-pts-commands
- [7]: http://dehs.alioth.debian.org
 
 Using wildcards in symbols files
 --------------------------------
