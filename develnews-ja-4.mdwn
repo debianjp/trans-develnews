@@ -28,11 +28,48 @@ Debian Enhancement Proposals
  [1] http://dep.debian.net
  [2] http://lists.debian.org/debian-project/2008/01/msg00045.html
 
+Debian 拡張プロポーザル
+-----------------------
+
+Lars Wirzenius さん、Stefano Zacchiroli さん、Adeodato Simó さんは、
+[Debian 拡張プロポーザル (DEP)][1] という概念を導入しようとしています。
+議論の発端となった [dato (Simó さん) のメール][2]を引用すると、
+このプロポーザルの目的は以下の 2 つです。
+
+ 1. 現在進行中のプロポーザルの状態を明確に示す。
+ 特に、何らかの設計や実装が合意に達している場合は、
+ それを明示して議論を決着させる。そして、
+ 実装に費やした時間が無駄にならないことを保証し、
+ その実装を採用することによる「懸念」をなくす (これは過去における
+ Debian の「広範な採用対標準のドキュメント」というループを断ち切るの
+ に役立つはず)。
+
+ 2. 昔からのやり方やフォーラムで行った決定や達した合意を記録する、
+ 中心となる場所・機構をもつ。「ああ、メーリングリストの *あの* スレッ
+ ドね」ではなく、後から参照できるように。
+
+このプロポーザルは、DEP の文書自体を保存する技術的な方法についての議論
+が残されてはいますが、すでに多大な支持を受けています。
+
+ -- Raphael Hertzog
+
+ [1]: http://dep.debian.net
+ [2]: http://lists.debian.org/debian-project/2008/01/msg00045.html
+
 wnpp.debian.net
 ---------------
 
  http://wnpp.debian.net provides a nice overview page and RSS feeds about
  work needing packages and their statistics.
+
+  -- Holger Levsen
+
+wnpp.debian.net
+---------------
+
+http://wnpp.debian.net では、作業が望まれるパッケージおよび
+それらの統計についての、すてきな概要のページや RSS フィード
+が提供されています。
 
   -- Holger Levsen
 
