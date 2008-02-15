@@ -73,7 +73,7 @@ wnpp.debian.net
 wnpp.debian.net
 ---------------
 
-http://wnpp.debian.net では、作業が望まれるパッケージおよび
+<http://wnpp.debian.net> では、作業が望まれるパッケージおよび
 それらの統計についての、すてきな概要のページや RSS フィード
 が提供されています。
 
