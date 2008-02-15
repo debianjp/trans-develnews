@@ -1,3 +1,6 @@
+開発ニュース寄せ集め (第 4 号)
+==============================
+
 The news are collected on http://wiki.debian.org/DeveloperNews
 Feel free to contribute.
 
