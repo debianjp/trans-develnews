@@ -61,6 +61,21 @@ New method for device probing in grub-install / update-grub
 
   -- Robert Millan
 
+grub-install / update-grub で探索するデバイスのための新しい方法
+-----------------------------------------------------------
+
+ Experimental (version 0.97-33) の最新の grub パッケージ (GRUB Legacy) は、
+ /etc/fstab または /etc/mtab をパースする必要のない探索するデバイスのための
+ 新しい機構を利用します。それは、grub-probe ( /dev をトラバースし、与えられた
+ ファイル/ディレクトリにマッチするデバイスを見つけるユーティリティ)を用いて
+ GRUB 2 からバックポートされます。そして、シンプルなセットアップで動作するため
+ テストされ、周知されます。最後に、これは (問題の一般的原因であった)
+ grub-install と update-grub で探索するデバイスのためさらにロバストネスを
+ 与えます。しかし、まだ広くテストされていません (特に未経験のセットアップ
+ では)。sid にアップロードされる前に、若干のテストが歓迎されます。
+
+ -- Robert Millan
+
 Policy checker linda removed from testing/unstable
 --------------------------------------------------
 
