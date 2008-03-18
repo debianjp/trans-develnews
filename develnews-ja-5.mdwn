@@ -72,3 +72,15 @@ Policy checker linda removed from testing/unstable
  and linda has been removed.
 
   -- Marc Brockschmidt
+
+ポリシーチェッカーの linda が testing/unstable から削除されました
+-----------------------------------------------------------------
+
+lintian とよく似ている Debian パッケージチェッカーの linda が unstable
+から削除されました。linda は lintian を python で書き換えたものとして
+作られ、lintian の設計上の制限の多くを克服しました。しかしながら、
+lintian の方がよく知られていて、その設計上の問題のほとんどを修正する
+変更がかなり見られたので、2 つのポリシーチェッカーを維持するオーバー
+ヘッドは今では不必要と考えられ、linda が削除されました。
+
+  -- Marc Brockschmidt
