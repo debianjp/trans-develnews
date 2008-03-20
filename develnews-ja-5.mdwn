@@ -36,6 +36,25 @@ Machine-interpretable debian/copyright
 
  [2] http://wiki.debian.org/Proposals/CopyrightFormat
 
+機械が解釈可能な debian/copyright ファイル
+------------------------------------------
+
+2007 年 8 月、Sam Hocevar さんは debian/copyright
+ファイルを機械が解釈可能なものにしようと提案しました。
+
+「このファイルは、Debian でのパッケージングにおいて最も重要なものの 1 つですが、
+いまだにそのフォーマットはあいまいで、各パッケージによって大きく異なっており、
+自動で解析するのが困難です。フリーソフトウェアライセンスの多様性とは、
+Debian が、関与するソフトウェアのフリーさだけでなく、
+利用しているその他の部分とのライセンスの互換性も気にかける必要があるということです。」
+
+ここ数ヵ月で、いくつかのパッケージがこの新しいフォーマットを採用しました。
+この提案の現状については、Debian wiki ページの [CopyrightFormat][2] を見てください。
+
+ -- Joost van Baal
+
+ [2]: http://wiki.debian.org/Proposals/CopyrightFormat
+
 WNPP status changes sent to PTS subscribers
 -------------------------------------------
 
