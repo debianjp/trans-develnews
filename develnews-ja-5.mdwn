@@ -61,7 +61,7 @@ New method for device probing in grub-install / update-grub
 
   -- Robert Millan
 
-grub-install / update-grub で新しいデバイス探索方法
+grub-install / update-grub での新しいデバイス探索方法
 -----------------------------------------------------------
 
 grub パッケージ (GRUB Legacy) の experimental における最新版
@@ -69,9 +69,9 @@ grub パッケージ (GRUB Legacy) の experimental における最新版
 新しいデバイス探索機構を利用します。この機構は、grub-probe (/dev をトラバースし、
 与えられたファイル/ディレクトリにマッチするデバイスを見つけるユーティリティ) を用いて
 GRUB 2 からバックポートされたもので、シンプルなセットアップで動作することが、テスト
-を経て分かっています。最後に、これは (問題の一般的原因であった) grub-install と
- update-grub でデバイス探索にさらにロバストネスを与えます。しかし、
-まだ広くテストされていません (特に未経験のセットアップでは) 。
+を経て分かっています。この機構によって、最終的には、(問題の一般的原因であった) grub-install と
+ update-grub でのデバイス探索がさらに堅牢になるでしょう。しかし、
+この機構は (特にあまり一般的でないセットアップでは) まだ広くテストされていないので、
 sid へのアップロード前に、多少テストをしてもらえるとありがたいです。
 
  -- Robert Millan
