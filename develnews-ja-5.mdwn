@@ -18,8 +18,8 @@ Debian Documentation Project switched to SVN
 Debian ドキュメンテーションプロジェクト は SVN に切り替えました
 --------------------------------------------
 
-[Debian ドキュメンテーションプロジェクトは CVS レポジトリを Subversion レポジトリへと変換しました][1]。
-ドキュメンテーションコントリビュータは全員、svn.debian.org に構築されている新しい SVN レポジトリ上で
+Debian ドキュメンテーションプロジェクトは CVS リポジトリを Subversion リポジトリへと[変換しました][1]。
+ドキュメンテーションコントリビュータは全員、svn.debian.org に構築されている新しい SVN リポジトリ上で
 作業を継続しなければなりません。
 
 * 認証チェックアウト: svn co svn+ssh://svn.debian.org/svn/ddp/manuals/trunk manuals
