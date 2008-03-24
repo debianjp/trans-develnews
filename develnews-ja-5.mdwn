@@ -12,10 +12,10 @@ Debian ドキュメンテーションプロジェクトは CVS リポジトリ�
 ドキュメンテーションコントリビュータは全員、svn.debian.org
 に構築されている新しい SVN リポジトリ上で作業を継続しなければなりません。
 
-* 認証チェックアウト: svn co svn+ssh://svn.debian.org/svn/ddp/manuals/trunk manuals
-* 匿名チェックアウト: svn co svn://svn.debian.org/ddp/manuals/trunk manuals
+  * 認証チェックアウト: svn co svn+ssh://svn.debian.org/svn/ddp/manuals/trunk manuals
+  * 匿名チェックアウト: svn co svn://svn.debian.org/ddp/manuals/trunk manuals
 
-  -- Raphael Hertzog
+-- Raphael Hertzog
 
  [1]: http://lists.debian.org/debian-doc/2008/03/msg00002.html
 
@@ -34,7 +34,7 @@ Debian ドキュメンテーションプロジェクトは CVS リポジトリ�
 ここ数ヵ月で、いくつかのパッケージがこの新しいフォーマットを採用しました。
 この提案の現状については、Debian wiki ページの [CopyrightFormat][2] を見てください。
 
-  -- Joost van Baal
+-- Joost van Baal
 
  [2]: http://wiki.debian.org/Proposals/CopyrightFormat
 
@@ -46,7 +46,7 @@ PTS の購読者に WNPP のステータス変更が通知されます
 購読している人々に、ステータス変更についての情報を送信するようになりました。
 関心のあるパッケージを購読する、相応の理由がまた一つできました。
 
-  -- Lucas Nussbaum
+-- Lucas Nussbaum
 
 grub-install と update-grub での新しいデバイス探索方法
 ------------------------------------------------------
@@ -64,7 +64,7 @@ grub パッケージ (GRUB Legacy) の experimental
 まだ広くテストされていないので、sid
 へのアップロード前に多少テストをしてもらえるとありがたいです。
 
-  -- Robert Millan
+-- Robert Millan
 
 ポリシーチェッカーの linda が testing/unstable から削除されました
 -----------------------------------------------------------------
@@ -76,7 +76,7 @@ lintian の設計上の制限の多くを克服しました。しかしながら
 2 つのポリシーチェッカーを維持するオーバーヘッドは今では不必要と考えられ、linda
 が削除されました。
 
-  -- Marc Brockschmidt
+-- Marc Brockschmidt
 
 この記事について
 ----------------
