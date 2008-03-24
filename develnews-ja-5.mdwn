@@ -149,3 +149,11 @@ lintian の方がよく知られていて、その設計上の問題のほとん
 ヘッドは今では不必要と考えられ、linda が削除されました。
 
   -- Marc Brockschmidt
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・倉敷悟さん・中尾隆さん・小林儀匡が行いました。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2008/03/msg00009.html
