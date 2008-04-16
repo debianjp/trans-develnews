@@ -1,0 +1,63 @@
+第 1 号
+-------
+
+0. リード …… 小林
+1. Homepage field in debian/control …… 荒木さん
+2. Vcs-* fields in debian/control …… 中尾さん
+3. dpkg-buildpackage uses fakeroot by default …… 今井さん
+4. dpkg-buildpackage supports parallel builds …… 倉敷さん
+5. dpkg-shlibdeps supports symbol based dependencies …… 石井さん
+
+第 2 号
+-------
+
+0. リード …… 小林
+1. New archive for unofficial architectures …… 石井さん
+2. PTS web interface …… 荒木さん
+3. Different compression algorithms for debs …… 中尾さん
+4. Advanced package search prototype in experimental …… 今井さん
+5. Changelog entries must describe changes …… 倉敷さん
+
+第 3 号
+-------
+
+0. リード …… 小林
+1. Updating libraries with symbols files …… 倉敷さん
+2. Mark easy bugs to let new contributors help you …… 石井さん
+3. D-I i18n news …… 荒木さん
+4. packages.qa.debian.org (PTS) update …… 中尾さん
+5. bugs.qa.debian.org update …… 今井さん
+6. Fonts review updates …… 石井さん
+
+第 4 号
+-------
+
+0. リード …… 小林
+1. Debian Enhancement Proposals …… 今井さん
+2. wnpp.debian.net …… 今井さん
+3. debcheckout …… 倉敷さん
+4. Bits from DEHS …… 石井さん
+5. PTS <-> DEHS integration …… 荒木さん
+6. Using wildcards in symbols files …… 中尾さん
+7. Dpkg feature removal schedule and API information …… 小林
+
+第 5 号
+-------
+
+0. リード …… 小林
+1. Debian Documentation Project switched to SVN …… 中尾さん
+2. Machine-interpretable debian/copyright …… 今井さん
+3. WNPP status changes sent to PTS subscribers …… 倉敷さん
+4. New method for device probing in grub-install / update-grub …… 石井さん
+5. Policy checker linda removed from testing/unstable …… 荒木さん
+
+第 6 号
+-------
+
+0. リード …… 小林
+1. Python 2.5 by default …… 荒木さん
+2. Use a recent devscripts …… 中尾さん
+3. dpkg-buildpackage sets default value to CFLAGS, etc. …… 今井さん
+4. Please help test "etch and a half" …… 倉敷さん
+5. FTFBS on packages build-depending on libqt4-dev …… 小林
+6. "Someday someone should do this..." …… 石井さん
