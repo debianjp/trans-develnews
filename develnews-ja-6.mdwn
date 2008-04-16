@@ -1,0 +1,87 @@
+The news are collected on http://wiki.debian.org/DeveloperNews
+Feel free to contribute.
+
+Python 2.5 by default
+---------------------
+
+ The default python in unstable has been switched to python 2.5. We've
+ scheduled rebuilds for packages that needed one (around 100), and we'll
+ be hand-holding this transition. In order not to disrupt this effort, be
+ sure to upgrade your sid chroot so that you don't accidentally upload
+ packages built against the previous python version.
+
+  -- Adeodato Simó
+
+Use a recent devscripts
+-----------------------
+
+ With the introduction of the new Checksums-* fields in the changes file,
+ debsign had to be fixed to also update the checksums in the new fields
+ (see #474949). Be sure to run devscripts 2.10.25 or newer, otherwise
+ you'll generate broken *.changes files which will be rejected by dak.
+
+ The current version of mergechanges is also behaving badly with those new
+ fields, it will be fixed in the next version of devscripts (2.10.26).
+
+  -- Raphaël Hertzog, Joerg Jaspert
+
+dpkg-buildpackage sets default value to CFLAGS, etc.
+----------------------------------------------------
+
+ Since dpkg 1.14.17, dpkg-buildpackage will define the environment
+ variables CFLAGS, CXXFLAGS, CPPFLAGS, LDFLAGS and FFLAGS. The goal is to
+ be able to easily recompile packages with supplementary compilation flags
+ and to simplify the debian/rules files since CFLAGS has the right default
+ value (no need to special case for DEB_BUILD_OPTIONS=noopt).
+
+ But this change has many consequences which can lead to problems (several
+ dozens FTBFS have been filed due to this change). The most important
+ change is related to make's behavior: since the variables exist in the
+ environment when make is called, they are automatically exported to the
+ various commands called in the makefile (possibly modified by the
+ variable assignation in debian/rules). Some broken build systems do not
+ cope with the presence of those variables.
+
+ Please note that debuild currently doesn't call dpkg-buildpackage and
+ thus can't be used to reproduce the various FTBFS filed (see #476100).
+
+  -- Raphaël Hertzog
+
+Please help test "etch and a half"
+----------------------------------
+
+ The next point release of etch is targeted to be the "etch and a half"
+ release, with the limited intent of increasing the hardware supported by
+ the Debian 4.0 release. An updated kernel based on 2.6.24 and some
+ updated X drivers are making their way to proposed-updates. Developers
+ are encouraged to start testing these packages and report issues to the
+ associated package maintainers and the project-etchnahalf list. See
+ http://wiki.debian.org/EtchAndAHalf for more information.
+
+  -- Dann Frazier
+
+FTFBS on packages build-depending on libqt4-dev
+-----------------------------------------------
+
+ If your package is build-depending on libqt4-dev and is currently failing
+ to build from sources, please wait for the next qt4-x11 package revision
+ before adding a gazillion of build-deps to your package.
+
+  -- Sune Vuorela
+
+"Someday someone should do this..."
+-----------------------------------
+
+ Sometimes I stumble on interesting or useful ideas on mailingslists,
+ which should be done, but the person having that in mind, doesn't have
+ time to do those. So I came up with idea of a wiki page, where those
+ tasks could be collected, so that people willing to do some useful work
+ (for example because they are in NM and need to prove their skills) can
+ maybe find some.
+
+ I've started collecting some on http://wiki.debian.org/NMTasks and would
+ be happy if you'd also use this page, to collect such ideas (in a form
+ other people are able to understand) or to pick those ideas and implement
+ them.
+
+  -- Holger Levsen
