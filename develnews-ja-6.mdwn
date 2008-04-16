@@ -69,6 +69,16 @@ FTFBS on packages build-depending on libqt4-dev
 
   -- Sune Vuorela
 
+libqt4-dev に Build-Depends するパッケージの FTBFS
+--------------------------------------------------
+
+パッケージが libqt4-dev に構築時依存 (Build-Depends)
+しており、現在、ソースからのビルドが失敗 (FTBFS)
+する場合は、大量のパッケージへの Build-Depends を追加する前に、qt4-x11
+パッケージの次のリビジョンがアップロードされるのをお待ちください。
+
+  -- Sune Vuorela
+
 "Someday someone should do this..."
 -----------------------------------
 
