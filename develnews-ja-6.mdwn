@@ -22,7 +22,7 @@ python を必要とする (100 個程度の) パッケージを再構築する�
 以前のバージョンの python で構築されたパッケージをアップロードしない
 ようにしてください。
 
-  -- Adeodato Simo
+  -- Adeodato Simó
 
 Use a recent devscripts
 -----------------------
