@@ -1,6 +1,9 @@
 The news are collected on http://wiki.debian.org/DeveloperNews
 Feel free to contribute.
 
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
 Python 2.5 by default
 ---------------------
 
