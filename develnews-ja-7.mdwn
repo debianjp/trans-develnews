@@ -1,0 +1,123 @@
+The news are collected on http://wiki.debian.org/DeveloperNews
+Please contribute: add important news related to your Debian work, too.
+
+debhelper v7
+------------
+
+ debhelper v7 is ready for daring developers to use. In this version I've
+ tried to learn some things from cdbs, and the result is a new "dh"
+ command which can be used to create debian/rules files that are as short
+ as 3 lines for many packages. I hope this will be more powerful and have
+ a lower learning curve than cdbs, so give it a try.
+
+  -- Joey Hess
+
+Help the DPL
+------------
+
+ Steve McIntyre, our beloved DPL, has requested help[1] in handling the CD
+ build infrastructure. Work is needed on an on-going basis to handle the
+ weekly/daily ISO images and also at release time to generate and test the
+ final ISO images.
+
+  -- Raphaël Hertzog
+
+ [1] http://lists.debian.org/debian-cd/2008/04/msg00041.html
+
+New debian-ports.org machine
+----------------------------
+
+ During the last week-end, debian-ports.org[2] has been moved to a new
+ machine, which is faster and has a lot more disk space.
+
+ The goal of this machine is to provide an infrastructure for unofficial
+ architectures until they are integrated in the main Debian archive. This
+ way porters could spend their time porting packages instead of fighting
+ with the infrastructure.
+
+ It provides:
+ * a repository to host packages and install CD
+ * a wanna-build database
+ * a web interface to the build logs
+ * a DNS hosting service
+ * a POP server for build daemons behind NAT
+
+ The machine is now capable of accepting new ports, currently sh4 seems to
+ be the next one. To accept a new port, we require that a minimal set of
+ .deb packages has been ported, for example enough to run a buildd. Don't
+ hesitate to ask for more details.
+
+ I would like to thank Skyrock/Telefun for hosting the machine, Debian
+ for buying it, and our former DPL, Sam Hocevar, who made this possible.
+
+  -- Aurélien Jarno
+
+ [2] http://www.debian-ports.org
+
+Debconf translation updates
+---------------------------
+
+ Days have arrived where Debian developers and maintainers are putting
+ their packages in shape for lenny. That is Good.
+
+ Among those are all these tiny changes for trivial issues reported by
+ lintian that you ignored up to now (lintian got dozens of new checks since
+ Etch, did you know?). That is Good.
+
+ Among those are the various warnings about writing style in debconf
+ templates (use of first person, interrogative form for
+ select/multiselect, no sentences in notes "titles"). Maintainers are
+ tempted to fix those. That is Good.
+
+ Then, they upload fixed packages. That is Bad... :-)
+
+ Please consider, when modifying debconf templates, to use the 
+ shiny tool named "podebconf-report-po", from the po-debconf package. It
+ allows maintainers to send out "call for translations" to translators
+ who have incomplete work *and even* send out calls for new
+ translations.
+
+ One recommended use for that is:
+
+ cd debian/
+ debconf-updatepo
+ podebconf-report-po --call --languageteam --with-translators --deadline=`date -d '+10days'`
+
+ (see 'man podebconf-report-po' for more and more options... The above
+ will send both a call for updates to existing translators, CC'ed to
+ translation teams AND a call for new translations to debian-i18n, with
+ a 10 days translation update "window", which is the minimum we need)
+
+  -- Christian Perrier
+
+Planet Debian via Mail(ing list)
+--------------------------------
+
+ Joey Schulze announced the existence of a mailing list that
+ distributes articles aggregated at Planet Debian[3].
+ This enables interested people to read web log articles without having
+ the need to use a feed reader or to setup a personal rss to mail
+ conversion utility. Here is the full text of his
+ announcement[4]:
+
+ /--
+ Every once in a while some people complain about the implied need to
+ read articles on Planet Debian who don't have the desire to graze the
+ website on their own. There are RSS feeds but this requires the use of
+ RSS feed readers.
+
+ Most of these people are subscribed to several mailing lists in order to
+ keep up with the development within the Debian project. For those people
+ I have created a mailing list several years ago that distributes
+ articles from Planet Debian via mail. This way, Planet Debian is just
+ similar to a mailing list without threads and more people can keep up
+ with it.
+
+ Those who are interested execute the following command:
+ echo subscribe ticker-planetdebian | mail majordomo@lists.infodrom.org
+ \--
+
+  -- Stefano Zacchiroli
+
+ [3] http://planet.debian.org/
+ [4] http://www.infodrom.org/~joey/log/?200804201121
