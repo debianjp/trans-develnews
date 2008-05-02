@@ -43,6 +43,19 @@ Use a recent devscripts
 
   -- Raphaël Hertzog, Joerg Jaspert
 
+  新しい devscripts を使いましょう
+-----------------------
+ changes ファイルに新しく Checksums-* フィールドが導入されるとともに、
+ debsign はそれら新しいフィールドにあるチェックサムも更新するように修正
+されました（#474949 を参照）。
+ 必ず devscripts 2.10.25 かそれ以降のものを実行しましょう。
+ さもないと dak に拒絶される壊れた *.changes ファイルを生成してしまうでしょう。
+  
+ 現在のバージョンの mergechanges もそれらの新しいフィールドがあるとうまく動作しませんが、
+ devscripts の次のバージョン (2.10.26) で修正される予定です。
+  
+ -- Raphael Hertzog, Joerg Jaspert
+
 dpkg-buildpackage sets default value to CFLAGS, etc.
 ----------------------------------------------------
 
