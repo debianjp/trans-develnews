@@ -89,6 +89,19 @@ Please help test "etch and a half"
 
   -- Dann Frazier
 
+"etch and a half" のテストにご協力ください
+----------------------------------
+
+etch の次のポイントリリースは、Debian 4.0 リリースでサポートされるハードウェアを
+増やすという限定された目的で、"etch and a half" ("etch とそこから半分") のリリース
+となることを目指しています。2.6.24 ベースに更新されたカーネルおよび一部の更新
+された X のドライバが、proposed-updates として認められています。開発者はこれらの
+パッケージのテストを始めて、関係するパッケージメンテナや project-etchnahalf
+メーリングリストに問題を報告するように推奨されています。より詳しい情報は、
+http://wiki.debian.org/EtchAndAHalf をご覧ください。
+
+ -- Dann Frazier
+
 FTFBS on packages build-depending on libqt4-dev
 -----------------------------------------------
 
