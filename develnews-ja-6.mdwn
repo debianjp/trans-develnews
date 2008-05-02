@@ -65,7 +65,7 @@ proposed-updates として認められています。
 開発者はこれらのパッケージのテストを始めて、
 関係するパッケージメンテナや project-etchnahalf
 メーリングリストに問題を報告するように推奨されています。
-より詳しい情報は、http://wiki.debian.org/EtchAndAHalf をご覧ください。
+より詳しい情報は、<http://wiki.debian.org/EtchAndAHalf> をご覧ください。
 
   -- Dann Frazier
 
@@ -91,7 +91,7 @@ libqt4-dev に Build-Depends するパッケージの FTBFS
 自分の技術力を証明する必要がある NM プロセス中の人たち)
 はなにか仕事をみつけることができるでしょう。
 
-http://wiki.debian.org/NMTasks ページ上に、そのようなタスクを集め始めました。
+<http://wiki.debian.org/NMTasks> ページ上に、そのようなタスクを集め始めました。
 そのようなアイデアを (他の人が理解できる形式で) 集めるために、あるいは、
 それらのアイデアから興味を持ったものを選んで実装するのに、
 このページを利用してくれるなら幸いです。
