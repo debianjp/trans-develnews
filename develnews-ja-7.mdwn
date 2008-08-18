@@ -87,9 +87,9 @@ New debian-ports.org machine
 
 このマシンをホストしている Skyrock/Telefun、購入してくれた Debian、可能にしてくれた前 DPL である Sam Hocevar に感謝します。
 
-  -- Aurelien Jarno
+  -- Aurélien Jarno
   
- [2] http://www.debian-ports.org
+ [2]: http://www.debian-ports.org
 
 
 Debconf translation updates
