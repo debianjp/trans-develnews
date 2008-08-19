@@ -35,6 +35,18 @@ Help the DPL
 
  [1] http://lists.debian.org/debian-cd/2008/04/msg00041.html
 
+DPL を助けましょう
+------------------
+
+我らの愛すべき DPL、Steve McIntyre が CD イメージ作成用のインフラを
+取り扱うのに[助け][1]を求めました。週次／日次 ISO イメージを処理する
+現行の基本システムでの作業が必要であり、さらにリリース時に最終 ISO
+イメージを生成してテストするための作業も必要です。
+
+  -- Raphaël Hertzog
+
+ [1]: http://lists.debian.org/debian-cd/2008/04/msg00041.html
+
 New debian-ports.org machine
 ----------------------------
 
