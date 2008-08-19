@@ -207,3 +207,32 @@ Planet Debian via Mail(ing list)
 
  [3] http://planet.debian.org/
  [4] http://www.infodrom.org/~joey/log/?200804201121
+
+メール(ML) 経由で Planet Debian を
+--------------------------------
+
+Joey Schulze さんは [Planet Debian][3] に集約された記事を配布する
+メーリングリストがある、とアナウンスしました。
+これによって、フィードリーダーを使ったり、個人的な rss から メールへの
+変換ユーティリティを準備したりすることなく、関心のある人がウェブログの
+記事を読むことができます。彼の[アナウンスの全文][4]はこちら：
+
+ /--
+折にふれ、自分でウェブサイトを見て回るつもりがなくて、Planet Debian 上で
+記事を読む必要があるらしいことに不満を漏らす人がいます。RSS フィードは
+ありますが、これには RSS フィードリーダーを使う必要があります。
+
+こういった人のほとんどは、Debian プロジェクトでの開発状況を追いかける
+ためにいくつかのメーリングリストを購読しています。そういう人たち向けに、
+Planet Debian からの記事をメールで配信するメーリングリストを数年前に
+作成しました。このやり方だと、Planet Debian は単にスレッドのないメーリング
+リストのようなもので、より多くの人々が対応できます。
+
+興味のある方は、次のコマンドを実行してください：
+echo subscribe ticker-planetdebian | mail majordomo@lists.infodrom.org
+ \--
+
+ -- Stefano Zacchiroli
+
+ [3]: http://planet.debian.org/
+ [4]: http://www.infodrom.org/~joey/log/?200804201121
