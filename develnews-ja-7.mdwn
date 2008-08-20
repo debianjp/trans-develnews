@@ -1,6 +1,9 @@
 The news are collected on http://wiki.debian.org/DeveloperNews
 Please contribute: add important news related to your Debian work, too.
 
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
 debhelper v7
 ------------
 
