@@ -28,7 +28,7 @@ DPL を助けましょう
  [1]: http://lists.debian.org/debian-cd/2008/04/msg00041.html
 
 新しい debian-ports.org マシン
----------------------------
+------------------------------
 
 先週末から、[debian-ports.org][2]
 は、より速く多くのディスクスペースを持つ新しいマシンに移行しました。
@@ -38,11 +38,12 @@ DPL を助けましょう
 これにより、移植者はインフラに苦労せずにパッケージを移植するために時間を使うことができます。
 
 以下を供給します。
-* パッケージとインストール CD をホストするリポジトリ
-* wanna-build データベース
-* ビルドログ用のウェブインターフェース
-* DNS ホスティングサービス
-* NAT の中にあるビルドデーモン (buildd) 用の POP サーバ
+
+  * パッケージとインストール CD をホストするリポジトリ
+  * wanna-build データベース
+  * ビルドログ用のウェブインターフェース
+  * DNS ホスティングサービス
+  * NAT の中にあるビルドデーモン (buildd) 用の POP サーバ
 
 このマシンは新しい移植版を受け入れることができ、現在のところ、次は sh4
 を受け入れることになるでしょう。新しい移植版を受け入れる条件として、我々は .deb
@@ -81,18 +82,18 @@ debconf のテンプレートを変更するとき、po-debconf
 
 おすすめの使い方は以下の通りです。
 
-cd debian/
-debconf-updatepo
-podebconf-report-po --call --languageteam --with-translators --deadline=`date -d '+10days'`
+    cd debian/
+    debconf-updatepo
+    podebconf-report-po --call --languageteam --with-translators --deadline=`date -d '+10days'`
 
 ('man podebconf-report-po' にはもっとたくさんのオプションが書かれています……。
 上の例では、既存の翻訳の更新要請、翻訳チームへの CC、debian-i18n
 への新規翻訳依頼を、翻訳更新期間を最低限必要な 10 日間に設定して送信します。)
 
- -- Christian Perrier
+  -- Christian Perrier
 
 メール (ML) 経由で Planet Debian を
---------------------------------
+-----------------------------------
 
 Joey Schulze さんは [Planet Debian][3]
 に集約された記事を配布するメーリングリストがある、とアナウンスしました。
@@ -100,23 +101,22 @@ Joey Schulze さんは [Planet Debian][3]
 からメールへの変換ユーティリティを個人的に準備したりすることなく、
 関心のある人がウェブログの記事を読むことができます。彼の[アナウンスの全文][4]はこちら：
 
- /--
-折にふれ、自分でウェブサイトを見て回るつもりがなくて、Planet Debian
-上で記事を読む必要があるらしいことに不満を漏らす人がいます。RSS
-フィードはありますが、これには RSS フィードリーダーを使う必要があります。
+> 折にふれ、自分でウェブサイトを見て回るつもりがなくて、Planet Debian
+> 上で記事を読む必要があるらしいことに不満を漏らす人がいます。RSS
+> フィードはありますが、これには RSS フィードリーダーを使う必要があります。
+> 
+> こういった人のほとんどは、Debian
+> プロジェクトでの開発状況を追いかけるためにいくつかのメーリングリストを購読しています。
+> そういう人たち向けに、Planet Debian
+> からの記事をメールで配信するメーリングリストを数年前に作成しました。
+> このやり方だと、Planet Debian は単にスレッドのないメーリングリストのようなもので、
+> より多くの人々が対応できます。
+> 
+> 興味のある方は、次のコマンドを実行してください：
+> 
+>     echo subscribe ticker-planetdebian | mail majordomo@lists.infodrom.org
 
-こういった人のほとんどは、Debian
-プロジェクトでの開発状況を追いかけるためにいくつかのメーリングリストを購読しています。
-そういう人たち向けに、Planet Debian
-からの記事をメールで配信するメーリングリストを数年前に作成しました。
-このやり方だと、Planet Debian は単にスレッドのないメーリングリストのようなもので、
-より多くの人々が対応できます。
-
-興味のある方は、次のコマンドを実行してください：
-echo subscribe ticker-planetdebian | mail majordomo@lists.infodrom.org
- \--
-
- -- Stefano Zacchiroli
+  -- Stefano Zacchiroli
 
  [3]: http://planet.debian.org/
  [4]: http://www.infodrom.org/~joey/log/?200804201121
