@@ -38,7 +38,7 @@ Help the DPL
 DPL を助けましょう
 ------------------
 
-我らの愛すべき DPL、Steve McIntyre が CD イメージ作成用のインフラを
+我らの愛すべき DPL、Steve McIntyre さんが CD イメージ作成用のインフラを
 取り扱うのに[助力][1]を求めています。週次／日次 ISO イメージを処理する
 継続的な作業が必要であり、さらにリリース時に最終 ISO
 イメージを生成してテストするための作業も必要です。
@@ -97,7 +97,7 @@ New debian-ports.org machine
 例えば buildd が実行できる必要があります。
 より詳しいことは遠慮せずに問い合わせてください。
 
-このマシンをホストしている Skyrock/Telefun、購入してくれた Debian、可能にしてくれた前 DPL である Sam Hocevar に感謝します。
+このマシンをホストしている Skyrock/Telefun、購入してくれた Debian、可能にしてくれた前 DPL である Sam Hocevar さんに感謝します。
 
   -- Aurélien Jarno
   
@@ -208,12 +208,12 @@ Planet Debian via Mail(ing list)
  [3] http://planet.debian.org/
  [4] http://www.infodrom.org/~joey/log/?200804201121
 
-メール(ML) 経由で Planet Debian を
+メール (ML) 経由で Planet Debian を
 --------------------------------
 
 Joey Schulze さんは [Planet Debian][3] に集約された記事を配布する
 メーリングリストがある、とアナウンスしました。
-これによって、フィードリーダーを使ったり、rss から メールへの
+これによって、フィードリーダーを使ったり、RSS から メールへの
 変換ユーティリティを個人的に準備したりすることなく、関心のある人がウェブログの
 記事を読むことができます。彼の[アナウンスの全文][4]はこちら：
 
