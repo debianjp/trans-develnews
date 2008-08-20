@@ -1,3 +1,6 @@
+開発ニュース寄せ集め (第 7 号)
+==============================
+
 The news are collected on http://wiki.debian.org/DeveloperNews
 Please contribute: add important news related to your Debian work, too.
 
