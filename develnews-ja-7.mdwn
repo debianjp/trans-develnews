@@ -236,3 +236,13 @@ echo subscribe ticker-planetdebian | mail majordomo@lists.infodrom.org
 
  [3]: http://planet.debian.org/
  [4]: http://www.infodrom.org/~joey/log/?200804201121
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・倉敷悟さん・中尾隆さんが行いました。
+また、石井一夫さん・倉敷悟さんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2008/04/msg00013.html
