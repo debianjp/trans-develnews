@@ -34,6 +34,18 @@ Minor update to the mailing list code of conduct
 
  [3] http://www.debian.org/MailingLists/#codeofconduct
 
+メーリングリスト行動規範のマイナーアップデート
+------------------------------------------------
+
+ Debian メーリングリストに適用される[行動規範][3] が少しアップデートされました。
+ パブリックな回答の希望に反したプライベートなコピーを受け取った人は、そのことに
+ ついてパブリックにクレームをつけることはできません。そのかわりに、その行為を
+ 行った人にプライベートにメールをすることが求められます。
+
+  -- Raphael Hertzog
+
+ [3]: http://www.debian.org/MailingLists/#codeofconduct
+
 Document aimed at upstreams in preparation
 ------------------------------------------
 
