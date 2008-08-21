@@ -104,6 +104,19 @@ d-i beta2 in preparation, breaks beta 1
 
   -- Otavio Salvador on 8th may 2008
 
+d-i ベータ 2 の準備とベータ 1 の中断
+---------------------------------------
+
+ Lenny 用 Debian インストーラ ベータ 2 のリリース準備が始まっています。
+ Debian アーカイブへの変更により、Lenny ベータ 1 リリース以降、
+ いくつかのインストール用メディアが壊れていることが知られています。
+ 
+ 該当するのは、(netboot、mini.iso、floppy といった)ネットワークミラーから
+ インストーラコンポーネントを読み込むイメージです。
+ 代りにデイリービルドイメージを使ってください。
+ 
+  -- 2008年 5月 8日 Otavio Salvador
+
 New "transition check" tool
 ---------------------------
 
