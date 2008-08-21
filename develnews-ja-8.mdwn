@@ -91,7 +91,7 @@ Document aimed at upstreams in preparation
 --------------------------------
 
 上流の開発者がディストリビュータの要望について調べるときの、
-単一の情報源とするため、Debian Wiki 内の http://wiki.debian.org/GettingPackaged
+単一の情報源とするため、Debian Wiki 内の <http://wiki.debian.org/GettingPackaged>
 に、ページが作成されました。(プログラミング言語、アプリケーションサーバ、
 ビルドシステムといった) フレームワークのメンテナから、
 それらのフレームワーク内のコンポーネントにおけるベストプラクティス (例えば「python
