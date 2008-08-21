@@ -1,32 +1,8 @@
 開発ニュース寄せ集め (第 8 号)
 ==============================
 
-The news are collected on http://wiki.debian.org/DeveloperNews
-Feel free to contribute.
-
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
-
-~/.ssh/authorized_keys will remain disabled by default
-------------------------------------------------------
-
- Peter Palfrader announced on debian-infrastructure-announce[1] that DSA
- will not reenable the usage of ~/.ssh/authorized_keys. One should use the
- official LDAP infrastructure[2] to setup key-based SSH connection to
- debian.org machines. There's an exception however, quoting Peter:
-
-> Should you need keys only on specific hosts for automated tasks like
-> updating stuff or syncing files between project machines or similar
-> we can enable a user editable authorized_keys file for specific users
-> on specific hosts.  Usually we would expect those keys to be limited
-> to use only from certain hosts (using from="<xyz>") and limited to
-> allow execution of only certain commands (using command="<foobar").
-> Contact DSA if you have such a case.
-
-  -- Raphael Hertzog
-
- [1] http://lists.debian.org/debian-infrastructure-announce/2008/05/msg00004.html
- [2] https://db.debian.org/doc-mail.html
 
 ~/.ssh/authorized_keys はデフォルトでは無効なままとなります
 ------------------------------------------------------
@@ -51,18 +27,6 @@ Peter Palfrader さんは [debian-infrastructure-announce][1] にて、Debian
  [1]: http://lists.debian.org/debian-infrastructure-announce/2008/05/msg00004.html
  [2]: https://db.debian.org/doc-mail.html
 
-Minor update to the mailing list code of conduct
-------------------------------------------------
-
- The code of conduct[3] that applies to Debian mailing lists has been
- slightly updated. People who receive unwanted private copies of public
- answers are asked to not complain publicly about that fact. Instead they
- should mail privately the offender.
-
-  -- Raphael Hertzog
-
- [3] http://www.debian.org/MailingLists/#codeofconduct
-
 メーリングリスト利用上の注意のマイナーアップデート
 ------------------------------------------------
 
@@ -74,18 +38,6 @@ Minor update to the mailing list code of conduct
   -- Raphael Hertzog
 
  [3]: http://www.debian.org/MailingLists/#codeofconduct
-
-Document aimed at upstreams in preparation
-------------------------------------------
-
- In order to have a single resource for upstream developers to read up on
- the needs of distributors, a page has been started inside the Debian Wiki
- at http://wiki.debian.org/GettingPackaged. Help is requested from
- framework maintainers (programming languages, application servers, build
- systems, ...) to document best practices for components inside that
- framework (e.g. "python modules should use distutils").
-
-  -- Simon Richter on May 18th, 2008
 
 上流に向けた文書を準備しています
 --------------------------------
@@ -100,19 +52,6 @@ Document aimed at upstreams in preparation
 
  -- 2008 年 5 月 18 日 Simon Richter
 
-d-i beta2 in preparation, breaks beta 1
----------------------------------------
-
- Preparations have begun for the beta 2 release of Debian Installer for
- Lenny. The changes to the Debian archive are known to break some
- installation media from the lenny beta 1 release.
-
- Affected are images that load installer components from a network
- mirror (netboot, mini.iso and floppy). Please use daily built
- images instead.
-
-  -- Otavio Salvador on 8th may 2008
-
 d-i ベータ 2 の準備でベータ 1 が利用不可能に
 ---------------------------------------
 
@@ -125,18 +64,6 @@ d-i ベータ 2 の準備でベータ 1 が利用不可能に
  代わりにデイリービルドイメージを使ってください。
  
   -- 2008 年 5 月 8 日 Otavio Salvador
-
-New "transition check" tool
----------------------------
-
- In version 2.10.27, the devscripts package introduced a new tool named
- "transition-check".
-
- The tool can be used to determine whether a package (or set of packages)
- are involved in a transition for which the Release Team have currently
- blocked uploads to unstable.
-
-  -- Adam D. Barratt
 
 新たな「移行チェック」ツール
 ----------------------------
