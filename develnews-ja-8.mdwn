@@ -104,11 +104,11 @@ d-i beta2 in preparation, breaks beta 1
 
   -- Otavio Salvador on 8th may 2008
 
-d-i ベータ 2 の準備とベータ 1 の中断
+d-i ベータ 2 の準備でベータ 1 が利用不可能に
 ---------------------------------------
 
- Lenny 用 Debian インストーラ ベータ 2 のリリース準備が始まっています。
- Debian アーカイブへの変更により、Lenny ベータ 1 リリース以降、
+ Lenny 用 Debian Installer ベータ 2 のリリース準備が始まっています。
+ Debian アーカイブへの変更により、Lenny ベータ 1 リリースの、
  いくつかのインストール用メディアが壊れていることが知られています。
  
  該当するのは、(netboot、mini.iso、floppy といった)ネットワークミラーから
