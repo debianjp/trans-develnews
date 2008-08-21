@@ -46,6 +46,18 @@ Document aimed at upstreams in preparation
 
   -- Simon Richter on May 18th, 2008
 
+準備中の上流を対象とした文書
+----------------------------
+
+上流開発者が配布業者の必要性から読み込んでおくべき単一のリソースを用意する
+ために、Debian Wiki 内の http://wiki.debian.org/GettingPackaged で、ある
+ページが開始されました。フレームワーク内部のコンポーネントに関するベストプ
+ラクティス (例えば「python モジュールは distutils を使用すべきである」な
+ど) を文書化するフレームワーク開発者 (プログラミング言語、アプリケーション
+サーバ、ビルドシステムなどの開発者) からはヘルプが求められています。
+
+ -- 2008 年 5 月 18 日 Simon Richter
+
 d-i beta2 in preparation, breaks beta 1
 ---------------------------------------
 
