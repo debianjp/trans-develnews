@@ -71,3 +71,13 @@
 3. New debian-ports.org machine …… 中尾さん
 4. Debconf translation updates …… 今井さん
 5. Planet Debian via Mail(ing list) …… 倉敷さん
+
+第 8 号
+-------
+
+0. リード …… 小林
+1. ~/.ssh/authorized_keys will remain disabled by default …… 倉敷
+2. Minor update to the mailing list code of conduct …… 石井さん
+3. Document aimed at upstreams in preparation …… 荒木さん
+4. d-i beta2 in preparation, breaks beta 1 …… 中尾さん
+5. New "transition check" tool …… 今井さん
