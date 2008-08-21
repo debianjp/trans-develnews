@@ -128,3 +128,15 @@ New "transition check" tool
  blocked uploads to unstable.
 
   -- Adam D. Barratt
+
+新たな「移行チェック」ツール
+----------------------------
+
+devscripts パッケージのバージョン 2.10.27 で、"transition-check" とい
+う名前の新たなツールが導入されました。
+
+このツールは、あるパッケージ (もしくは一連のパッケージ群) が、リリース
+チームが現時点で不安定版 (unstable) へのアップロードをブロックしている
+移行に関係しているかどうか判断してくれます。
+
+  -- Adam D. Barratt
