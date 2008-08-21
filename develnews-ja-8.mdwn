@@ -22,17 +22,17 @@ Feel free to contribute.
  [1] http://lists.debian.org/debian-infrastructure-announce/2008/05/msg00004.html
  [2] https://db.debian.org/doc-mail.html
 
-~/ssh/authorized_keys はデフォルトでは無効なままとなります
+~/.ssh/authorized_keys はデフォルトでは無効なままとなります
 ------------------------------------------------------
 
-Peter Palfrader さんは [debian-infrastructure-announce][1] にて、DSA は
-~/.ssh/authorized_keys を再度使えるようにはしない、と発表しました。各自、
-公式の [LDAP インフラ][2] を使って、debian.org のマシンへ鍵ベースの SSH
-接続をセットアップしなくてはなりません。といっても例外もあります。Peter さん
-の引用ですが：
+Peter Palfrader さんは [debian-infrastructure-announce][1] にて、Debian
+システム管理者 (DSA) は ~/.ssh/authorized_keys
+を再度使えるようにはしない、と発表しました。debian.org のマシンへ鍵ベースの SSH
+接続をセットアップするには、各自、公式の [LDAP インフラ][2] を使ってください。
+といっても例外もあります。Peter さんの引用ですが：
 
 > 何らかの更新や、プロジェクトのマシン間でのファイル同期、といった自動化された
-> タスクのために特定のホストにおいてのみ鍵が必要な場合があるはずです。
+> タスクのために特定のホストにおいてのみ鍵が必要な場合があるはずです。そのようなときには、
 > 特定のホスト上の特定のユーザに対して、authorized_keys ファイルを編集できるように
 > することも可能です。たいていの場合、それらの鍵は特定のホストから (from="<xyz>" で)
 > のみ使ったり、特定のコマンド (command="<foobar>" で) のみ実行を許可するように
