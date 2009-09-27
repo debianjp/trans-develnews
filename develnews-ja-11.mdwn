@@ -1,0 +1,150 @@
+開発ニュース寄せ集め (第 11 号)
+==============================
+
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+CD/DVD images for Lenny
+-----------------------
+
+ The debian-cd team is discussing some changes to the CD and DVD images to
+ be made available for Lenny, centered around a patch series that makes it
+ possible to select from the boot menu which desktop environment to
+ install.
+
+ If you're interested, please read the following two mails; the first one
+ has links to a few images available for testing the patches and
+ demonstrate the new option.
+  * http://lists.debian.org/debian-cd/2008/12/msg00000.html
+  * http://lists.debian.org/debian-cd/2008/12/msg00019.html
+
+ Discussion on the debian-cd list please!
+
+  -- Frans Pop
+
+License AGPL v3.0 is suitable for main
+--------------------------------------
+
+ Joerg Jaspert announced that ftp-masters resolved that software licensed
+ under GNU AGPL 3.0 public license is suitable for the main Debian
+ archive.
+ This solves a long standing issues discussed in several bug reports
+ (e.g., #495721, #506402).
+
+  * Read more at:
+    http://blog.ganneff.de/blog/2008/11/28/ftpmaster-meeting-in-extremadu.html
+  * The AGPL 3.0 license is available at:
+    http://www.fsf.org/licensing/licenses/agpl-3.0.html
+  * Some of the involved bug logs can be read at:
+  * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=495721
+  * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=506402
+
+Building CD/DVD images made easier
+----------------------------------
+
+ The debian-cd package, which is used to build the official Debian CD
+ images, includes a new script named easy-build.sh. This script is
+ intended to significantly simplify building (sets of) custom images. It
+ can be used for derived distributions, but is also very suitable for
+ ad-hoc builds of images for testing purposes.
+
+ The main feature of the script is that it is very flexible. By passing
+ different arguments or by making only minor changes in the settings in
+ the script it can be used to build images of different types, for
+ different architectures (single and multiple) and Debian releases, using
+ alternative default desktop environments, including custom packages or
+ custom D-I images and components, etc.
+
+ For further information see the README.easy-build file included with the
+ script or mail the debian-cd list.
+
+ Of course you do still need a local mirror...
+
+  -- Frans Pop
+
+Mono 2.0 transition in progress
+-------------------------------
+
+ The Debian Mono team is currently transitioning all CLI apps to Mono 2.0.
+ We currently have transitioned the whole stack, and are working on
+ packages. Libraries will come last, so as to reduce any possible
+ breakage.
+
+ For "real-time" (almost) information on our progresses, visit our wiki
+ page: http://wiki.debian.org/Teams/DebianMonoGroup/Mono20TransitionTODO
+
+  -- David Paleino
+
+SOAP interface to the PTS
+-------------------------
+
+ The PTS now offers a SOAP interface to access the information shown in
+ its web pages from third party programs, using the SOAP protocol.
+ The interface is currently in alpha version: testing, feedback, and bug
+ reports are sought.
+
+  * a preliminary announcement has been posted at
+    http://upsilon.cc/~zack/blog/posts/2008/11/PTS_SOAP_interface/
+  * general information about the SOAP interface are available at:
+    http://wiki.debian.org/qa.debian.org/pts/SoapInterface
+  * the HTML API reference for the SOAP interface is available at:
+    http://people.debian.org/~zack/pts/soap
+
+  -- Stefano Zacchiroli
+
+Tracking GCC 4.4 related build errors
+-------------------------------------
+
+ I built the Debian archive with GCC 4.4 to report build errors and filed
+ about 220 bugs (the majority with patches). There are roughly 30 build
+ failures left that I haven't analyzed yet. There are also about 35
+ packages that fail because the boost headers don't work with GCC 4.4.
+ I'll try to build them when the boost headers get fixed.
+
+ I used the ftbfs-gcc-4.4 user tag (with debian-gcc@lists.debian.org as
+ the user) to track these bugs:
+ http://bugs.debian.org/cgi-bin/pkgreport.cgi?tag=ftbfs-gcc-4.4;users=debian-gcc@lists.debian.org
+ If you run into GCC 4.4 related build failures that I missed, please use
+ the same user tag.
+
+ The majority of GCC 4.4 build errors are trivial. The large majority of
+ failures is because of missing #include statements, as described at
+ http://www.cyrius.com/journal/gcc/gcc-4.4-include
+
+ There are also about 20 build errors because of improved preprocessor
+ checks, as described at
+ http://www.cyrius.com/journal/gcc/gcc-4.4-preprocessor-errors
+
+  -- Martin Michlmayr
+
+Mirror of git repositories on Alioth
+------------------------------------
+
+ If you host a (debian related) public Git repository somewhere else than
+ on Alioth, you have the possibility to mirror it on Alioth itself. This
+ brings you the gitweb interface and might simplify access to the
+ repository to some people since Alioth also offers access through the git
+ server.
+
+ The mirror is currently updated every 30 minutes. If you want us to add a
+ new repository to the mirror, please contact us at
+ admin@alioth.debian.org with the repository URL and its public
+ description. The first user of this service is the DSA team with 3
+ repositories (dsa-exim[1], dsa-getclamsigs[2], dsa-misc[3]).
+
+  -- Raphael Hertzog
+
+ [1] http://git.debian.org/?p=mirror/dsa-exim.git;a=summary
+ [2] http://git.debian.org/?p=mirror/dsa-getclamsigs.git;a=summary
+ [3] http://git.debian.org/?p=mirror/dsa-misc.git;a=summary
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さんが行いました。
+また、xxさんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2008/12/msg00001.html
