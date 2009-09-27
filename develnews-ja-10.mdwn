@@ -1,74 +1,83 @@
 開発ニュース寄せ集め (第 10 号)
 ==============================
 
+
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
-PTS news
+PTS ニュース
 --------
 
- The PTS has been improved to show/aggregate some new info:
+いくつかの新しい情報を示しまたは統計を取るため、PTS は改良され続けています。
 
- 1. The integration with lintian has been improved. The hyperlink to the
- Lintian report is now shown only if Lintian has something "to say" about
- that package. Moreover, if there were warnings or errors in the last
- Lintian ran, they are now shown as TODO items in the appropriate part of
- the PTS web interface.
+ 1. lintian との統合が改善されています。
+    今では、Lintian レポートへのハイパーリンクは、Lintian にそのパッケージに関して"言及すべき"ことがある場合のみ表示されています。
+    さらに、最後に Lintian が動作した際に warning や error があった場合、
+    それらは今や、PTS のウェブインターフェースの特定の場所に TODO アイテムとして表示されます。
+ 2. スポンサーシップを待っている mentors.debian.net 上のアップロードの有効性は、今はTODOアイテムとして表示されます。
+ 3. help および gift タグが表示されるようになりました。前者は手助けが必
+    要な問題に、後者はバグボックスの中で gift タグのセマンティクスを説明す
+    るハイパーリンクとともに表示されます
+    (<http://wiki.debian.org/qa.debian.org/GiftTag> を見てください)。
 
- 2. The availability of uploads on mentors.d.n waiting for sponsorships
- are now shown as TODO items.
+(願わくば) すべてのページが XHTML 1.0 Strict に準拠するようになりました。
+これは、アクセシビリティの向上だけでなく、各ページ に対して XML に基づ
+いた後処理が可能になったということです。
 
- 3. help and gift tags are now shown: the formers as problems in need of
- help, the latters in the bug box, with a hyperlink to explain gift tag
- semantics (see http://wiki.debian.org/qa.debian.org/GiftTag).
- 
- All pages are now (hopefully) valid XHTML 1.0 Strict, this not only
- improves accessibility, but also enables XML-based post-processing of
- pages.
-
- A lot of bugs have been squashed during DebConf8, you might want to look
- at the PTS bug page to check the status of bugs you reported.
+DebConf8 の期間中に多くのバグが退治されました。あなたが報告したバグの
+状況を確認するには、PTS のバグのページを見るとよいでしょう。
 
   -- Stefano Zacchiroli
 
-Casals replaced by mahler
+casals が mahler へリプレース
 -------------------------
 
- The new MIPS porter machine available to all Debian developers is
- mahler.debian.org and replaces the old casals.debian.org.
+全 Debian 開発者が利用可能である MIPS への移植用計算機は、以前の
+casals.debian.org から、新しく mahler.debian.org へリプレースされまし
+た。
 
   -- Peter Palfrader
 
-Personnel changes
+人事異動
 -----------------
 
- Martin Zobel-Helas joined the DSA team and therefore will reduce his
- involvement with Stable Release Management, though he is still available
- as a Stable Release Wizard. His role as a Stable Release Manager has been
- taken up by Philipp Kern, who was a Stable Release Assistant formerly.
+Martin Zobel-Helas が DSA チームに参加しました。結果的に、安定版リリース
+管理への関与は縮小することになりますが、安定版リリースの専門家としても活動します。
+安定版リリース管理者としての彼の役割は、以前は安定版リリースアシスタントだった
+Philipp Kern が引き受けています。
 
   -- Alexander Reichle-Schmehl
+  
+遅延アップロードキューは、ravel に移動します
+------------------------------------
 
-Delayed queue moves to ravel
-----------------------------
-
- people.debian.org will move to ravel.debian.org in near future, thus the
- delayed queue[1] will move as well. At this occasion, we decided to move
- it to /org/delayed.d.o, and add a canonical upload host
- ssh-delayed.upload.debian.org. Now the upload tools need to be adjusted.
+近い将来、people.debian.org は ravel.debian.org に移動します。
+これに伴い、[遅延アップロードキュー][1] も同じように移動します。これを機に、
+遅延アップロードキューを /org/delayed.d.o に移動し、正規のアップロードホストに
+ssh-delayed.upload.debian.org を加えることにしました。
+さぁ、今こそアップロードツールの調節が必要なときです。
 
   -- Martin Zobel-Helas
 
- [1] http://www.debian.org/doc/manuals/developers-reference/pkgs.html#delayed-incoming
+ [1]: http://www.debian.org/doc/manuals/developers-reference/pkgs.html#delayed-incoming
 
-Git user survey 2008
---------------------
+Git ユーザ調査 2008
+-------------------
 
- The git developers have asked us to help them advertize their new user
- survey. If you're using Git, consider taking a few minutes to answer this
- survey[2].
+git の開発者が自分達の新しいユーザ調査を宣伝するのに助けを
+求めてきました。もし Git を利用しているのなら、数分かけて
+この[調査][2]に回答することをご検討ください。
 
   -- The Alioth admins
 
- [2] http://tinyurl.com/GitSurvey2008
+ [2]: http://tinyurl.com/GitSurvey2008
 
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さん・倉敷悟が行いました。
+また、武藤健志さん、小林儀匡さん、やまねひできさん、西山和広さん、かねこせいじさん・武井伸光さんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2008/09/msg00003.html
