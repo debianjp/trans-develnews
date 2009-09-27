@@ -1,0 +1,74 @@
+開発ニュース寄せ集め (第 10 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+PTS news
+--------
+
+ The PTS has been improved to show/aggregate some new info:
+
+ 1. The integration with lintian has been improved. The hyperlink to the
+ Lintian report is now shown only if Lintian has something "to say" about
+ that package. Moreover, if there were warnings or errors in the last
+ Lintian ran, they are now shown as TODO items in the appropriate part of
+ the PTS web interface.
+
+ 2. The availability of uploads on mentors.d.n waiting for sponsorships
+ are now shown as TODO items.
+
+ 3. help and gift tags are now shown: the formers as problems in need of
+ help, the latters in the bug box, with a hyperlink to explain gift tag
+ semantics (see http://wiki.debian.org/qa.debian.org/GiftTag).
+ 
+ All pages are now (hopefully) valid XHTML 1.0 Strict, this not only
+ improves accessibility, but also enables XML-based post-processing of
+ pages.
+
+ A lot of bugs have been squashed during DebConf8, you might want to look
+ at the PTS bug page to check the status of bugs you reported.
+
+  -- Stefano Zacchiroli
+
+Casals replaced by mahler
+-------------------------
+
+ The new MIPS porter machine available to all Debian developers is
+ mahler.debian.org and replaces the old casals.debian.org.
+
+  -- Peter Palfrader
+
+Personnel changes
+-----------------
+
+ Martin Zobel-Helas joined the DSA team and therefore will reduce his
+ involvement with Stable Release Management, though he is still available
+ as a Stable Release Wizard. His role as a Stable Release Manager has been
+ taken up by Philipp Kern, who was a Stable Release Assistant formerly.
+
+  -- Alexander Reichle-Schmehl
+
+Delayed queue moves to ravel
+----------------------------
+
+ people.debian.org will move to ravel.debian.org in near future, thus the
+ delayed queue[1] will move as well. At this occasion, we decided to move
+ it to /org/delayed.d.o, and add a canonical upload host
+ ssh-delayed.upload.debian.org. Now the upload tools need to be adjusted.
+
+  -- Martin Zobel-Helas
+
+ [1] http://www.debian.org/doc/manuals/developers-reference/pkgs.html#delayed-incoming
+
+Git user survey 2008
+--------------------
+
+ The git developers have asked us to help them advertize their new user
+ survey. If you're using Git, consider taking a few minutes to answer this
+ survey[2].
+
+  -- The Alioth admins
+
+ [2] http://tinyurl.com/GitSurvey2008
+
