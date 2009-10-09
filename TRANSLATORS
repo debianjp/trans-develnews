@@ -81,3 +81,35 @@
 3. Document aimed at upstreams in preparation …… 荒木さん
 4. d-i beta2 in preparation, breaks beta 1 …… 中尾さん
 5. New "transition check" tool …… 今井さん
+
+第 9 号
+-------
+
+0. リード …… 倉敷
+1. Advice on quilt usage and compatibility with new source format …… 今井さんと佐々木さん
+2. update-grub starts using UUIDs by default …… 石井さん
+3. wxwidgets2.8 upload to unstable …… 荒木さん
+4. Volunteers needed to handle update of release notes …… 中尾さん
+
+第 10 号
+-------
+
+0. リード …… 倉敷
+1. PTS news …… 中尾さん (2 まで)・今井さん (3)
+2. Casals replaced by mahler …… 佐々木さん
+3. Personnel changes …… 倉敷さん
+4. Delayed queue moves to ravel …… 石井さん
+5. Git user survey 2008 …… 荒木さん
+
+第 11 号
+-------
+
+0. リード …… 倉敷
+1. CD/DVD images for Lenny …… 荒木さん
+2. License AGPL v3.0 is suitable for main …… 石井さん
+3. Building CD/DVD images made easier …… いまいさん
+4. Mono 2.0 transition in progress …… 佐々木さん
+5. SOAP interface to the PTS …… 中尾さん
+6. Tracking GCC 4.4 related build errors …… 倉敷
+7. Mirror of git repositories on Alioth …… victory さん
+

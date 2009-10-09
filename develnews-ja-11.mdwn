@@ -1,150 +1,149 @@
 開発ニュース寄せ集め (第 11 号)
 ==============================
 
-
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
-CD/DVD images for Lenny
------------------------
+Lenny 用の CD/DVD イメージ
+------------------------
 
- The debian-cd team is discussing some changes to the CD and DVD images to
- be made available for Lenny, centered around a patch series that makes it
- possible to select from the boot menu which desktop environment to
- install.
+Debian CD チームでは、Lenny で利用可能にしようとしている CD と DVD イメ
+ージへのいくつかの変更について話し合っています。その変更点は、ブートメニューか
+らどのデスクトップ環境をインストールするかを選択できるようにする一連のパッチが
+中心です。
 
- If you're interested, please read the following two mails; the first one
- has links to a few images available for testing the patches and
- demonstrate the new option.
-  * http://lists.debian.org/debian-cd/2008/12/msg00000.html
-  * http://lists.debian.org/debian-cd/2008/12/msg00019.html
+もし興味があれば、以下の 2 つのメールを読んでください。最初のメールには、その
+パッチをテストし、新しいオプションをデモできるようにしたイメージへのリンクが含
+まれています。
 
- Discussion on the debian-cd list please!
+  * <http://lists.debian.org/debian-cd/2008/12/msg00000.html>
+  * <http://lists.debian.org/debian-cd/2008/12/msg00019.html>
+
+debian-cd メーリングリストでの議論をお願いします。
 
   -- Frans Pop
 
-License AGPL v3.0 is suitable for main
+AGPL v3.0 ライセンスは、main に適合している
 --------------------------------------
 
- Joerg Jaspert announced that ftp-masters resolved that software licensed
- under GNU AGPL 3.0 public license is suitable for the main Debian
- archive.
- This solves a long standing issues discussed in several bug reports
- (e.g., #495721, #506402).
+ftpmaster は、GNU AGPL 3.0 パブリック・ライセンスのもとでライセンスされたソフトウェアは、
+Debian アーカイブ の main に適合していると決定したことを、Joerg Jaspert さんは発表しました。
 
-  * Read more at:
-    http://blog.ganneff.de/blog/2008/11/28/ftpmaster-meeting-in-extremadu.html
-  * The AGPL 3.0 license is available at:
-    http://www.fsf.org/licensing/licenses/agpl-3.0.html
-  * Some of the involved bug logs can be read at:
-  * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=495721
-  * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=506402
+これはいくつかのバグレポート(#495721, #506402 など)で議論された長期の問題を解決します。
 
-Building CD/DVD images made easier
-----------------------------------
+  * さらに以下を読んでください:
+  
+    <http://blog.ganneff.de/blog/2008/11/28/ftpmaster-meeting-in-extremadu.html>
+  * AGPL 3.0 ライセンスは、以下で参照可能です:
+  
+    <http://www.fsf.org/licensing/licenses/agpl-3.0.html>
+  * 関連しているバグのうちのいくつかについては、以下でログを参照可能です:
+  * <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=495721>
+  * <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=506402>
 
- The debian-cd package, which is used to build the official Debian CD
- images, includes a new script named easy-build.sh. This script is
- intended to significantly simplify building (sets of) custom images. It
- can be used for derived distributions, but is also very suitable for
- ad-hoc builds of images for testing purposes.
+CD/DVD イメージの作成を簡単に
+-----------------------------
 
- The main feature of the script is that it is very flexible. By passing
- different arguments or by making only minor changes in the settings in
- the script it can be used to build images of different types, for
- different architectures (single and multiple) and Debian releases, using
- alternative default desktop environments, including custom packages or
- custom D-I images and components, etc.
+公式の Debian CD イメージを作成するのに使われている debian-cd パッケー
+ジには、easy-build.sh という新しいスクリプトが含まれています。このスク
+リプトは、(何組もの) カスタムイメージの作成を、かなり簡単なものにするよ
+う意図されています。派生ディストリビューションを作るのにも使えますが、
+テスト目的のイメージをアドホックに作成するのにぴったりです。
 
- For further information see the README.easy-build file included with the
- script or mail the debian-cd list.
+このスクリプトの主な特徴は、極めて柔軟性が高いところにあります。異なる
+引数を渡したり、スクリプト内の設定をちょっと変更するだけで、例えば、異
+なるアーキテクチャ (単一もしくは複数) や Debian リリース、選択できるデ
+フォルトのデスクトップ環境、カスタムパッケージの収録、カスタムの D-I
+イメージおよびコンポーネントなどの、異なるタイプのイメージをビルドでき
+ます。
 
- Of course you do still need a local mirror...
+更なる情報は、スクリプトと一緒に入っている README.easy-build ファイル
+を見るか、debian-cd メーリングリストに尋ねてください。
+
+もちろん、ローカルにミラーが必要なのは変わりありませんが...
 
   -- Frans Pop
 
-Mono 2.0 transition in progress
--------------------------------
+Mono 2.0 への移行が進行中
+-------------------------
 
- The Debian Mono team is currently transitioning all CLI apps to Mono 2.0.
- We currently have transitioned the whole stack, and are working on
- packages. Libraries will come last, so as to reduce any possible
- breakage.
+Debian Mono チームは目下全ての CLI アプリケーションを Mono 2.0 へ移行中
+です。現在は全てのスタックを移行し、パッケージについて作業しています。
+破損する可能性を減らすために、ライブラリ群の移行は最後になるでしょう。
 
- For "real-time" (almost) information on our progresses, visit our wiki
- page: http://wiki.debian.org/Teams/DebianMonoGroup/Mono20TransitionTODO
+「リアルタイムの」(に近い)進捗情報については、Wiki を参照して下さい：
+
+<http://wiki.debian.org/Teams/DebianMonoGroup/Mono20TransitionTODO>
 
   -- David Paleino
 
-SOAP interface to the PTS
+PTS のための SOAP インターフェイス
 -------------------------
 
- The PTS now offers a SOAP interface to access the information shown in
- its web pages from third party programs, using the SOAP protocol.
- The interface is currently in alpha version: testing, feedback, and bug
- reports are sought.
+PTS は、サードパーティ製プログラムから SOAP プロトコルを利用して
+ウェブページに掲載された情報にアクセスするための SOAP インターフェイスを
+提供するようになりました。
+現在、インターフェイスはアルファ版であり、テスト、フィードバック、バグレポートが
+求められています。
 
-  * a preliminary announcement has been posted at
-    http://upsilon.cc/~zack/blog/posts/2008/11/PTS_SOAP_interface/
-  * general information about the SOAP interface are available at:
-    http://wiki.debian.org/qa.debian.org/pts/SoapInterface
-  * the HTML API reference for the SOAP interface is available at:
-    http://people.debian.org/~zack/pts/soap
+  * 前置きは次の場所に書いてあります。
 
-  -- Stefano Zacchiroli
+    <http://upsilon.cc/~zack/blog/posts/2008/11/PTS_SOAP_interface/>
+  * SOAP インターフェイスの基本情報は次の場所にあります。
 
-Tracking GCC 4.4 related build errors
--------------------------------------
+    <http://wiki.debian.org/qa.debian.org/pts/SoapInterface>
+  * SOAP インターフェイスの HTML API リファレンスは次の場所にあります。
 
- I built the Debian archive with GCC 4.4 to report build errors and filed
- about 220 bugs (the majority with patches). There are roughly 30 build
- failures left that I haven't analyzed yet. There are also about 35
- packages that fail because the boost headers don't work with GCC 4.4.
- I'll try to build them when the boost headers get fixed.
+GCC 4.4 に関するビルドエラーの追跡
+--------------------------------
 
- I used the ftbfs-gcc-4.4 user tag (with debian-gcc@lists.debian.org as
- the user) to track these bugs:
- http://bugs.debian.org/cgi-bin/pkgreport.cgi?tag=ftbfs-gcc-4.4;users=debian-gcc@lists.debian.org
- If you run into GCC 4.4 related build failures that I missed, please use
- the same user tag.
+私はビルドエラーを報告するために GCC 4.4 で Debian アーカイブをビルドし、
+約 220 のバグを (大半はパッチと一緒に) 登録しました。おおよそ 30 ほどの
+ビルド失敗については、まだ調べていません。約 35 のパッケージについては、
+boost のヘッダが GCC 4.4 では使えないためにビルドができません。これらに
+ついては、boost のヘッダが修正されたらビルドしてみます。
 
- The majority of GCC 4.4 build errors are trivial. The large majority of
- failures is because of missing #include statements, as described at
- http://www.cyrius.com/journal/gcc/gcc-4.4-include
+これらのバグを追いかけるのに、ftbfs-gcc-4.4 ユーザタグを
+(debian-gcc@lists.debian.org をユーザとして) 使いました：
 
- There are also about 20 build errors because of improved preprocessor
- checks, as described at
- http://www.cyrius.com/journal/gcc/gcc-4.4-preprocessor-errors
+<http://bugs.debian.org/cgi-bin/pkgreport.cgi?tag=ftbfs-gcc-4.4;users=debian-gcc@lists.debian.org>
+
+私が見逃した GCC 4.4 関連のビルドエラーに出くわしたら、同じユーザタグを使ってください。
+
+ほとんどの GCC 4.4 のビルドエラーは些細なものです。失敗の大多数は、
+<http://www.cyrius.com/journal/gcc/gcc-4.4-include> に説明があるように
+\#include 文の抜けが原因です。
+
+<http://www.cyrius.com/journal/gcc/gcc-4.4-preprocessor-errors> で説明
+しているような、プリプロセッサチェックが改善されたことによるビルドエラーも
+20 ほどあります。
 
   -- Martin Michlmayr
-
-Mirror of git repositories on Alioth
+ 
+git リポジトリの Alioth でのミラー
 ------------------------------------
+Alioth 以外のどこかに (debian 関連の) 公開 Git リポジトリを持っているなら、
+Alioth 自体でそれをミラーさせることも可能です。Alioth では git サーバ経由の
+アクセスも提供するため、それにより gitweb インターフェースが得られるとともに、
+一部のユーザのリポジトリへのアクセス手段を単純化できる可能性もあります。
 
- If you host a (debian related) public Git repository somewhere else than
- on Alioth, you have the possibility to mirror it on Alioth itself. This
- brings you the gitweb interface and might simplify access to the
- repository to some people since Alioth also offers access through the git
- server.
-
- The mirror is currently updated every 30 minutes. If you want us to add a
- new repository to the mirror, please contact us at
- admin@alioth.debian.org with the repository URL and its public
- description. The first user of this service is the DSA team with 3
- repositories (dsa-exim[1], dsa-getclamsigs[2], dsa-misc[3]).
+ミラーは現在 30 分毎に更新されています。ミラーに新しいリポジトリを追加したい場合は、
+リポジトリの URL と 外部向けの説明を添えて、admin@alioth.debian.org まで
+連絡をください。このサービスの最初のユーザは DSA チームで、3 つのリポジトリ
+([dsa-exim][1], [dsa-getclamsigs][2], [dsa-misc][3]) があります。
 
   -- Raphael Hertzog
 
- [1] http://git.debian.org/?p=mirror/dsa-exim.git;a=summary
- [2] http://git.debian.org/?p=mirror/dsa-getclamsigs.git;a=summary
- [3] http://git.debian.org/?p=mirror/dsa-misc.git;a=summary
+ [1]: http://git.debian.org/?p=mirror/dsa-exim.git;a=summary
+ [2]: http://git.debian.org/?p=mirror/dsa-getclamsigs.git;a=summary
+ [3]: http://git.debian.org/?p=mirror/dsa-misc.git;a=summary
 
 この記事について
 ----------------
 
 この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
-翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さんが行いました。
-また、xxさんから多数のコメントをいただきました。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さん・victory さん・倉敷が行いました。
+また、かねこせいじさん・武井伸光さん・西山和広さん・やまねひできさん・victory さんから多数のコメントをいただきました。
 ありがとうございます。
 
  [0]: http://lists.debian.org/debian-devel-announce/2008/12/msg00001.html
