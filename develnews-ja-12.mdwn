@@ -1,0 +1,94 @@
+開発ニュース寄せ集め (第 12 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+Bdale Garbee as Acting Secretary
+--------------------------------
+
+ Manoj Srivastava resigned as secretary[1]. Following section 7.2[2] of
+ our constitution, the chairman of the technical committee — currently
+ Bdale Garbee — is serving as acting secretary[3] until the DPL appoints a
+ new one.
+
+  -- Raphael Hertzog
+
+ [1] http://lists.debian.org/debian-vote/2008/12/msg00275.html
+ [2] http://www.debian.org/devel/constitution#7
+ [3] http://lists.debian.org/debian-vote/2008/12/msg00292.html
+
+New proposal to track maintenance status of all packages
+--------------------------------------------------------
+
+ To avoid big delays in releases we need to have an active maintainer for
+ each package so that we don't end up with thousands of RC bugs rotting in
+ unstable. To achieve this we must detect as early and as accurately as
+ possible when a package needs a new maintainer. This proposal[4] aims to
+ solve this problem and more by regularly asking each maintainer to
+ self-assess the kind of maintenance that he's doing with each of his
+ packages. Feel free to share your comments on the idea!
+
+  -- Raphael Hertzog
+
+ [4] http://lists.debian.org/debian-qa/2008/12/msg00046.html
+
+Packages-arch-specific maintenance changes
+-------------------------------------------
+
+ The wanna-build admins have put Packages-arch-specific (the file which
+ states what packages are excluded from which architectures) into their
+ hands. This means that the submission rules for changes to this important
+ file that controls our building infrastructure changed a bit:
+
+ http://lists.debian.org/debian-devel/2008/12/msg00340.html
+
+  -- Philipp Kern
+
+Githubredir available
+---------------------
+
+ Gunnar Wolf announced[5] GitHub-Redir[6]. The main target for this site
+ is uscan: given that GitHub allows for downloading as a .zip or as a
+ .tar.gz any given commit, it suddenly becomes enough to git tag with a
+ version number, and GitHub magically makes that version available for
+ download. Which is sweet!
+
+ Sometimes it is a bit problematic, though, to follow their format. Github
+ gives a listing of the tags for each particular project, and each of
+ those tags has a download page, with both archiving formats.
+
+  -- Rene Mayorga
+
+ [5] http://gwolf.org/node/1873
+ [6] http://githubredir.debian.net/
+
+Babelbox updated for Lenny
+--------------------------
+
+ The "Babelbox" demo system has been updated for Lenny. It's been tested
+ with D-I Lenny RC1, but should also work without further changes with
+ RC2.
+
+ As a result of various changes in the installer, installation and use of
+ Babelbox is somewhat simpler than it was for Etch.
+
+ Babelbox is a system designed to demonstrate the automation capabilities
+ of the Debian Installer. It also shows the high number and the quality of
+ translations available for the installer. It is well suited for a live
+ demo on a booth in an expo or any other event.
+
+ For further information, see:
+ http://wiki.debian.org/DebianInstaller/BabelBox
+
+  -- Frans Pop
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さんが行いました。
+また、xxさんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2008/12/msg00009.html
