@@ -4,34 +4,33 @@
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
-Bdale Garbee as Acting Secretary
+Bdale Garbee さんが書記を代行
 --------------------------------
 
- Manoj Srivastava resigned as secretary[1]. Following section 7.2[2] of
- our constitution, the chairman of the technical committee — currently
- Bdale Garbee — is serving as acting secretary[3] until the DPL appoints a
- new one.
+Manoj Srivastava さんは、書記を[辞任しました][1]。
+以下の、私たちの[規約第7.2項][2]に従い、DPLが新しい人を任命するまで、
+現技術委員会の委員長 Bdale Garbee さんが[書記代行を務めています][3]。
 
   -- Raphael Hertzog
 
- [1] http://lists.debian.org/debian-vote/2008/12/msg00275.html
- [2] http://www.debian.org/devel/constitution#7
- [3] http://lists.debian.org/debian-vote/2008/12/msg00292.html
+ [1]: http://lists.debian.org/debian-vote/2008/12/msg00275.html
+ [2]: http://www.debian.org/devel/constitution#7
+ [3]: http://lists.debian.org/debian-vote/2008/12/msg00292.html
 
-New proposal to track maintenance status of all packages
---------------------------------------------------------
+全パッケージの状態管理追跡に関する新しい提案
+--------------------------------------------
 
- To avoid big delays in releases we need to have an active maintainer for
- each package so that we don't end up with thousands of RC bugs rotting in
- unstable. To achieve this we must detect as early and as accurately as
- possible when a package needs a new maintainer. This proposal[4] aims to
- solve this problem and more by regularly asking each maintainer to
- self-assess the kind of maintenance that he's doing with each of his
- packages. Feel free to share your comments on the idea!
+リリースの大きな遅れを回避するため、不安定版 (unstable) に何千もの RC
+バグを残さないよう、それぞれのパッケージにはアクティブなメンテナが必要
+です。これを達成するためには、パッケージに新しいメンテナが必要になったと
+きに、できるだけ早く正確にそれを見つけなくてはいけません。[この提案][4]は
+この問題を解決し、さらに、メンテナが自身のパッケージに対して実施してい
+るメンテナンスなどを自己評価するよう、定期的に尋ねることを目的としてい
+ます。このアイデアについて、気軽に意見を出してください。
 
   -- Raphael Hertzog
 
- [4] http://lists.debian.org/debian-qa/2008/12/msg00046.html
+ [4]: http://lists.debian.org/debian-qa/2008/12/msg00046.html
 
 Packages-arch-specific maintenance changes
 -------------------------------------------
@@ -63,25 +62,23 @@ Githubredir available
  [5] http://gwolf.org/node/1873
  [6] http://githubredir.debian.net/
 
-Babelbox updated for Lenny
+Lenny 用に更新された Babelbox
 --------------------------
 
- The "Babelbox" demo system has been updated for Lenny. It's been tested
- with D-I Lenny RC1, but should also work without further changes with
- RC2.
+"Babelbox" デモシステムが Lenny 用に更新されました。それは D-I Lenny RC1 で
+テストされましたが、これ以上の変更無しに RC2 でも動作するはずです。
 
- As a result of various changes in the installer, installation and use of
- Babelbox is somewhat simpler than it was for Etch.
+インストーラ内の様々な変更の結果、Babelbox をインストールして使用するのは Etch の
+時と比べて多少簡単になりました。
 
- Babelbox is a system designed to demonstrate the automation capabilities
- of the Debian Installer. It also shows the high number and the quality of
- translations available for the installer. It is well suited for a live
- demo on a booth in an expo or any other event.
+Babelbox は、Debian インストーラの自動化機能を実証するために設計されたシステムです。
+インストーラにとって利用可能な翻訳の量や質も示してくれます。Babelbox は、エキスポや
+他のイベントのブースでの実演に適しています。
 
- For further information, see:
- http://wiki.debian.org/DebianInstaller/BabelBox
+さらなる情報については、こちらをご覧ください:
+ <http://wiki.debian.org/DebianInstaller/BabelBox>
 
-  -- Frans Pop
+ -- Frans Pop
 
 この記事について
 ----------------
