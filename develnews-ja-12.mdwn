@@ -32,60 +32,62 @@ Manoj Srivastava さんは、書記を[辞任しました][1]。
 
  [4]: http://lists.debian.org/debian-qa/2008/12/msg00046.html
 
-Packages-arch-specific maintenance changes
+Packages-arch-specific の管理変更
 -------------------------------------------
 
- The wanna-build admins have put Packages-arch-specific (the file which
- states what packages are excluded from which architectures) into their
- hands. This means that the submission rules for changes to this important
- file that controls our building infrastructure changed a bit:
+wanna-build 管理者達は、どのパッケージがどのアーキテクチャから除外されているかが
+記載されたファイルである Package-arch-specific を手動で追加しました。
+このことから、ビルドインフラストラクチャーを調整するこの重要なファイルを提出する
+方法が多少変更になります：
 
- http://lists.debian.org/debian-devel/2008/12/msg00340.html
+<http://lists.debian.org/debian-devel/2008/12/msg00340.html>
 
   -- Philipp Kern
 
-Githubredir available
+Githubredir が利用できるようになりました
 ---------------------
 
- Gunnar Wolf announced[5] GitHub-Redir[6]. The main target for this site
- is uscan: given that GitHub allows for downloading as a .zip or as a
- .tar.gz any given commit, it suddenly becomes enough to git tag with a
- version number, and GitHub magically makes that version available for
- download. Which is sweet!
+Gunnar Wolf さんは [GitHub-Redir][6] を[発表しました][5]。
+このサイトは主に uscan のためのもので、GitHub で任意のコミットを
+.zip または .tar.gz でダウンロードできるようにしたものです。
+それは突然、バージョン番号で git tag でき、GitHub がそれを
+魔法のようにダウンロード可能な状態にするようになったようなものです。
+なんてすばらしいことでしょう！
 
- Sometimes it is a bit problematic, though, to follow their format. Github
- gives a listing of the tags for each particular project, and each of
- those tags has a download page, with both archiving formats.
+それらの形式を追跡するのは多少面倒なときもありますが、
+GitHub は個々のプロジェクトのタグの一覧を提供し、
+それらのタグのどれもが両方のフォーマットでのダウンロードページを持ちます。
 
   -- Rene Mayorga
-
- [5] http://gwolf.org/node/1873
- [6] http://githubredir.debian.net/
+ 
+ [5]: http://gwolf.org/node/1873
+ [6]: http://githubredir.debian.net/
 
 Lenny 用に更新された Babelbox
 --------------------------
 
-"Babelbox" デモシステムが Lenny 用に更新されました。それは D-I Lenny RC1 で
-テストされましたが、これ以上の変更無しに RC2 でも動作するはずです。
+"Babelbox" デモシステムが Lenny 用に更新されました。D-I Lenny RC1 でテストされ
+ましたが、これ以上の変更無しに RC2 でも動作するはずです。
 
 インストーラ内の様々な変更の結果、Babelbox をインストールして使用するのは Etch の
 時と比べて多少簡単になりました。
 
 Babelbox は、Debian インストーラの自動化機能を実証するために設計されたシステムです。
-インストーラにとって利用可能な翻訳の量や質も示してくれます。Babelbox は、エキスポや
-他のイベントのブースでの実演に適しています。
+インストーラにとって利用可能な多数の翻訳及びその品質も示してくれます。Babelbox は、
+展示会他、イベントのブースでの実演に適しています。
 
 さらなる情報については、こちらをご覧ください:
- <http://wiki.debian.org/DebianInstaller/BabelBox>
 
- -- Frans Pop
+<http://wiki.debian.org/DebianInstaller/BabelBox>
+
+  -- Frans Pop
 
 この記事について
 ----------------
 
 この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
 翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さんが行いました。
-また、xxさんから多数のコメントをいただきました。
+また、今井伸広さん・武井伸光さん・やまねひできさん・victory さんから多数のコメントをいただきました。
 ありがとうございます。
 
  [0]: http://lists.debian.org/debian-devel-announce/2008/12/msg00009.html
