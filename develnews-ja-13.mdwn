@@ -5,117 +5,79 @@
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
-Security support for new testing (squeeze) delayed
 新しいテスト版 (squeeze) のセキュリティサポートは遅れます
 --------------------------------------------------
 
- The Testing Security Team announced that security support for squeeze
- will not begin immediately after the release of lenny. Users who need
- security support should stay with lenny until the begin of security
- support for squeeze is announced.
- squeeze のセキュリティサポートは lenny
- リリース後すぐには開始されない、とテスト版 (testing)
- セキュリティチームが発表しました。
- セキュリティサポートが必要なユーザは squeeze
- のセキュリティサポート開始が発表されるまで lenny
- のままにしてください。
+squeeze のセキュリティサポートは lenny リリース後すぐには
+開始されない、とテスト版 (testing) セキュリティチームが発表しました。
+セキュリティサポートが必要なユーザは squeeze のセキュリティサポート
+開始が発表されるまで lenny のままにしてください。
 
- http://lists.debian.org/debian-testing-security-announce/2008/12/msg00019.html
+<http://lists.debian.org/debian-testing-security-announce/2008/12/msg00019.html>
 
- -- Stefan Fritsch
+  -- Stefan Fritsch
 
-New whohas tool displays other distributions that have your package
 あるパッケージを持っている他のディストリビューションを表示する新しい whohas ツール
 -------------------------------------------------------------------
 
- Unstable features a new tool, `whohas`, which searches through a list of
- distributions and displays those that also carry a version of a given
- package. Currently supported are Arch, Debian, Fedora, Gentoo, openSUSE,
- Slackware, Source Mage, Ubuntu, FreeBSD, NetBSD, OpenBSD, Fink and
- MacPorts. It can be helpful to maintainers to find new packaging ideas or
- patches.
- 不安定版の新しいツール、`whohas`
- は任意のパッケージをディストリビューションのリスト全体から検索して、
- そのバージョンとともに表示します。
- 現時点では Arch, Debian, Fedora, Gentoo, openSUSE, Slackware,
- Source Mage, Ubuntu, FreeBSD, NetBSD, OpenBSD, Fink, MacPorts
- を対象としています。メンテナが新しいパッケージ方法や
- パッチを見つけるのに役立つ可能性があります。
+不安定版の新しいツール、`whohas` は任意のパッケージを
+ディストリビューションのリスト全体から検索して、そのバージョンとともに表示します。
+現時点では Arch, Debian, Fedora, Gentoo, openSUSE, Slackware,
+Source Mage, Ubuntu, FreeBSD, NetBSD, OpenBSD, Fink, MacPorts
+を対象としています。メンテナが新しいパッケージ方法やパッチを見つけるのに
+役立つ可能性があります。
 
- http://packages.debian.org/whohas
+<http://packages.debian.org/whohas>
 
- -- Thijs Kinkhorst
+  -- Thijs Kinkhorst
 
-Documentation for python-apt
 python-apt の文書
 ----------------------------
 
- There is now documentation available for python-apt, documenting the
- complete API. I created it in a half week using Sphinx and
- reStructuredText. This is a help for everyone who develops with
- python-apt which has been lacking a lot of documentation previously. The
- whole documentation is included in version 0.7.9~exp2 of python-apt.
- API について網羅している python-apt の文書が用意されました。Sphinx と reStructuredText
- を使って半週で作りました。これまでひどい資料不足だった
- python-apt で開発していたあらゆる人にとって助けになります。
- この完全な文書は python-apt のバージョン 0.7.9~exp2 で入ります。
+API について網羅している python-apt の文書が用意されました。
+Sphinx と reStructuredText を使って半週で作りました。これまで
+ひどい資料不足だった python-apt で開発していたあらゆる人にとって
+助けになります。この完全な文書は python-apt のバージョン 0.7.9~exp2
+で入ります。
 
- http://apt.alioth.debian.org/python-apt-doc/
+<http://apt.alioth.debian.org/python-apt-doc/>
 
- -- Julian Andres Klode
+  -- Julian Andres Klode
 
-sbuild and wanna-build status update
 sbuild と wanna-build の状況更新
 ------------------------------------
 
- Over the last three months, a number of large changes have been made, and
- more are planned both in the near future and for Squeeze. sbuild is now
- fully usable with contemporary wanna-build and buildd, and has had many
- improvements made.  Most recent work has focussed on wanna-build, with
- several usability improvements made, as well as bug fixing. Changes made
- on the buildds, but not previously available in a public SCM, have also
- been merged, so wanna-build now contains all of the functionality present
- on the live wanna-build installation. Ongoing work includes modularising
- wanna-build in order to replace the MLDBM database backend with a more
- flexible PostgreSQL backend.
- これまで 3 か月以上に渡って大きな変更がいろいろと加えられてきました。
- 他にも近いうちに、また Squeeze に向けても計画しています。
- sbuild は最新の wanna-build 及び
- buildd、また多くの改善も図られたことにより存分に使えるようになっています。
- ここ最近の作業は wanna-build に集中し、
- バグ修正はもちろんですが使い勝手をいくらか改善しています。これまでの
- buildd への変更で、公開 SCM に入っていなかったものもマージされ、今では
- wanna-build には稼働している wanna-build
- にある機能は全て入っています。継続中の作業にはバックエンドの MLDBM
- データベースをもっと柔軟な PostgreSQL に置き換えるための wanna-build
- のモジュール化等があります。
+これまで 3 か月以上に渡って大きな変更がいろいろと加えられてきました。
+他にも近いうちに、また Squeeze に向けても計画しています。sbuild は
+最新の wanna-build 及び buildd、また多くの改善も図られたことにより
+存分に使えるようになっています。
+ここ最近の作業は wanna-build に集中し、バグ修正はもちろんですが
+使い勝手をいくらか改善しています。これまでの buildd への変更で、公開
+SCM に入っていなかったものもマージされ、今では wanna-build には
+稼働している wanna-build にある機能は全て入っています。継続中の
+作業にはバックエンドの MLDBM データベースをもっと柔軟な PostgreSQL
+に置き換えるための wanna-build のモジュール化等があります。
 
- http://lists.debian.org/debian-devel/2009/01/msg00061.html
+<http://lists.debian.org/debian-devel/2009/01/msg00061.html>
 
- -- Roger Leigh
+  -- Roger Leigh
 
-Kernel pseudo-package removed
 Kernel の仮想パッケージを削除しました
 -----------------------------
 
- The pseudo-package "kernel" has been removed, since nowadays all kernel
- images are built from the single source package "linux-2.6". reportbug
- has already been modified in experimental to report all bugs directed
- against "kernel" to the linux-2.6 source package.
- 仮想パッケージ "kernel" は削除されました。
- 現在ではカーネルイメージはすべて 1 つのソースパッケージ
- "linux-2.6" からビルドされているからです。reportbug
- は既に実験的に "kernel" に向けて報告されるあらゆるバグを
- linux-2.6 に向けるように変更されています。
+仮想パッケージ "kernel" は削除されました。現在ではカーネルイメージは
+すべて 1 つのソースパッケージ "linux-2.6" からビルドされているからです。
+reportbug は既に実験的に "kernel" に向けて報告されるあらゆるバグを
+linux-2.6 に向けるように変更されています。
 
- -- Moritz Muehlenhoff
+  -- Moritz Muehlenhoff
 
 この記事について
 ----------------
 
 この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
 翻訳は victory さんが行いました。
-また、xxさんから多数のコメントをいただきました。
+また、武井伸光さんから多数のコメントをいただきました。
 ありがとうございます。
 
- [0]: http://lists.debian.org/debian-devel-announce/xxx.html
+ [0]: http://lists.debian.org/debian-devel-announce/2009/01/msg00007.html
