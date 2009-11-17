@@ -1,0 +1,98 @@
+開発ニュース寄せ集め (第 14 号)
+==============================
+
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+
+debhelper の外部コマンドのオプション解析方法が変更になります
+-------------------------------------------------------
+
+debhelper の不安定版 (unstable) への次のアップロードがまもなく予定され
+ていますが、特定のオプションを使っている一部の debhelper 外部コマンドは、
+うまく動かなくなるかもしれません。そのようなコマンドでオプションを有効のまま
+にするには、少々変更が必要です。これらのコマンドのメンテナは、詳細について、
+[アナウンスのメール][1]を見てください。
+
+  -- Joey Hess
+
+ [1]: http://lists.debian.org/debian-devel/2009/02/msg00387.html
+
+initramfs-tools の Lenny での新機能
+----------------------------------
+
+initramfs-tools はより小さな initramfs に /sys/ を押し込められる様にな
+りました。また、ある種の環境ではさらに小さい initramfs を生成できます。
+これに関する全ての情報については [「innitramfs-tools new feature list」][2]
+のブログ記事を参照して下さい。
+
+  -- Maximilian Attems
+
+ [2]: http://www.itp.tuwien.ac.at/~mattems/blog/2009/02/05#initramfs-tools-lenny-features
+
+bts-link がさらに多くのバグ追跡システムに対応しました
+------------------------------------
+
+[bts-link][3] が GForge/Fusionforge のバグ追跡システムと Sourceforge の
+V2 トラッカーを新たにサポート対象に加えました。それらの開発支援サイトにホスト
+されている開発元のプロジェクトにおけるバグを追跡するために `forwarded-to` 属性
+を追加し、それによりバグの状態の変更を通知することが可能になります。
+
+  -- Olivier Berger
+
+ [3]: http://bts-link.alioth.debian.org/
+
+Debian Data Export
+------------------
+
+[Debian Data Export][4]は、Debian の情報を出力するのを容易にする
+システムですが、それについての[発表がありました][5]。
+
+もし今 DDE でデータを検索したり、ダウンロードしたりしたければ、こちらで
+試せます: <http://dde.debian.net/dde>
+
+Debian に関するデータをメンテナンスするのであれば、DDE について目を通
+すことが推奨されています: 単純なデータセットによって[データを公開するの
+を非常に簡単にし][6]、さらにデータを探してアクセスするのを容易にします。
+
+  -- Enrico Zini
+
+ [4]: http://wiki.debian.org/DDE
+ [5]: http://lists.debian.org/debian-devel/2009/02/msg00247.html
+ [6]: http://wiki.debian.org/DDE/StaticData
+
+移行を妨げているバグのリスト
+---------------------------------
+
+ライブラリ移行の時期になりました。多くのパッケージをビルドしなおさなければ
+なりません。これは、いくつかが FTBFS (ソースからのビルドが失敗する状態)
+になる、あるいは移行の進捗を妨げる他の問題が現れるということを意味しています。
+
+移行を妨げているバグの一覧は、現在 usertag
+(user:debian-release@lists.debian.org, tag:transition-blocker)
+を通して BTS に保存されています:
+
+<http://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-release@lists.debian.org;tag=transition-blocker>
+
+あるいは、以下の URL が良いでしょう:
+
+<http://snipr.com/transition-blockers>
+
+このバグ群に対する NMU のルールが緩められました:
+
+バグが 3 日以上経つ場合は、パッケージは 0-day アップロード (delay キューに
+ではなく、即日のアップロード) が可能となります。 どうか、礼儀正しく、役立つよう
+にふるまいましょう。メンテナの希望を尊重しましょう。
+
+  -- Adeodato Simó
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さんが行いました。
+また、やまねひできさんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2009/03/msg00000.html
