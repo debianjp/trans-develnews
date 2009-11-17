@@ -1,0 +1,26 @@
+開発ニュース寄せ集め (第 19 号)
+==============================
+
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+lxpanel の最新リリース 0.5.3 が「experimental (実験版)」に
+---------------
+
+ここ数か月、lxpanel の最新リリース 0.5.3 がパッケージ化され Debian の「experimental (実験版)」ディストリビューションにアップロードされています。
+速く軽量な動作を保つため、さらなるテストが必要です。試してみたい場合はどうぞ使ってみてください。見つけたバグは、もちろん知らせてください。
+詳細は <http://packages.debian.org/experimental/lxpanel> を参照ください
+
+  -- Andrew Lee (李健秋)
+
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳はやまねひできさんが行いました。
+また、さんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2009/xx/msg0000x.html
