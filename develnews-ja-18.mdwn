@@ -1,0 +1,86 @@
+開発ニュース寄せ集め (第 18 号)
+==============================
+
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+
+debian/changelog ファイルの 3-way マージ
+-------------------------------------
+
+Debian changelog ファイルのスマートな 3-way マージを行う新しいスクリプトが
+アナウンスされています[1]。git は自動的にこれを使うように設定でき、これによって、
+よく見られる通常の行ベースによるマージによって生成されるコンフリクトを回避できる
+ようになります。
+
+  -- Raphaël Hertzog
+
+ [1]: http://www.ouaza.com/wp/2009/10/08/3-way-merge-of-debian-changelog-files/
+
+
+PTS のページで対処されていないセキュリティ問題が表示されるように
+----------------------------------------------
+
+Raphael Geissert さんによるパッチのおかげで、PTS (http://packages.qa.debian.org)
+が security tracker (http://security-tracker.debian.net) ときちんと
+統合されました: パッケージのページは、入力されたソースパッケージに対して、
+(もしあれば) 対処されていないセキュリティ問題の数を表示します。
+
+ -- Stefano Zacchiroli
+ 
+git format-patch との互換性のため DEP-3 が更新
+-----------------------------------------------------
+
+最近アナウンスされた [Patch Tagging ガイドライン][2] が更新されました。
+これは、git の format-patch と他の VCS でメールで変更点を交換するのに、より互換性を高めるためです。
+この形式の利用を検討してください。使い方についてのコメントの交換はご自由にどうぞ。
+
+  -- Raphaël Hertzog
+
+ [2]: http://dep.debian.net/deps/dep3/
+
+debian-devel メーリングリストと ITP
+---------------------
+
+DebConf9 で、debian-devel メーリングリストをより有用にするためのディスカッションがありました。
+まとめると、[開発者リファレンスの 5.1 項][3] にあるお勧めについての簡単なリマインダです。
+複数パッケージの ITP を debian-devel に送らないで、代わりに後で ITP をまとめてサマリを
+debian-devel に送ってください。複数のパッケージ群が何かしら関連がある場合は特にそうです。
+
+  -- Paul Wise
+
+ [3]: http://www.debian.org/doc/developers-reference/pkgs.html#newpackage
+
+wiki.debian.org でのバグの状態表示
+-------------------------
+
+
+Debian wiki では、クローズされたバグを打ち消し線でオープンになっている
+バグと区別している DebianBug:123456 のようなリンクを含んでいる wiki ページの
+更新に Javascript を使うようになりました。さらに、マウスポインタをタイトルの上に載せると、
+バグの状態 + 修正されたバージョン + バグ番号 + バグの件名に変更されます。
+この機能は debian-installer チームの Max Volzeler (mvz) さんによって始められ、
+コードが書かれました。彼はこれを [squeeze goals][4] wiki ページに使いたいと思ったのです。
+実相の詳細は [Debian wiki チームの git リポジトリ][5] で参照できます。 
+wiki チームは、通常の interwiki アイコンを置き換えるのに使う、死んでいるバグと生きている
+バグの[アイコンのデザイン][6]をする人も探しています。
+wiki にある既存のバグへのリンクを DebianBug:123456 形式のリンクに変更したい場合は、
+[DebianBugification][7] の wiki ページ案のリストを参照してください。
+
+  -- Paul Wise
+
+ [4]: http://wiki.debian.org/DebianInstaller/SqueezeGoals
+ [5]: http://wiki.debian.org/Teams/DebianWiki
+ [6]: http://art.debian.net/?ccm=/media/thread/24
+ [7]: http://lists.debian.org/debian-www/2009/08/msg00154.html
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳はやまねひできさんが行いました。
+また、さんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2009/10/msg00001.html
