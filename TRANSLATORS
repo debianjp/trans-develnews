@@ -123,3 +123,46 @@
 4. Githubredir available …… 中尾さん
 5. Babelbox updated for Lenny …… 荒木さん
 
+第 13 号
+-------
+
+0. リード …… 倉敷
+1. Security support for new testing (squeeze) delayed …… victory さん
+2. New whohas tool displays other distributions that have your package …… victory さん
+3. Documentation for python-apt …… victory さん
+4. sbuild and wanna-build status update …… victory さん
+5. Kernel pseudo-package removed …… victory さん
+
+第 14 号
+-------
+
+0. リード …… 倉敷
+1. debhelper third-party command option parsing transition …… 今井さん
+2. initramfs-tools new Lenny features …… 佐々木さん
+3. bts-link supporting more bugtrackers …… 中尾さん
+4. Debian Data Export …… 荒木さん
+5. List of bugs blocking transitions …… 石井さん
+
+第 15 号
+-------
+
+0. リード …… 倉敷
+1. Updates of major desktop environments …… 佐々木さん
+2. Alioth updated to lenny and FusionForge 4.7 …… 中尾さん
+3. wiki.debian.org migrated to MoinMoin 1.7 …… 荒木さん
+4. Tidbits from the wanna-build team …… 石井さん
+5. RFH: Removing spam from the listarchive …… 今井さん
+6. Groupware discussion list …… 倉敷
+
+第 16 号
+-------
+
+第 17 号
+-------
+
+第 18 号
+-------
+
+第 19 号
+-------
+
