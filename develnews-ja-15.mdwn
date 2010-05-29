@@ -1,19 +1,129 @@
 開発ニュース寄せ集め (第 15 号)
 ==============================
 
-
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
+主要なデスクトップ環境のアップデート
+----------------------------------
+
+Debian における三つの主要なデスクトップ環境は更新されたか、近日中に更新
+されることになりました。[Xfce 4.6][1] は既に unstable にアップロードさ
+れています。[KDE4.2.2][2] も同様です。[GNOME 2.26][3] についても今後
+数日中にこれらに続くでしょう。
+
+ -- Yves-Alexis Perez
+
+ [1]: http://www.xfce.org
+ [2]: http://www.kde.org
+ [3]: http://www.gnome.org
+
+Alioth が lenny に更新され、FusionForge 4.7 になりました
+-------------------------------------------
+
+Alioth.debian.org (別名、VCS/共同開発サーバー) が Lenny に アップグレード されました。
+gforge は FusionForge 4.7 に切り替えられ、些細な問題が多数解決しています。
+もしこのサービスで何か問題に遭遇したら、そのサイト管理プロジェクトに[サポートチケット][4]を開いてください。
+
+もし Alioth で SSH タイムアウトを経験したら、あなたのSSHクライアントが誤った設定をされている
+可能性があります。
+Alioth は fail2ban を使用しており、あまりに度重なるログインの失敗が SSH デーモンにより記録されている
+IP アドレスからのトラフィックを落とすようファイアーウォールの設定がなされています。
+SSH クライアントがあなたのアカウントに登録されていない鍵で
+接続を試みることも含まれます。その後で正しい鍵が送られたとしてもです。
+あなたの Alioth アカウントにあなたのキーを選択し登録するか、
+または (.ssh/config に) 適切な鍵だけを送るように [stanza][5] を設定するだけです。
+どちらの方法でもログイン時に数ミリ秒の節約になるでしょう。
+
+ -- Raphael Hertzog and Roland Mas
+
+ [4]: https://alioth.debian.org/tracker/?func=add&group_id=1&atid=200001
+ [5]: http://wiki.debian.org/Alioth/SSH
 
 
+wiki.debian.org が MoinMoin 1.7 に移行されました
+---------------------------------------------
+
+DSA と [DebianWiki チーム][6] が wiki.debian.org を、多くの新機能を持つ
+MoinMoin 1.7 に移行しました。現在 wiki は新しいマシン上で提供されています。
+ハードウェアと回線は、[Dembach Goo Informatics][7] より資金援助を受けて
+います。また、wiki に安全にログインするための https も今では使用可能になって
+います。
+
+さらなる情報については、[お知らせのページ][8]を見てください。
+
+ -- Stefano Zacchiroli
+
+ [6]: http://wiki.debian.org/Teams/DebianWiki
+ [7]: http://www.dg-i.net/
+ [8]: http://wiki.debian.org/DebianWiki/MigratedToMoinmoin17
+
+
+wanna-build チームからのちょっとしたお知らせ
+---------------------------------
+
+ wanna-build チームは、wanna-build へのリクエストや autobuild に関する
+ その他の問題についての連絡アドレス debian-wb-team@lists.debian.org を発表しました。
+ また、Kurt Roeckx さんが amd64 以外にもその他すべてのアーキテクチャについての
+ wanna-build データベースへの変更権限を持ったことも発表しました。
+
+    http://lists.debian.org/debian-project/2009/03/msg00096.html
+
+  -- Adeodato Simó
+
+ さらに、buildds はアーカイブで現在のバージョンにより近い sbuild 版にアップグレードされています。
+ 新しい buildds は、powerpc と、hppa、i386に加えられました。詳細は以下を参照してください。
+
+    http://lists.debian.org/debian-devel/2009/04/msg00537.html
+
+  -- Philipp Kern
+
+
+【急募】メーリングリストのアーカイブからスパムを削除
+----------------------------------------------------
+
+みなさんご存知のとおり、メーリングリストやそのアーカイブは完全にスパム
+と無縁という訳ではありません。そのため、アーカイブの各ページには
+「Report as Spam」というボタンが用意されています。その結果、不適切もし
+くは議論の余地のあるような投稿も報告されるようになってきたので、これら
+の指摘をレビューできるシステムをセットアップしました。
+
+アーカイブからスパムを除去するのを手伝ってもらえるなら、[このページにあ
+る説明][9]にしたがってください。参加するには、@debian.org のメールアド
+レスを持っている必要があります。
+
+メールアドレスがない場合は、[メーリングリストのアーカイブ][10]をレビュー
+して、「Report as Spam」ボタンを押すことで手伝えます。
+
+詳細と調整のために [Wiki ページ][11]も管理しています。
+
+ -- Cord Beermann
+
+ [9]: http://lists.debian.org/archive-spam-removals/review/
+ [10]: http://lists.debian.org/
+ [11]: http://wiki.debian.org/Teams/ListMaster/ListArchiveSpam
+
+グループウェアのメーリングリスト
+-------------------------
+
+Debian の[グループウェア][12]開発者間での議論や協力をしやすくするため、[メーリング
+リスト][13]を作成しました。Debian で、グループウェア関連クライアント・サーバをメンテナンス
+している (もしくは興味がある) 方は、[購読をお願いします][14]。共通の場を持つことで、例えば
+相互接続のテストを行うために新バージョンをアナウンスする、といった作業ができることを意図
+しています。
+
+  -- Guido Günther
+
+ [12]: http://wiki.debian.org/Groupware
+ [13]: mailto:calendarserver-discuss@lists.alioth.debian.org
+ [14]: http://lists.alioth.debian.org/mailman/listinfo/calendarserver-discuss
 
 この記事について
 ----------------
 
 この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
-翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さんが行いました。
-また、やまねひできさんから多数のコメントをいただきました。
+翻訳は荒木淳さん・石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さん・倉敷悟が行いました。
+また、やまねひできさん、victory さんから多数のコメントをいただきました。
 ありがとうございます。
 
  [0]: http://lists.debian.org/debian-devel-announce/2009/04/msg00012.html
