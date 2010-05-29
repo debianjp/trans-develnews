@@ -17,8 +17,6 @@ Debconf9 の期間中に PTS (<http://packages.qa.debian.org>) に多数の変�
  * PTS は、piuparts によって発見されたパッケージのインストール問題のエラーを表示するように
    なっています (詳細な情報については <http://piuparts.debian.org> を参照してください)。
 
-FIXME: stressing!
-
  * PTS は、パッケージの翻訳状況と、Debian 固有の文字列 (例えば debconf のテンプレート)
    が翻訳を必要としている時に警告の情報を表示するようになっています。
 
