@@ -1,26 +1,96 @@
 開発ニュース寄せ集め (第 19 号)
 ==============================
 
-
 このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
 寄稿はご自由にどうぞ。
 
-lxpanel の最新リリース 0.5.3 が「experimental (実験版)」に
----------------
+GPG キーサイン coordination は wiki.debian.org に移動しました
+-----------------------------------------------------
 
-ここ数か月、lxpanel の最新リリース 0.5.3 がパッケージ化され Debian の「experimental (実験版)」ディストリビューションにアップロードされています。
-速く軽量な動作を保つため、さらなるテストが必要です。試してみたい場合はどうぞ使ってみてください。見つけたバグは、もちろん知らせてください。
-詳細は <http://packages.debian.org/experimental/lxpanel> を参照ください
+ GPG キーサイン coordination page は、旧来の PHP で稼働するシステムから
+ Debian wiki に移動し、より簡単に編集できるようになりました。
+
+ * http://wiki.debian.org/Keysigning
+ * http://wiki.debian.org/Keysigning/Offers
+ * http://wiki.debian.org/Keysigning/Need
+
+  -- Christoph Berg
+
+Debian OpenSSH の VCS の変更と支援の要請
+------------------------------------------
+
+Debian にとって重要な OpenSSH パッケージのメンテナンスを支援したいと考
+え、最終的に、よりよい VCS でパッケージの履歴を管理することにし、実際
+に使えるようになりました。詳しくは、
+http://lists.debian.org/debian-ssh/2010/01/msg00017.html と
+http://wiki.debian.org/Teams/DebianSsh を見てください。Debian 開発者で
+支援に興味のある人は、私まで連絡してください。
+
+  -- Colin Watson
+
+LXDE のカスタマイズがより簡単になりました。
+------------------------------------------
+
+sid にある LXDE の構成要素の幾つかは、最近になって更新もしくは変更され
+ました。
+
+この更新/変更によって、lxsession ではカスタムセッション名がサポートさ
+れました。また、lxpanel は XDG_CURRENT_DESKTOP を読めるようになり、
+LXDE の代わりに他のデスクトップ環境のアプリケーションメニューも表示で
+きるようになりました。これによって、Debian Pure Blends を用いたカスタ
+マイズされた LXDE 作成がより容易に行なえます。
+
+lxnm と lxpanel-netstat-plugin はともに廃止予定です。lxnm は wicd への
+移行が推奨されており、live-helper などの他の Debian のユーティリティ
+では既にそのように変更されています。
 
   -- Andrew Lee (李健秋)
 
+WNPP BTS レポートがカテゴリ分けされました
+-------------------------------
+
+ユーザタグとユーザカテゴリを活用して、[WNPP][1] BTS レポートの見え方が新しくなりました。
+これによって、他より多くのバグをもっている (疑似) パッケージの BTS ページでナビゲーション
+がしやすくなります。Sandro Tosi さんが、カテゴリをあてはめるための適切な制御メッセージを
+思いついてくれたおかげです。
+
+バグの並び替えに使っているユーザタグはレポートの表題を元にしています。
+[WNPP のサイト][2]でフォーマットが説明されています。
+
+  -- Raphael Geissert
+
+ [1]: http://bugs.debian.org/wnpp
+ [2]: http://www.debian.org/devel/wnpp/#l2
+
+ソースフォーマット "3.0 (quilt)" の更新
+----------------------------------------
+
+dpkg 1.15.5.4 以降の dpkg-source は、quilt が使用する `.pc` ディレクトリを
+(quilt を使わない場合でも) 作成します。また、パッチが適用されているかいないかを
+把握するために `.pc/applied-patches` も使います。このように quilt とは 100%
+互換ですので `--without-quilt` オプションはなくなります。
+
+同じバージョンで、新しいオプション `--single-debian-patch` が作られました。
+VCS を使っている人は dpkg-source を使って、(debian-changes-<バージョン> の
+代わりに) debian-changes という単一のパッチを作成して自動更新できます。
+これはフォーマット 1.0 における .diff.gz にやや似ていますが、その他の機能 (bzip2
+圧縮や、複数の tar 玉など) の利点があります。
+debian/source/patch-header にこの自動パッチのヘッダをセットすることができますので、
+そこで変更内容を確認しやすい場所 (大抵の場合は VCS のどこか) を説明することができます。
+
+パッケージの転換は、安定したペースで行われています：
+http://upsilon.cc/~zack/stuff/dpkg-v3/
+
+自分のパッケージを転換する方法については、http://wiki.debian.org/Projects/DebSrc3.0
+で基本的な情報を確認してください。
+
+  -- Raphael Hertzog
 
 この記事について
 ----------------
 
 この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
-翻訳はやまねひできさんが行いました。
-また、さんから多数のコメントをいただきました。
+翻訳は石井一夫さん・今井伸広さん・佐々木洋平さん・倉敷悟が行いました。
 ありがとうございます。
 
- [0]: http://lists.debian.org/debian-devel-announce/2009/xx/msg0000x.html
+ [0]: http://lists.debian.org/debian-devel-announce/2010/01/msg00001.html
