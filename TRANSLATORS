@@ -186,36 +186,42 @@
 第 19 号
 -------
 
-1. GPG key signing coordination moved to wiki.debian.org
-2. Debian OpenSSH VCS changeover, and call for help
-3. Easier for customization on LXDE now
-4. WNPP BTS report now categorised
-5. Update about "3.0 (quilt)" source format
+0. リード …… 倉敷
+1. GPG key signing coordination moved to wiki.debian.org …… 石井さん
+2. Debian OpenSSH VCS changeover, and call for help …… 今井さん
+3. Easier for customization on LXDE now …… 佐々木さん
+4. WNPP BTS report now categorised …… 倉敷
+5. Update about "3.0 (quilt)" source format …… 倉敷
 
 第 20 号
 -------
 
-1. Notification of failed builds
-2. Integration of experimental, non-free, backports.org, debian-edu and volatile into the official autobuilding infrastructure
-3. Unification of buildd software
-4. Browse WNPP bugs based on debtags
-5. Multiple CSS skins disabled on the PTS
+0. リード …… 倉敷
+1. Notification of failed builds …… 今井さん
+2. Integration of experimental, non-free, backports.org, debian-edu and volatile into the official autobuilding infrastructure …… 佐々木さん
+3. Unification of buildd software …… 中尾さん
+4. Browse WNPP bugs based on debtags …… 石井さん
+5. Multiple CSS skins disabled on the PTS …… 倉敷
 
 第 21 号
 -------
 
-1. DEHS, watching 10 000 packages
-2. Conversion of source packages to 3.0 (quilt/native)
-3. DEHS now supports format 3.0 source packages
-4. userdir-ldap mail gateway updated
-5. piuparts.d.o
+0. リード …… 倉敷
+1. DEHS, watching 10 000 packages …… 佐々木さん
+2. Conversion of source packages to 3.0 (quilt/native) …… victory さん
+3. DEHS now supports format 3.0 source packages …… victory さん
+4. userdir-ldap mail gateway updated …… 石井さん
+5. piuparts.d.o …… 倉敷
 
 第 22 号
 -------
 
-1. LWN subscriptions
-2. ubuntudiff.debian.net
-3. TXT records on debian.net
-4. Debian Sysadmin Team seeks for help
-5. Receive Ubuntu bugs by mail via PTS
+0. リード …… 倉敷
+1. LWN subscriptions …… 中尾さん
+2. ubuntudiff.debian.net …… 石井さん
+3. TXT records on debian.net …… 今井さん
+4. Debian Sysadmin Team seeks for help …… 佐々木さん
+5. Receive Ubuntu bugs by mail via PTS …… 倉敷
+
+
 
