@@ -1,0 +1,129 @@
+開発ニュース寄せ集め (第 23 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+Debian MiniConfなど
+----------------
+
+そういうわけで、[Debconf][1] が終わって、すぐに寂しく思うことでしょう(というか寂しがってるでしょう？)。
+いつでもこれを少しばかり悲しむ人はいますが、 それゆえに必然として来年再び皆さんと会うために
+私たちは帰ってきます。また、来年までの一年間、皆さんが寂しい思いをする必要はありません。
+
+今年はじめに、MiniDebCampがタイで開催され、およそ30人の地元の人と、ヨーロッパや、オーストラリア、
+日本、台湾から5人が[出席しました][2]。伝えられるところでは、DebConf の終了時と日程が重なったインドの
+MiniConf では、ほぼ200人の[参加者がありました][3]。
+
+10月の終わりには、MiniConfがフランスの[パリで開催されます][4]。11月の初めには、Debian MiniConf が、
+ベトナムのホーチミン（サイゴン）市の[FOSSASIA で開催されます][5]。このようなイベントは、世界中の Debian
+コミュニティの発展を助けます。どうかそれに出席し、トークを行ったり、あなたのブログや、ミニブログ、
+メーリングリスト、irc/チャットチャンネルでPRしたりすることでサポートしてください。
+もし、これらのイベントのうちの1つを組織しているならば、あなたの Debian MiniConf のために
+&lt;country&gt;&lt;year&gt;.mini.debconf.org ドメインを得るためにDebConfグローバルチームへの
+連絡を考慮してください。 また、あなたの Debian 関連イベントを[Debianウェブサイトのリスト][6]に
+掲載するために、Debian イベント関連のアドレスに連絡してください。
+
+  -- Paul Wise
+
+ [1]: http://wiki.debian.org/DebConf
+ [2]: http://wiki.debian.org/DebianThailand/MiniDebCamp2010
+ [3]: http://in2010.mini.debconf.org/
+ [4]: http://wiki.debconf.org/wiki/Miniconf-Paris/2010
+ [5]: http://fossasia.org/
+ [6]: http://www.debian.org/events/
+
+
+Debian Maintainer index
+-----------------------
+
+Enrico Zini が現在の全 Debian メンテナ (DM) とその保守するパッケージを一覧する
+すばらしい[概観ページ][7]を作ってくれました。
+
+  -- Stefano Zacchiroli
+
+ [7]: https://nm.debian.org/dm_list.html
+
+ 
+GoogleCode redirector
+---------------------
+
+最近 [GoogleCode redirector][9] のベータテストを[始めました][8]。
+これは debian/watch (by uscan(1) and DEHS) で使われることを想定しています。
+自由に使って、バグ報告や機能要求をしてください
+
+  -- David Paleino
+
+ [8]: http://www.hanskalabs.net/posts/googlecode-debian-net/
+ [9]: http://googlecode.debian.net/
+
+Debian プロジェクトニュースへの DD のコミット権限
+--------------------------------------------
+
+Debian プロジェクトニュースに(編集、レビュー、翻訳の形で)寄稿している Debian 開発者は、
+特別に権限を要求することなくコミット可能です。
+alioth の subversion リポジトリでは、既に全 Debian 開発者に書き込み権限を与えています。
+さらなる詳細については、 http://wiki.debian.org/ProjectNews/HowToContribute にあります。
+
+  -- Alexander Reichle-Schmehl
+
+Debian 開発者のポートフォリオサービス
+----------------------------------
+
+最近、[Debian 開発者のポートフォリオサービス][10] にいくつか新しい情報の種別を追加しました。
+
+ * ユーザの Debian wiki ホームページへのリンク (URL パラメータ wikihomepage
+   で指定されるものか、大文字で始める名前から生成されるもの)
+ * ユーザの Debian フォーラムページへの任意のリンク (フォーラムの id が URL パラメータ
+   forumsid として指定された場合のみ)
+ * MIA 情報向け ssh コマンドライン、保有している debian.net ドメインと所属グループ
+ * db.debian.org から GPG 鍵を取得するための finger コマンドと URL
+ * db.debian.org から開発者情報を取得するための finger コマンド
+
+日次で gpg 鍵情報を keyring.debian.org と同期するための cron ジョブも追加しました。
+DDPortfolio は、Debian maintainer および Debian developer キーリングの
+情報を使っています。
+
+Debian Maintainer の GPG 指紋とフルネームは、Debian Developer の場合と同じ方法で
+email アドレスから自動的に取得されるようになりました。
+
+ddportfolioservice に新しいアイデアを淀みなく提供してくれた Paul Wise (pab) さん
+に感謝します。
+
+  -- Jan Dittberner
+
+ [10]: http://ddportfolio.debian.net/
+
+#debian-ubuntu on OFTC
+----------------------
+
+Lucas Nussbaum が OFTC の IRC チャンネル #debian-ubuntu について[ブログ記事][11]を書いています。
+あるパッケージがUbuntuではどんな状態なのか(そしてその逆も)、疑問がある場合に非常に有用です。
+
+  -- Raphaël Hertzog
+
+ [11]: http://www.lucas-nussbaum.net/blog/?p=500
+
+
+チームアップロード
+------------
+
+一つのメーリングリストに全てのバグレポートを集めていて、Maintainer や Uploader
+への直接記載なしに、メンバーによる通常のアップロードを許可しているパッケージング
+チームがあります。こういった場合に、特別な一行目 ` * Team Upload.` があると、
+アップロードが NMUと間違われるのを避けることができます。`devscripts` パッケージ
+の `debchange` (`dch`) ツールは、`--team` コマンドラインオプションを使う
+ことで [チームアップロード][12] をサポートします。
+ 
+  -- Charles Plessy
+
+ [12]: http://wiki.debian.org/TeamUpload
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は victory さん・石井一夫さん・倉敷悟が行いました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2010/08/msg00001.html

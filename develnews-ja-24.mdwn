@@ -1,0 +1,108 @@
+開発ニュース寄せ集め (第 24 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+packages.d.o のスクリーンショット
+---------------------------------
+
+もうお気づきかもしれませんが、packages.d.o に [Debian スクリーンショットサイト][2]へのリンクとともに
+[スクリーンショット][1]が表示されるようになっています。"No screenshot available"
+の画像が出てスクリーンショットが表示されないところは、ユーザにスクリーンショットの投稿を求めているところです。
+誰でも簡単に[寄稿][3]出来て、承認後には、スクリーンショットが[ウェブページ][4]や
+[packages.d.o][5]、[synaptic][6]、[aptitude-gtk][7]、[software-center][8]、さらに、
+[games-thumbnails][9]、[goplay][10] を経由して利用可能になります。Debian
+スクリーンショットサイトはすでに[ほぼ 2 年間][11]運営されており、1700
+もの[パッケージ][12]から 2200 を越すスクリーンショットを集めていますが、
+多くの[パッケージ][13]のスクリーンショットが足りていないので、今日にでもアップロードするといいと思います。
+スクリーンショットのメタデータは JSON ([1][14]、[2][15]) か [UDD][16] で利用可能です。Debian
+スクリーンショットサイトの裏で動いている [debshots][17] で作業したいなら、git
+のリポジトリをチェックアウトして、Christoph Haas さんにパッチを送ってください。
+特に、packages.d.o との統合に関して、様々な改善が[予定されています][18]。
+
+  -- Paul Wise
+
+ [1]: http://rhonda.deb.at/blog/debian/packages-screenshots.html
+ [2]: http://screenshots.debian.net/
+ [3]: http://screenshots.debian.net/upload
+ [4]: http://screenshots.debian.net/packages
+ [5]: http://rhonda.deb.at/blog/debian/packages-screenshots.html
+ [6]: http://blog.workaround.org/2008/11/14/screenshotsdebiannet-goes-live/
+ [7]: http://packages.debian.org/sid/aptitude-gtk
+ [8]: http://packages.debian.org/sid/software-center
+ [9]: http://bugs.debian.org/589928
+ [10]: http://packages.debian.org/sid/goplay
+ [11]: http://blog.workaround.org/2008/11/10/screenshotsdebiannet-goes-beta/
+ [12]: http://screenshots.debian.net/packages
+ [13]: http://screenshots.debian.net/packages/without_screenshots
+ [14]: http://screenshots.debian.net/json/packages
+ [15]: http://screenshots.debian.net/json/screenshots
+ [16]: http://udd.debian.org/schema/udd.html#public.table.screenshots
+ [17]: http://debshots.workaround.org/trac/
+ [18]: http://debshots.workaround.org/trac/report/1
+
+
+BTS のバージョン追跡の解説
+--------------------------
+
+BTS においてどの様にバージョンを追跡しているのかについて、未だに多くの混
+乱がみうけられます。この件に関する多少長い[ブログ記事][19]を書きました。
+この記事では、しばらく前に閉じられているにもかかわらず、アーカイブされな
+いバグがあるのは何故かを説明しています。
+
+  -- Gerfried Fuchs
+
+ [19]: http://rhonda.deb.at/blog/debian/on-BTS-usage.html
+
+
+dpkg-dev の最新機能
+---------------------------
+
+Raphaël Hertzog さんが dpkg-dev の最新機能について[ブログに書いています][20]。
+また、彼はフランスのパリで最近開催された MiniDebConf でもトークセッションを
+行いました ([スライド][21])。彼のブログ記事とトークは、いくつかの領域をカバーする
+もので、次のような内容を含んでいます。新しいソースパッケージ形式、ソースパッケージの
+ビルドオプション、メンテナスクリプトのヘルパー、ベンダー差分のサポート (パッチと
+ビルドルール)、ライブラリ向けのシンボルファイル、それからビルドフラグのカスタマイズ、
+などなど。
+
+  -- Paul Wise
+
+ [20]: http://raphaelhertzog.com/2010/10/30/latest-features-of-dpkg-dev-debian-packaging-tools/
+ [21]: http://raphaelhertzog.com/files/2010/10/latest-dpkg-dev-features.pdf
+
+
+Ultimate Debian Database を用いたバグの検索
+-------------------------------------------------
+
+バグ (RC バグを含む) の検索に、いくつもの条件を指定できる
+検索エンジンを提供する Ultimate Debian Database 用の
+[新しいウェブインタフェースがあります][22]。
+
+  -- Lucas Nussbaum
+
+  [22]: http://udd.debian.org/bugs.cgi
+
+
+バックポートされたパッケージの状態を再評価
+----------------------------------
+
+バックポートされたパッケージの状態を再評価する呼びかけを[メールしました][23]。
+squeeze 版よりもバックポートが古くなっている理由が、もはや妥当でなくなって
+いるなら、再度パッケージを同期させておくとよいでしょう。セキュリティ修正や
+ポイントリリースによる更新がやりやすくなります。
+
+  -- Gerfried Fuchs
+
+ [23]: http://lists.debian.org/debian-backports/2010/11/msg00008.html
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は石井一夫さん・今井伸広さん・佐々木洋平さん・倉敷悟が行いました。
+また、victory さん・やまねひできさんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2010/11/msg00002.html

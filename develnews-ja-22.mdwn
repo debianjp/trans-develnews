@@ -1,0 +1,100 @@
+開発ニュース寄せ集め (第 22 号)
+==============================
+
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+
+LWN サブスクリプション
+-----------------
+
+現在、DD に加え、[DM][4] も HP がスポンサーしている LWN サブスクリプションを受ける
+資格があると Bdale Garbee さんは[アナウンスしました][3]。
+現時点で約571人の DD と DM が HP がスポンサーしている [LWN サブスクリプション][5]
+の恩恵を受けています。
+
+  -- Paul Wise
+
+ [3]: http://www.gag.com/bdale/blog/posts/Debian_and_LWN.html
+ [4]: http://wiki.debian.org/DebianMaintainer
+ [5]: http://www.debian.org/doc/developers-reference/resources.html#lwn
+
+
+ubuntudiff.debian.net
+---------------------
+
+[UbuntuDiff][6] と呼ばれる新しいサービスがセットアップされました。
+それは、grep-dctrl クエリを指定したり、またはショートカット(例えば[package][7]、
+[uploaders][8])を使用することにより
+Ubuntu の変化が、 Debianパッケージになされるのを即座に見ることを可能にします。
+あなたのフィードバックとバグレポートを歓迎します。
+
+  -- Mehdi Dogguy
+
+ [6]: http://ubuntudiff.debian.net/
+ [7]: http://ubuntudiff.debian.net/q/package/linux-ntfs
+ [8]: http://ubuntudiff.debian.net/q/uploaders/mehdi@debian.org
+
+ 
+debian.net の TXT レコード
+--------------------------
+
+Debian のシステム管理者は、各 debian.net ドメインに対する TXT レコード
+を有効にしました。これは、そのドメインが DD によるスポンサードなのか、
+あるいは、非 DD によって管理されているのかを示すのに使うとよいとされて
+います。CNAME レコードは、その他のレコードとは組み合わせられないので、
+debian.net ドメインに CNAME を追加するのではなく、正規の名前に対して
+TXT レコードを追加すべきことに注意してください。
+
+  -- Paul Wise
+
+
+Debian システム管理チームは支援を求めています
+---------------------------------------------
+
+ 先日、Setephen Gran は移植開発者およびプロジェクトのメーリングリストに
+ 対して移植用計算機上での chroot のメンテナンスについての[支援要請][9]
+ を送りました。数人の人々が応募してくれて、実際に手助けをしています(感謝します!)。
+ ですが、まだまだ手が足りていません。 興味のある方はこのメッセージを確
+ 認し、DSA に連絡を取って下さい。また Peter Palfrader は、移植用の
+ [chroot のアップデートに関する最近のメール][10]において、
+ DSA が管理しやすいメール題名のフォーマットについて述べています。
+
+  -- Martin Zobel-Helas
+
+ [9]: http://lists.debian.org/debian-project/2010/03/msg00062.html
+ [10]: http://lists.debian.org/debian-devel-announce/2010/05/msg00002.html
+
+
+PTS 経由で Ubuntu のバグをメール受信
+-----------------------------------
+
+気になるパッケージについての、Ubuntu のバグメールを Launchpad を使うことなく
+(そこでパッケージ毎の登録をしなくても) 購読することができるようになりました。これは
+新しいオプトインの PTS キーワード：derivatives-bugs として実装されています。
+
+自分のパッケージ全てを購読するなら、([デベロッパーズリファレンス][11]にある通り)
+'keyword [email] + derivatives-bugs' を使います。
+'derivatives' (Ubuntu diff など。これもオプトインです) をあわせて購読しても
+よいでしょう。
+
+言うまでもないことですが、他の派生ディストリビューションでこのようなデータ提供に
+関心があるという場合は、遠慮なく Debian QA チームに連絡してください。
+ 
+また、自分がメンテナンスしているパッケージを購読しているか定かでないなら、
+[UDD スクリプト][12]を使って購読の漏れを確認することができます。
+ 
+  -- Lucas Nussbaum
+
+ [11]: http://www.debian.org/doc/developers-reference/resources.html#pts-commands
+ [12]: http://udd.debian.org/cgi-bin/pts-check.cgi
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さん、倉敷悟が行いました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2010/05/msg00006.html
