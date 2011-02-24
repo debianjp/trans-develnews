@@ -1,0 +1,107 @@
+開発ニュース寄せ集め (第 25 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+
+Debian QA ミーティング
+----------------------
+
+Debian QA ミーティングがフランス、パリにある [Center for Research and
+Innovation on Free Software(IRILL)][1] で[開催されます][2]。このミーティン
+グは 3月18日(金)午後から始まり、3月20日(日)に終わる予定です。参加予定で
+旅費の支援が必要な場合には、sprint への援助を受けられるように2月8日(火)
+までに wiki にあなたの情報を追加して下さい。
+
+ [1]: http://www.irill.org
+ [2]: http://wiki.debian.org/DebianQAParis2011
+ [3]: http://wiki.debian.org/Sprints
+
+
+squeeze のリリースがマイクロブログで実況されます
+----------------------------------
+
+Debian squeeze のリリースが Debian の [identica アカウント][5] で[マイクロブログ][4] に実況されます。
+リリースプロセスのいくつかの段階はかなり長く、退屈です。
+そのためこれらの静かな段階は Debian に関する冗談やその他興味深い実話で埋められるでしょう。
+冗談や興味深い実話伝えることで手伝ってもよいという方がいたら、[スレッド][6] に返信してください。
+
+ -- Paul Wise
+
+ [4]: http://lists.debian.org/20110130130240.GC30200@melusine.alphascorpii.net
+ [5]: http://identi.ca/debian
+ [6]: http://lists.debian.org/debian-publicity/2011/01/threads.html#00055
+
+
+
+Debian派生物調査
+-------------------------
+
+Debian [派生物フロントデスク][7]は、すべての Debian 派生物の[調査][9]を[行っています][8]。
+あなたが Debian 派生物の代表である場合、[テンプレート][10]に基づいてあなたの派生物についての
+ページを追加してください。Debian派生物調査における将来の計画には、Debian 派生物の経過状況を把握したり、
+Debian で作業している人向けに便利な情報をもっと追加したり、機械的に処理できる情報を含めるなどして、
+結果的に派生物についての情報を Debian のインフラに統合する、といったことが含まれています。
+さらに、Debian から派生したディストリビューション代表者に Debian [派生物][11] [フロントデスク][12]、
+[IRC チャンネル][13] および[メーリングリスト][14] への参加を招待したいと考えています。
+
+ -- Paul Wise
+
+ [7]: http://wiki.debian.org/DerivativesFrontDesk
+ [8]: http://www.debian.org/News/2011/20110124
+ [9]: http://wiki.debian.org/Derivatives/Census
+ [10]: http://wiki.debian.org/Derivatives/CensusTemplate
+ [11]: http://wiki.debian.org/Derivatives
+ [12]: http://wiki.debian.org/DerivativesFrontDesk
+ [13]: irc://irc.debian.org/debian-derivatives
+ [14]: http://lists.debian.org/debian-derivatives/
+
+
+planet.debian.org のポリシー
+----------------------------
+
+[Planet Debian][15] の管理者が、[Planet Debian のポリシー][16]を改訂して、Planet
+のホームページからリンクしました。このポリシーは、(読み手にせよ、書き手にせよ、) すべての Planet Debian
+ユーザが読むように勧められていて、誰が Planet Debian に登場できるか、何が Planet Debian
+に投稿されるか、また、各種の Planet Debian サービスからメリットを得るための技術的な文書などのトピックをカバーしています。
+
+主な変更点は、Planet Debian ではフィルタリングされていない webbugs に難色を示し、
+フィード削除の理由となり得るという点です。現時点では、feedburner
+のトラッキング画像だけが削除されています。自動的にフィードに挿入される、
+ブログが配信されているのとは別のホストにある画像は、追跡目的に利用されることが知られており、webbug
+とみなされます。もし、フィードに webbugs が含まれてしまっている場合は、
+フィードを除外されないための追加のフィルターを提供してください。パッチは、planet@debian.org に送ってください。
+
+  -- Stefano Zacchiroli & Raphaël Hertzog
+
+ [15]: http://planet.debian.org
+ [16]: http://wiki.debian.org/PlanetDebian
+
+
+override の差異一覧
+----------------------------
+
+[ポリシーの 2.5 節][17] によれば、パッケージは自分よりもプライオリティが低いパッケージに
+依存してはいけないことになっています。これをよりよく順守するため、FTP チームでは yaml 形式
+で [override に差異のあるパッケージ一覧][18] を出力しています。
+自分のパッケージが間違っていると思う場合は、次のアップロードで修正してください。間違っている
+のが私たちの override だとお考えなら、自分のパッケージの override を変更するよう、
+ftp.debian.org にバグ登録してください。
+より詳しくは、http://lists.debian.org/4D2CDDF5.2000600@debian.org をご覧ください。
+
+ -- Alexander Reichle-Schmehl
+
+ [17]: http://www.debian.org/doc/debian-policy/ch-archive.html#s-priorities
+ [18]: http://ftp-master.debian.org/override-disparity.gz
+
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さん・倉敷悟が行いました。
+また、victory さん・やまねひできさんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2011/02/msg00000.html
