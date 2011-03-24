@@ -1,0 +1,119 @@
+開発ニュース寄せ集め (第 26 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+
+DebConf ニュース
+------------
+
+DebConf チームは現在、DebConf12 の[入札][1]の検討と [DebConf11][2]
+の準備についてミーティングをしています。
+DebConf12 をどこで開催するかを決めるミーティングは、協定世界時の 4 月 22 日の
+20:00 から開催されます。
+
+最新の [DebConf11 の報告][3] によると、特に国と地方の行政からのサポートにより、
+Debconf11 の準備は順調とのことです。
+
+ボスニアを訪れるためのビザを必要とする、またはビザについて何か問題がある可能性の
+ある人は、ビザについての[ウェブページ][4]をみて、penta で登録して visa@debconf.org
+で準備チームに連絡をとりましょう。DebConf11 準備チームはスルプスカ共和国政府から
+援助を受けています。
+
+DebConf11 は、4 月 1 日までには登録できるようになっているのが目標です。
+いつも通り、DebConf に参加するための資金提供が必要なら、最終期限までに
+申し込んでください。資金提供が受けられるかについては悲観しないでください。
+あなた自身や会社が DebConf を財政的に援助してくれるのであれば、
+資金提供についての[ウェブページ][5]をご覧頂き、可能な額の寄付をお願いします。
+
+カンファレンスの期間、とてもやりがいのある[ボランティア][7]を行うことを含め、
+別の方法で DebConf11 を援助するには、"どのような援助ができますか？"の
+[ウェブページ][6]を見てください。
+
+DebConf に参加した、またはどのようなものか興味があれば、3 月 14 日に
+でることになっている、DebConf10の最終報告を探し、一読してください。
+報告は昔のものも[存在し][8]、フィンランドでの DebConf5 までさかのぼることができます。
+
+  -- Paul Wise
+
+ [1]: http://meetbot.debian.net/debconf-team/2011/debconf-team.2011-03-01-20.01.html
+ [2]: http://meetbot.debian.net/debconf-team/2011/debconf-team.2011-03-08-20.01.html
+ [3]: http://lists.debconf.org/lurker/message/20110224.204950.5f426a36.en.html
+ [4]: http://debconf11.debconf.org/visas.xhtml
+ [5]: http://debconf11.debconf.org/sponsorship.xhtml
+ [6]: http://debconf11.debconf.org/helpus.xhtml
+ [7]: http://wiki.debconf.org/wiki/DebConf11/Teams#Volunteers
+ [8]: http://media.debconf.org/
+
+
+Multiarch サポート
+-----------------
+
+[multi-arch][9] サポートに向けて dpkg は順調に進んでいます。
+しかし、複数のアーキテクチャから同じパッケージを co-install する
+ことが可能となることにより様々なパッケージにおいて想定していることが
+通用しなくなるでしょう。その問題と、それがどのように
+修正されるかについての詳細を知るには、この[メッセージ][10]を debian-devel
+で確認してください。それらの問題で影響を受けそうなあらゆるパッケージの
+報告を返してください。
+
+ -- Raphaël Hertzog
+
+ [9]: https://wiki.ubuntu.com/MultiarchSpec
+ [10]: http://lists.debian.org/20110302140611.GH20023@rivendell.home.ouaza.com
+
+
+win32-loader.exe がミラーネットワークからも利用可能に
+-----------------------------------------------------
+
+バージョン 0.6.22 以降、FTP マスターの支援のおかげで、win32-loader.exe
+は [Debian の公式ミラー][11]からもダウンロード出来るようになりました。Windows
+マシンで実行した場合、この実行ファイル (x86 CD に収録されている setup.exe
+のスタンドアローンフレーバ) は Debian-Installer カーネルおよび initrd
+をダウンロードして、Debian-Installer からシームレスに再起動出来るように Windows
+のブートローダを設定します。すべてのバージョンの Windows で動作すると思われ、GNU/Linux
+もしくは GNU/kFreeBSD のどちらのフレーバの Debian-Installer でもダウンロード出来ます。
+
+  -- Didier Raboud
+
+ [11]: http://ftp.ch.debian.org/debian/tools/win32-loader/unstable/win32-loader.exe
+
+
+チーム特有の NM 質問集
+----------------------
+
+チーム特有の P&P、T&S 質問集を私宛に送って欲しいと(呼びかけました)[12]。
+返信は整理した後にチーム毎に一つのファイルとして NM テンプレートリポジト
+リに追加する予定です。これらは NM にとってだけではなく、人々に、そのチー
+ムの動きについて精通する方法を提供する上で有益なものとなるでしょう。
+
+ -- Enrico Zini
+
+ [12]: http://lists.debian.org/20110309130159.GA27335@enricozini.org
+
+
+Debian ゲームチームのミーティング
+-------------------------
+
+Debian ゲームチームでは、3 月 18 日の午後 9:00 UTC に[ミーティング][13]を
+予定しています。Debian の内外でゲームをメンテナンスしていたり、ゲームと Debian
+に関心がある人に参加するよう呼びかけて、いろいろなトピックについて一緒に議論
+したいと考えています。議題はまだ決まっていませんので、どんな項目について話を
+するか決めるために、[投票][14]に書きこみをお願いします。
+
+  -- Paul Wise
+
+ [13]: http://wiki.debian.org/Games/Meetings/2011-03-18
+ [14]: http://doodle.com/e53i5dad794vxadq
+
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は石井一夫さん・今井伸広さん・佐々木洋平さん・中尾隆さん・倉敷悟が行いました。
+また、victory さんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2011/03/msg00006.html
