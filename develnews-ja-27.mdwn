@@ -1,0 +1,116 @@
+開発ニュース寄せ集め (第 27 号)
+==============================
+
+このニュースは <http://wiki.debian.org/DeveloperNews> でまとめたものです。
+寄稿はご自由にどうぞ。
+
+Planet Debian 派生物
+-------------------------
+
+[Debian 派生物調査][1]からの最初の具体的成果は、[Planet Debian 派生物][2]
+の作成です。Debian から派生したディストリビューションに興味をもっている皆さんの
+ために、派生物調査で挙げられているすべてのディストリビューションについてのブログと
+プラネットを集積しています。
+調査に参加するディストリビューションが増え、調査ページのメンテナが新しくブログや
+planet の URL を追加するにつれて、フィードのリストは半自動的に拡大されます。
+さらに Debian のインフラストラクチャーへの派生物に関する情報の[統合][3]が計画
+されており、次の目標はパッケージ情報です。
+
+  -- Paul Wise
+
+ [1]: http://wiki.debian.org/Derivatives/Census
+ [2]: http://planet.debian.org/deriv/
+ [3]: http://wiki.debian.org/Derivatives/Integration
+
+win32-loader.exe が GNU/Hurd Debian-Installer にアクセスしやすくなりました
+--------------------------------------------------------------------------
+
+バージョン 0.7.4 以降、Samuel Thibault さんのお陰で、(ミラーネットワークから利用出来る)
+[win32-loader.exe][4] のスタンドアロンフレーバにより、Windows のホストを GNU/Hurd
+Debian-Installer で簡単にリブート出来るようになりました。
+
+Windows ホストから実行する際、この実行ファイルは Debian-Installer をダウンロードし、
+Debian-Installer がシームレスに起動するように Windows のブートローダを設定します。
+どのバージョンの Windows でも動作すると思われ、GNU/Linux、GNU/kFreeBSD および
+GNU/Hurd フレーバの Debian-Installer をダウンロード出来ます。
+
+  -- Didier Raboud
+
+ [4]: http://ftp.ch.debian.org/debian/tools/win32-loader/unstable/win32-loader.exe
+
+Wiki のバグステータスが Launchpad のバグに対応
+-----------------------------------------
+
+wiki にあるバグステータス JavaScript はバグのステータスをチェックして、有用な
+タイトルをつけて、クローズされているかオープンになっているかによって異なるスタイル
+を適用します。[Paul Tagliamonte さん][5]の助力のおかげで、既存の Debian バグ
+トラッカーに加えて Launchpad バグトラッカーへのリンクがサポートされました。これを
+利用するには、UbuntuBug もしくは LaunchpadBug の [InterWiki][6]リンクを
+使うか、Launchpad のバグに通常のリンクをはってください。これを拡張して他のバグ
+トラッカーもサポートするようにしたい人がいたら、[wiki 設定][7]を確認の上、パッチ
+をつけて[wiki.debian.org][8]疑似パッケージにバグを登録してください。
+
+  -- Paul Wise
+
+ [5]: http://wiki.debian.org/PaulTagliamonte
+ [6]: http://wiki.debian.org/InterWiki
+ [7]: http://wiki.debian.org/Teams/DebianWiki#Infrastructure
+ [8]: http://bugs.debian.org/wiki.debian.org
+
+
+dh-exec が不安定版に入りました
+--------------------------
+
+Debhelper (compat レベルが 9 以上) では、設定ファイルを実行可能にして、そういった
+スクリプトの出力を設定ファイルの中身として使うことができます。
+
+[dh-exec][9] は、そのようなスクリプトの作成を、標準化されて理解しやすい形で
+補助するためのスクリプトとプログラムの集合です。
+
+これらによって、次のようなタスクにヘルパーが提供されます：
+
+ * 様々な debhelper ファイルの内部で変数を展開 (環境変数や、multi-arch 関連も含めた
+   dpkg-architecture による変数)
+ * dh_install を拡張し、拡張書式を使うことでコピー時のファイル名変更をサポート
+
+dh-exec は不安定版で利用可能で、上記の機能のいずれかを必要とする人は誰でもすぐに
+使うことができます。
+
+  -- Gergely Nagy
+
+ [9]: https://github.com/algernon/dh-exec
+
+
+派生物とのパッチ生成を試作
+---------------------
+
+Debian [派生物調査][10]の[統合][11]における、2番目の具体的な成果は
+[Debian と派生物間の debdiff を生成][12]することです。
+Debian から派生したディストリビューションで、どのようなパッチが適用されているのか
+興味がある人向けに、このサービスでは、派生物調査で示されているディストリビューションで、
+その apt sources.list コードに deb-src エントリがあるもの全てについて、
+[snapshots.debian.org[13] のデータベースとファイルを使って一連のパッチを生成します。
+多くの問題があって、サービスはまだ稼動していません。サービスが稼動すれば、一連のパッチは
+より多くのディストリビューションが調査に参加し、調査ページのメンテナが deb-src 行を彼らの
+apt sources.list に追加するにつれて、自動的に拡大するでしょう。
+Debian インフラストラクチャへの派生物情報の[統合][14]はさらに進められる予定で、次の
+目標は派生物のパッケージ情報をまとめていくことです。
+
+  -- Paul Wise
+
+ [10]: http://wiki.debian.org/Derivatives/Census
+ [11]: http://wiki.debian.org/Derivatives/Integration
+ [12]: http://lists.debian.org/debian-derivatives/2011/10/msg00061.html
+ [13]: http://snapshots.debian.org
+ [14]: http://wiki.debian.org/Derivatives/Integration
+
+
+この記事について
+----------------
+
+この記事は [debian-devel-announce に流れたニュース][0]の翻訳です。
+翻訳は石井一夫さん・今井伸広さん・倉敷悟が行いました。
+また、victory さんから多数のコメントをいただきました。
+ありがとうございます。
+
+ [0]: http://lists.debian.org/debian-devel-announce/2011/12/msg00001.html
