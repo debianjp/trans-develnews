@@ -1,0 +1,10 @@
+before_install:
+  - "sudo apt-get -qq update"
+  - "sudo apt-get -qq install markdown xsltproc"
+
+script:
+  - "make all"
+
+notifications:
+  email: false
+
