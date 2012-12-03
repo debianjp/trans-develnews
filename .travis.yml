@@ -1,3 +1,5 @@
+language: common
+
 before_install:
   - "sudo apt-get -qq update"
   - "sudo apt-get -qq install markdown xsltproc"
