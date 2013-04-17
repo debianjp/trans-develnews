@@ -1,0 +1,83 @@
+amd64 most popular architecture according to popcon
+---------------------------------------------------
+
+ Today, amd64 is the architecture with the greatest number of popcon[1]
+ submissions by a narrow margin. When restricted to submissions from
+ squeeze users, amd64 has 51% of all submissions and i386 47%.
+
+ [1] http://popcon.debian.org/
+
+Register your media types to the IANA
+-------------------------------------
+
+ Please consider registering media types to the IANA before requiring
+ their inclusion in the mime-support[2] package. Simplified registration
+ procedures for vendor and personal trees are being implemented with the
+ update of RFC 4288[3], that states: ''it should rarely, if ever, be
+ necessary to use unregistered types. Therefore, use of types in the "x."
+ tree is strongly discouraged.'' Charles Plessy has confirmed that the
+ process is fairly quick and painless by registering
+ text/vnd.debian.copyright[4] for machine-readable Debian copyright files.
+
+  -- Charles Plessy
+
+ [2] http://packages.debian.org/mime-support
+ [3] http://tools.ietf.org/html/draft-ietf-appsawg-media-type-regs-14
+ [4] http://www.iana.org/assignments/media-types/text/vnd.debian.copyright
+
+First release of dput-ng in unstable
+------------------------------------
+
+ As seen on debian-devel[5], dput-ng has been uploaded to unstable. Please
+ feel free to test it, and provide early feedback on it. dput-ng is a
+ from-scratch rewrite of dput that provides an identical interface for
+ dput, and a slightly modified one for dcut (since most of us had to look
+ up the manpage anyway). It supports the new DM permissions, and allows
+ for more complex hooks to be written to be run before or after an upload.
+
+  -- Paul Tagliamonte
+
+ [5] http://lists.debian.org/20121204150123.GA24039@chayot
+
+Recent changes on the Debian QA front
+-------------------------------------
+
+ The PTS gained knowledge of the new system for DM access controls and of
+ upstream URLs that are failing, via the Debian Url ChecKer[6]. The PTS
+ had various watch-file related improvements, please check your PTS pages
+ before uploading so you can include new/updated watch files. The PTS now
+ reports when direct dependencies need a new maintainer. The PTS gained
+ semantic information using RDF files.
+
+ The Debian QA infrastructure always needs more folks working on it, so if
+ you have some spare time, please check out the code and come join us on
+ the debian-qa mailing list and IRC channel.
+
+  -- Paul Wise
+
+ [6] http://duck.debian.net/
+
+Fancy graphs on lintian.d.o
+---------------------------
+
+ Lintian.d.o now displays graphs over historical data collected for
+ each tag (like[7] these[8]).
+ Full credits goes to Jordà Polo for writing the data collection, graph
+ generation and even updating the templates to show the graphs inline!
+
+ Besides the graphs, we are also pleased to announce two other great
+ changes! First off, it is now possible to mechanically request the
+ report for a given source package (without knowing its maintainer) by
+ accessing:
+
+  `http://lintian.debian.org/source/<src>[/<src-version>]`
+
+ Currently this just redirects to the maintainer's lintian report.
+ Secondly, we have extended Lintian's work schedule to include i386
+ experimental! Thus, you may now see multiple reports for the same
+ source package on your lintian page.
+
+  -- Niels Thykier
+
+ [7] http://lintian.debian.org/tags/package-needs-versioned-debhelper-build-depends.html
+ [8] http://lintian.debian.org/tags/debhelper-but-no-misc-depends.html

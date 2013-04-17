@@ -1,25 +1,13 @@
-MDWN_FILES = $(wildcard *.mdwn)
-BLOSXOM_FILES = $(MDWN_FILES:%.mdwn=%.d)
+SRC_FILES  = $(wildcard en/*.txt)
+PO_FILES   = $(SRC_FILES:en/%.txt=po/ja/%.po)
+MDWN_FILES = $(SRC_FILES:en/%.txt=ja/%.mdwn)
 
-all: $(BLOSXOM_FILES)
+all: $(MDWN_FILES)
 
-%.d: %.html html2d.xsl Makefile
-	xsltproc --nodtdattr --nonet html2d.xsl $< > $@
+ja/%.mdwn: $(PO_FILES)
+	po4a-translate -f text -o markdown -m en/$(notdir $(basename $@)).txt -M UTF-8 -p po/ja/$(notdir $(basename $@)).po -l $@
 
-%.html: %.mdwn Makefile
-	echo "<div class='markdown'>" > $@
-	markdown $< >> $@
-	echo "</div>" >> $@
+po/ja/%.po: $(SRC_FILES)
+	po4a-updatepo -M UTF-8 -f text -o markdown -m en/$(notdir $(basename $@)).txt -p $@
 
-preview: $(BLOSXOM_FILES)
-	cat $(BLOSXOM_FILES) | w3m -I e -T text/html
-
-publish: $(BLOSXOM_FILES)
-	svn checkout https://svn.debian.or.jp/repos/www/trunk/blosxom/data/develop develop
-	cp -a $(BLOSXOM_FILES) develop
-	svn add develop/develnews-*.d
-	svn commit develop/develnews-*.d
-
-clean:
-	rm -f *.html *.d
-	rm -rf develop
+.PRECIOUS: po/ja/%.po

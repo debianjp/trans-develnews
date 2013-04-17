@@ -1,0 +1,91 @@
+Report from DSA Team Sprint
+---------------------------
+
+ The Debian System Administrators met for a sprint in Oslo, Norway. Luca
+ Filipozzi sent a report[1] about their activities at the sprint. The
+ goals of the meeting were to develop a long term plan for Debian's
+ infrastructure, to review the current set of machines we maintain and the
+ services we provide, and to formulate some policies and procedures
+ regarding account and group management.
+
+ They aim to ensure that all Debian hardware is no more than 5 years old
+ at any one time and hope to improve Debian donations and financial
+ contributions in order to support that. They are moving towards using
+ virtual machines for most services, consolidating our hosting locations
+ and adding disaster mitigation through geographically-distributed service
+ redundancy. They are starting a new Debian CDN for the distribution of
+ static content such as the Debian website and Planet Debian. They have
+ recently deployed a SSO solution for debian.org web based services. They
+ will also be locking inactive shell accounts and adding easy ways to
+ unlock them and monitoring the use of group memberships.
+
+  -- Paul Wise
+
+ [1] http://lists.debian.org/20120320012015.GA19474@emyr.net
+
+Using RAM for temporary files ?
+-------------------------------
+
+ As a result of ground work to use virtual filesystems for some
+ directories containing temporary files, it is easier to mount /tmp on
+ tmpfs. A long discussion about the default location (on RAM or on disk)
+ took place on the debian-devel mailing list, which is summarised in a
+ couple of posts and on LWN.
+
+ - Final decision on defaulting to disk:
+   http://lists.debian.org/debian-devel/2012/06/msg00028.html
+
+ - Summary from the person who started the thread:
+   http://lists.debian.org/debian-devel/2012/06/msg00311.html
+
+ - Rebuttal: http://lists.debian.org/debian-devel/2012/06/msg00318.html
+
+ - Article on LWN: https://lwn.net/Articles/499410/
+
+Control Commands at submit@bugs.debian.org time
+-----------------------------------------------
+
+ You can now use control commands at submit@bugs.debian.org time in the
+ pseudo-headers. An example is the following:
+
+ Package: foo
+ Severity: normal
+ Control: retitle -1 a bug, a bug, a buggy bug
+ Control: tag -1 moreinfo help
+
+ See pseudo header control commands[2], my blog post[3], and the
+ DebConf12 lighting talk[4] for more information.
+
+  -- Don Armstrong
+
+ [2] http://www.debian.org/Bugs/Reporting#control
+ [3] http://www.donarmstrong.com/posts/control_at_submit/
+ [4] http://penta.debconf.org/dc12_schedule/events/900.en.html
+
+Debian Maintainer Dashboard
+---------------------------
+
+ Debian Maintainer Dashboard[5] aims at gathering various kind of
+ information useful to maintainers and teams. In addition to the usual
+ information about packages versions, bug counts, etc., it exposes a list
+ of TODO items (RC bugs to fix, missing builds, testing migration issues,
+ new upstream releases etc). DMD gets all the data from the Ultimate Debian
+ Database.
+
+  -- Lucas Nussbaum
+
+ [5] http://udd.debian.org/dmd.cgi
+
+Declaring media (MIME) types with FreeDesktop menu entry files
+--------------------------------------------------------------
+
+ The package mime-support version 3.53~experimental1[6] was uploaded in
+ experimental. It implements the parsing of .desktop files to generate
+ mailcap entries, thanks to a patch[7] from Brian M. Carlson. This will
+ allow to de-duplicate media type information in packages containing
+ FreeDesktop menu entry files.
+
+  -- Charles Plessy
+
+ [6] http://anonscm.debian.org/gitweb/?p=collab-maint/mime-support.git;a=commitdiff;hp=3.52-1;h=3.53_experimental1
+ [7] http://bugs.debian.org/497779
