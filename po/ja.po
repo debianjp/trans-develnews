@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2013-04-18 08:53+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2013-04-20 21:55+0900\n"
+"Last-Translator: Satoru KURASHIKI <lurdan@gmail.com>\n"
+"Language-Team: Japanese "
+"<http://lurdan.dip.jp/projects/debianjp/develnews/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.6-dev\n"
 
 #. type: Title -
 #: en/31.txt:2
@@ -35,7 +37,7 @@ msgstr ""
 #: en/31.txt:9
 #, no-wrap
 msgid " [1] http://popcon.debian.org/\n"
-msgstr ""
+msgstr " [1] http://popcon.debian.org/\n"
 
 #. type: Title -
 #: en/31.txt:11
@@ -62,7 +64,7 @@ msgstr ""
 #: en/31.txt:23 en/30.txt:89 en/29.txt:123
 #, no-wrap
 msgid "  -- Charles Plessy\n"
-msgstr ""
+msgstr "  -- Charles Plessy\n"
 
 #. type: Plain text
 #: en/31.txt:27
@@ -72,6 +74,9 @@ msgid ""
 " [3] http://tools.ietf.org/html/draft-ietf-appsawg-media-type-regs-14\n"
 " [4] http://www.iana.org/assignments/media-types/text/vnd.debian.copyright\n"
 msgstr ""
+" [2] http://packages.debian.org/mime-support\n"
+" [3] http://tools.ietf.org/html/draft-ietf-appsawg-media-type-regs-14\n"
+" [4] http://www.iana.org/assignments/media-types/text/vnd.debian.copyright\n"
 
 #. type: Title -
 #: en/31.txt:29
@@ -95,13 +100,13 @@ msgstr ""
 #: en/31.txt:39
 #, no-wrap
 msgid "  -- Paul Tagliamonte\n"
-msgstr ""
+msgstr "  -- Paul Tagliamonte\n"
 
 #. type: Plain text
 #: en/31.txt:41
 #, no-wrap
 msgid " [5] http://lists.debian.org/20121204150123.GA24039@chayot\n"
-msgstr ""
+msgstr " [5] http://lists.debian.org/20121204150123.GA24039@chayot\n"
 
 #. type: Title -
 #: en/31.txt:43
@@ -134,13 +139,13 @@ msgstr ""
 #: en/31.txt:57 en/30.txt:23 en/29.txt:30 en/29.txt:63 en/29.txt:86 en/29.txt:107
 #, no-wrap
 msgid "  -- Paul Wise\n"
-msgstr ""
+msgstr "  -- Paul Wise\n"
 
 #. type: Plain text
 #: en/31.txt:59
 #, no-wrap
 msgid " [6] http://duck.debian.net/\n"
-msgstr ""
+msgstr " [6] http://duck.debian.net/\n"
 
 #. type: Title -
 #: en/31.txt:61
@@ -188,7 +193,7 @@ msgstr ""
 #: en/31.txt:81
 #, no-wrap
 msgid "  -- Niels Thykier\n"
-msgstr ""
+msgstr "  -- Niels Thykier\n"
 
 #. type: Plain text
 #: en/31.txt:83
@@ -198,6 +203,9 @@ msgid ""
 "http://lintian.debian.org/tags/package-needs-versioned-debhelper-build-depends.html\n"
 " [8] http://lintian.debian.org/tags/debhelper-but-no-misc-depends.html\n"
 msgstr ""
+" [7] http://lintian.debian.org/tags/package-needs-versioned-debhelper-build-"
+"depends.html\n"
+" [8] http://lintian.debian.org/tags/debhelper-but-no-misc-depends.html\n"
 
 #. type: Title -
 #: en/30.txt:2
@@ -237,7 +245,7 @@ msgstr ""
 #: en/30.txt:25
 #, no-wrap
 msgid " [1] http://lists.debian.org/20120320012015.GA19474@emyr.net\n"
-msgstr ""
+msgstr " [1] http://lists.debian.org/20120320012015.GA19474@emyr.net\n"
 
 #. type: Title -
 #: en/30.txt:27
@@ -303,6 +311,10 @@ msgid ""
 " Control: retitle -1 a bug, a bug, a buggy bug\n"
 " Control: tag -1 moreinfo help\n"
 msgstr ""
+" Package: foo\n"
+" Severity: normal\n"
+" Control: retitle -1 a bug, a bug, a buggy bug\n"
+" Control: tag -1 moreinfo help\n"
 
 #. type: Plain text
 #: en/30.txt:58
@@ -316,7 +328,7 @@ msgstr ""
 #: en/30.txt:60
 #, no-wrap
 msgid "  -- Don Armstrong\n"
-msgstr ""
+msgstr "  -- Don Armstrong\n"
 
 #. type: Plain text
 #: en/30.txt:64
@@ -326,6 +338,9 @@ msgid ""
 " [3] http://www.donarmstrong.com/posts/control_at_submit/\n"
 " [4] http://penta.debconf.org/dc12_schedule/events/900.en.html\n"
 msgstr ""
+" [2] http://www.debian.org/Bugs/Reporting#control\n"
+" [3] http://www.donarmstrong.com/posts/control_at_submit/\n"
+" [4] http://penta.debconf.org/dc12_schedule/events/900.en.html\n"
 
 #. type: Title -
 #: en/30.txt:66
@@ -350,7 +365,7 @@ msgstr ""
 #: en/30.txt:76
 #, no-wrap
 msgid "  -- Lucas Nussbaum\n"
-msgstr ""
+msgstr "  -- Lucas Nussbaum\n"
 
 #. type: Plain text
 #: en/30.txt:78
@@ -383,6 +398,9 @@ msgid ""
 "http://anonscm.debian.org/gitweb/?p=collab-maint/mime-support.git;a=commitdiff;hp=3.52-1;h=3.53_experimental1\n"
 " [7] http://bugs.debian.org/497779\n"
 msgstr ""
+" [6] http://anonscm.debian.org/gitweb/?p=collab-maint/mime-"
+"support.git;a=commitdiff;hp=3.52-1;h=3.53_experimental1\n"
+" [7] http://bugs.debian.org/497779\n"
 
 #. type: Title -
 #: en/29.txt:2
@@ -406,7 +424,7 @@ msgstr ""
 #: en/29.txt:12
 #, no-wrap
 msgid "  -- Damyan Ivanov\n"
-msgstr ""
+msgstr "  -- Damyan Ivanov\n"
 
 #. type: Plain text
 #: en/29.txt:15
@@ -415,6 +433,8 @@ msgid ""
 " [1] http://icedeb.ktnx.net/\n"
 " [2] http://tanguy.ortolo.eu/blog/article40/debian-buttons\n"
 msgstr ""
+" [1] http://icedeb.ktnx.net/\n"
+" [2] http://tanguy.ortolo.eu/blog/article40/debian-buttons\n"
 
 #. type: Title -
 #: en/29.txt:17
@@ -447,6 +467,11 @@ msgid ""
 " [6] http://debblog.philkern.de/2012/02/gobbydebianorg.html\n"
 " [7] http://packages.debian.org/gobby-0.5\n"
 msgstr ""
+" [3] http://lists.debian.org/20120127185635.GA11078@upsilon.cc\n"
+" [4] http://titanpad.debian.net/\n"
+" [5] http://whiteboard.debian.net/\n"
+" [6] http://debblog.philkern.de/2012/02/gobbydebianorg.html\n"
+" [7] http://packages.debian.org/gobby-0.5\n"
 
 #. type: Title -
 #: en/29.txt:38
@@ -482,13 +507,13 @@ msgstr ""
 #: en/29.txt:50
 #, no-wrap
 msgid "  -- Serafeim Zanikolas\n"
-msgstr ""
+msgstr "  -- Serafeim Zanikolas\n"
 
 #. type: Plain text
 #: en/29.txt:52
 #, no-wrap
 msgid " [8] http://lists.debian.org/debian-devel/2012/02/msg00456.html\n"
-msgstr ""
+msgstr " [8] http://lists.debian.org/debian-devel/2012/02/msg00456.html\n"
 
 #. type: Title -
 #: en/29.txt:54
@@ -514,6 +539,8 @@ msgid ""
 " [9] http://security-tracker.debian.org/tracker/\n"
 " [10] http://bugs.debian.org/660190\n"
 msgstr ""
+" [9] http://security-tracker.debian.org/tracker/\n"
+" [10] http://bugs.debian.org/660190\n"
 
 #. type: Title -
 #: en/29.txt:68
@@ -548,6 +575,8 @@ msgid ""
 " [11] http://lists.debian.org/debian-derivatives/2012/01/msg00023.html\n"
 " [12] http://lists.debian.org/debian-derivatives/2012/02/msg00024.html\n"
 msgstr ""
+" [11] http://lists.debian.org/debian-derivatives/2012/01/msg00023.html\n"
+" [12] http://lists.debian.org/debian-derivatives/2012/02/msg00024.html\n"
 
 #. type: Title -
 #: en/29.txt:91
@@ -577,7 +606,7 @@ msgstr ""
 #: en/29.txt:109
 #, no-wrap
 msgid " [13] http://lists.debian.org/4F498C5E.9050700@toell.net\n"
-msgstr ""
+msgstr " [13] http://lists.debian.org/4F498C5E.9050700@toell.net\n"
 
 #. type: Title -
 #: en/29.txt:111
@@ -616,3 +645,16 @@ msgid ""
 " [22] "
 "http://ddumont.wordpress.com/2012/02/24/configmodel-new-cme-command-is-avaialable/\n"
 msgstr ""
+" [14] http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
+" [15] http://dep.debian.net\n"
+" [16] http://lists.debian.org/debian-devel-announce/2012/02/msg00014.html\n"
+" [17] http://lists.debian.org/debian-devel-announce/2012/02/msg00013.html\n"
+" [18] http://packages.debian.org/changelogs/pool/main/l/lintian/lintian_2.5."
+"5/changelog#version2.5.5\n"
+" [19] "
+"http://anonscm.debian.org/gitweb/?p=lintian/lintian.git;a=blob;f=checks"
+"/source-copyright.desc\n"
+" [20] http://packages.debian.org/cdbs\n"
+" [21] http://packages.debian.org/libconfig-model-perl\n"
+" [22] http://ddumont.wordpress.com/2012/02/24/configmodel-new-cme-command-"
+"is-avaialable/\n"
