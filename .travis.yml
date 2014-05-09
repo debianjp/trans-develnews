@@ -2,7 +2,7 @@ language: common
 
 before_install:
   - "sudo apt-get -qq update"
-  - "sudo apt-get -qq install markdown xsltproc"
+  - "sudo apt-get -qq install po4a markdown xsltproc"
 
 script:
   - "make all"
